@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Simulation 2025</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'cinzel': ['Cinzel', 'serif'],
+                        'rajdhani': ['Rajdhani', 'sans-serif'],
+                    },
+                    colors: {
+                        'obsidian': '#050505',
+                        'charcoal': '#0a0a0a',
+                        'gold': '#d4af37',
+                        'neon-lime': '#cfff04',
+                        'crimson': '#ff003c',
+                        'glass': 'rgba(255, 255, 255, 0.03)'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #050505;
+            color: #e2e8f0;
+            overflow-x: hidden;
+            background-image:
+                radial-gradient(circle at 15% 50%, rgba(76, 29, 149, 0.05), transparent 25%),
+                radial-gradient(circle at 85% 30%, rgba(255, 0, 60, 0.03), transparent 25%);
+        }
+
+        /* Ambient Noise Texture */
+        .noise-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            pointer-events: none;
+            z-index: 0;
+            opacity: 0.03;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+        }
+
+        /* Scrollbar */
+        ::-webkit-scrollbar {
+            width: 4px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #0a0a0a;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #333;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #cfff04;
+        }
+
+        /* Animations */
+        @keyframes slideUpFade {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .row-animate {
+            animation: slideUpFade 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+            opacity: 0;
+        }
+
+        .shimmer {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .shimmer::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            transform: translateX(-100%);
+            background-image: linear-gradient(90deg,
+                    rgba(255, 255, 255, 0) 0,
+                    rgba(255, 255, 255, 0.05) 20%,
+                    rgba(255, 255, 255, 0.1) 60%,
+                    rgba(255, 255, 255, 0));
+            animation: shimmer 3s infinite;
+        }
+
+        @keyframes shimmer {
+            100% {
+                transform: translateX(100%);
+            }
+        }
+
+        /* Glass Panel */
+        .glass-panel {
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.01) 100%);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+        }
+
+        /* Hover Glow */
+        .hover-glow:hover {
+            box-shadow: 0 0 20px rgba(207, 255, 4, 0.15);
+            border-color: rgba(207, 255, 4, 0.3);
+        }
+    </style>
+</head>
+
+<body class="font-rajdhani selection:bg-neon-lime selection:text-black">
+    <div class="noise-bg"></div>
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 glass-panel border-b border-white/5">
+        <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+            <div class="font-cinzel font-bold text-xl tracking-widest text-white">
+                MARACANIA<span class="text-neon-lime">.AI</span>
+            </div>
+            <div class="flex gap-1 overflow-x-auto no-scrollbar" id="league-nav">
+                <!-- Nav Items Injected Here -->
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="relative z-10 pt-24 pb-12 px-4 max-w-7xl mx-auto min-h-screen flex flex-col">
+
+        <!-- Hero Section -->
+        <header id="hero-section" class="mb-16 mt-8 animate-[slideUpFade_0.8s_ease-out_forwards]">
+            <!-- Injected Hero Content -->
+            <div class="text-center">
+                <div
+                    class="inline-block px-3 py-1 border border-white/10 rounded-full text-xs font-bold tracking-[0.2em] text-white/50 mb-4 uppercase">
+                    Season 2024/2025 Prediction
+                </div>
+                <h1 class="font-cinzel text-6xl md:text-8xl font-black text-transparent bg-clip-text bg-gradient-to-b from-white to-gray-600 tracking-tighter mb-2"
+                    id="league-title">
+                    LOADING
+                </h1>
+            </div>
+        </header>
+
+        <!-- Standings Grid -->
+        <div class="w-full">
+            <!-- Table Header -->
+            <div
+                class="grid grid-cols-12 gap-4 px-6 py-3 text-xs font-bold tracking-widest text-white/30 uppercase border-b border-white/5 mb-2">
+                <div class="col-span-1 text-center">#</div>
+                <div class="col-span-4 md:col-span-3">Club</div>
+                <div class="col-span-2 text-center text-neon-lime">Win %</div>
+                <div class="col-span-2 text-center text-blue-400">UCL %</div>
+                <div class="col-span-2 text-center text-red-500 hidden md:block">Rel %</div>
+                <div class="col-span-3 md:col-span-2 text-right">Exp. Pts</div>
+            </div>
+
+            <div id="results-grid" class="space-y-1">
+                <!-- Rows Injected Here -->
+            </div>
+        </div>
+
+    </main>
+
+    <script src="simulation_data.js"></script>
+    <script>
+        // State
+        let currentLeague = 'La Liga';
+        let currentFilter = 'WIN'; // WIN, UCL, UEL, UECL, REL
+
+        const FILTERS = {
+            'WIN': { label: 'Winner', color: 'text-neon-lime', barColor: 'bg-neon-lime' },
+            'UCL': { label: 'Champions League', color: 'text-blue-400', barColor: 'bg-blue-500' },
+            'UEL': { label: 'Europa League', color: 'text-orange-400', barColor: 'bg-orange-500' },
+            'UECL': { label: 'Conference', color: 'text-green-400', barColor: 'bg-green-500' },
+            'REL': { label: 'Relegation', color: 'text-red-500', barColor: 'bg-red-500' }
+        };
+
+        document.addEventListener('DOMContentLoaded', () => {
+            if (typeof simulationResults !== 'undefined') {
+                const leagues = Object.keys(simulationResults);
+                renderNav(leagues);
+                renderFilters();
+                if (leagues.includes('La Liga')) selectLeague('La Liga');
+                else if (leagues.length > 0) selectLeague(leagues[0]);
+            }
+        });
+
+        function renderNav(leagues) {
+            const nav = document.getElementById('league-nav');
+            nav.innerHTML = leagues.map(league => `
+                <button onclick="selectLeague('${league}')" 
+                    id="nav-${league.replace(/\s+/g, '-')}"
+                    class="px-4 py-2 text-sm font-semibold tracking-wide text-white/50 hover:text-white transition-colors uppercase border-b-2 border-transparent">
+                    ${league}
+                </button>
+            `).join('');
+        }
+
+        function renderFilters() {
+            const container = document.createElement('div');
+            container.className = 'flex justify-center gap-2 mb-8 animate-[slideUpFade_0.9s_ease-out_forwards]';
+            container.id = 'filter-container';
+
+            const filterKeys = ['WIN', 'UCL', 'UEL', 'UECL', 'REL']; // Order
+
+            container.innerHTML = filterKeys.map(key => `
+                <button onclick="selectFilter('${key}')" 
+                    id="filter-${key}"
+                    class="px-3 py-1 text-xs font-bold tracking-widest border border-white/10 rounded-full transition-all duration-300 hover:bg-white/10 ${key === currentFilter ? 'bg-white/10 text-white shadow-[0_0_15px_rgba(255,255,255,0.1)]' : 'text-white/40'}">
+                    ${FILTERS[key].label.toUpperCase()}
+                </button>
+            `).join('');
+
+            // Insert after header
+            const header = document.getElementById('hero-section');
+            header.after(container);
+        }
+
+        function selectFilter(filterKey) {
+            currentFilter = filterKey;
+
+            // Update buttons
+            document.querySelectorAll('#filter-container button').forEach(btn => {
+                btn.classList.remove('bg-white/10', 'text-white', 'shadow-[0_0_15px_rgba(255,255,255,0.1)]');
+                btn.classList.add('text-white/40');
+            });
+            const active = document.getElementById(`filter-${filterKey}`);
+            if (active) {
+                active.classList.remove('text-white/40');
+                active.classList.add('bg-white/10', 'text-white', 'shadow-[0_0_15px_rgba(255,255,255,0.1)]');
+            }
+
+            // Re-render grid
+            const data = simulationResults[currentLeague];
+            if (data) renderGrid(data);
+        }
+
+        function selectLeague(leagueName) {
+            currentLeague = leagueName;
+
+            // Update Nav Active State
+            document.querySelectorAll('#league-nav button').forEach(btn => {
+                btn.classList.remove('text-white', 'border-neon-lime');
+                btn.classList.add('text-white/50', 'border-transparent');
+            });
+            const activeBtn = document.getElementById(`nav-${leagueName.replace(/\s+/g, '-')}`);
+            if (activeBtn) {
+                activeBtn.classList.add('text-white', 'border-neon-lime');
+                activeBtn.classList.remove('text-white/50', 'border-transparent');
+            }
+
+            // Update Title
+            const titleEl = document.getElementById('league-title');
+            titleEl.style.opacity = 0;
+            setTimeout(() => {
+                titleEl.textContent = leagueName.toUpperCase();
+                titleEl.style.opacity = 1;
+            }, 200);
+
+            // Render content
+            const data = simulationResults[leagueName];
+            if (data) {
+                renderHero(data);
+                renderGrid(data);
+            }
+        }
+
+        function renderHero(data) {
+            // Find winner
+            const winner = data.reduce((prev, current) => (prev.win_probability > current.win_probability) ? prev : current);
+        }
+
+        function getColumnsForFilter(filter) {
+            switch (filter) {
+                case 'WIN': return [
+                    { key: 'win_probability', label: 'Win %', color: 'text-neon-lime' },
+                    { key: 'top4_probability', label: 'UCL %', color: 'text-blue-400' },
+                    { key: 'relegation_probability', label: 'Rel %', color: 'text-red-500' }
+                ];
+                case 'UCL': return [
+                    { key: 'top4_probability', label: 'UCL %', color: 'text-blue-400' },
+                    { key: 'win_probability', label: 'Win %', color: 'text-neon-lime' },
+                    { key: 'uel_probability', label: 'UEL %', color: 'text-orange-400' }
+                ];
+                case 'UEL': return [
+                    { key: 'uel_probability', label: 'UEL %', color: 'text-orange-400' },
+                    { key: 'top4_probability', label: 'UCL %', color: 'text-blue-400' },
+                    { key: 'uecl_probability', label: 'UECL %', color: 'text-green-400' }
+                ];
+                case 'UECL': return [
+                    { key: 'uecl_probability', label: 'UECL %', color: 'text-green-400' },
+                    { key: 'uel_probability', label: 'UEL %', color: 'text-orange-400' },
+                    { key: 'relegation_probability', label: 'Rel %', color: 'text-red-500' }
+                ];
+                case 'REL': return [
+                    { key: 'relegation_probability', label: 'Rel %', color: 'text-red-500' },
+                    { key: 'safe_probability', label: 'Safe %', color: 'text-green-400' }, // Custom calculation
+                    { key: 'win_probability', label: 'Win %', color: 'text-white/20' }
+                ];
+                default: return [];
+            }
+        }
+
+        function renderGrid(data) {
+            const grid = document.getElementById('results-grid');
+
+            // 1. Update Header
+            const cols = getColumnsForFilter(currentFilter);
+            const headerHTML = `
+                <div class="grid grid-cols-12 gap-4 px-6 py-3 text-xs font-bold tracking-widest text-white/30 uppercase border-b border-white/5 mb-2">
+                    <div class="col-span-1 text-center">#</div>
+                    <div class="col-span-4 md:col-span-3">Club</div>
+                    <div class="col-span-2 text-center ${cols[0].color}">${cols[0].label}</div>
+                    <div class="col-span-2 text-center ${cols[1].color}">${cols[1].label}</div>
+                    <div class="col-span-2 text-center ${cols[2].color} hidden md:block">${cols[2].label}</div>
+                    <div class="col-span-3 md:col-span-2 text-right">Exp. Pts</div>
+                </div>
+            `;
+
+            // Replace the previous header if it exists inside the grid container or just prepend?
+            // Actually the header is OUTSIDE the 'results-grid' div in the HTML structure.
+            // Let's target the sibling before results-grid.
+            const headerEl = grid.previousElementSibling;
+            if (headerEl) headerEl.outerHTML = headerHTML;
+
+
+            grid.innerHTML = '';
+
+            // Sort data based on the Active Filter Metric
+            const sortedData = [...data].sort((a, b) => {
+                // Primary sort: The selected filter metric
+                const key = cols[0].key;
+                let valA = a[key];
+                let valB = b[key];
+
+                // Special handling for 'safe_probability'
+                if (key === 'safe_probability') {
+                    valA = 100 - a.relegation_probability;
+                    valB = 100 - b.relegation_probability;
+                }
+
+                // Secondary sort: Points (tie breaker)
+                if (valA !== valB) return valB - valA;
+                return b.avg_points - a.avg_points;
+            });
+
+            // Wait, usually standings are sorted by POINTS. 
+            // If I filter by "Relegation", should the list reorder to show high relegation prob first?
+            // "The user should be able to select if he wants to calculate de probability of..."
+            // Usually these tools just change the columns, but KEEP the ranking by POINTS (official table order).
+            // HOWEVER, if I want to see "Who is most likely to win", sorting by Win % makes sense (which usually aligns with points).
+            // If I want to see "Who is most likely to relegate", I probably want to see the bottom teams.
+            // Let's stick to Points Ordering for stability, but maybe the visual bars help you spot them.
+            // Actually, let's keep the standard table order (avg_points). It's less confusing than rows jumping around.
+            // The user asked to "Classify" which might imply sorting, but "Table" implies points. 
+            // Let's stick to the original order (data is passed in sorted by points from Python usually, or we sort by points).
+            const dataByPoints = [...data].sort((a, b) => b.avg_points - a.avg_points);
+
+            dataByPoints.forEach((team, index) => {
+                const rank = index + 1;
+                const delay = index * 0.05; // Stagger effect
+
+                // Styling logic based on RANK (not probability) for the row background
+                // We keep the "Qualification Zone" styling based on rank (Realism)
+                let rowBg = 'hover:bg-white/5';
+                let rankColor = 'text-white/40';
+
+                const isUCL = rank <= 4;
+                const isRelegation = rank > data.length - 3;
+
+                if (rank === 1) {
+                    rankColor = 'text-neon-lime';
+                    rowBg = 'bg-gradient-to-r from-neon-lime/10 to-transparent border border-neon-lime/20';
+                } else if (isUCL) {
+                    rankColor = 'text-blue-400';
+                    rowBg = 'bg-blue-500/5 hover:bg-blue-500/10 border-l-2 border-l-blue-500';
+                } else if (isRelegation) {
+                    rankColor = 'text-red-500';
+                    rowBg = 'bg-red-500/5 hover:bg-red-500/10 border-l-2 border-l-red-500';
+                }
+
+                const el = document.createElement('div');
+                el.className = `grid grid-cols-12 gap-4 px-6 py-4 items-center rounded-lg border border-transparent transition-all duration-300 row-animate group ${rowBg}`;
+                el.style.animationDelay = `${delay}s`;
+
+                // Calculate Values for Columns
+                const getVal = (key) => {
+                    if (key === 'safe_probability') return (100 - team.relegation_probability).toFixed(1);
+                    return team[key];
+                };
+
+                const val1 = getVal(cols[0].key);
+                const val2 = getVal(cols[1].key);
+                const val3 = getVal(cols[2].key);
+
+                // Bar Width (Primary Metric)
+                const barWidth = Math.max(0, parseFloat(val1));
+                const activeBarColor = FILTERS[currentFilter].barColor;
+
+                el.innerHTML = `
+                    <div class="col-span-1 text-center font-cinzel font-bold text-xl ${rankColor}">${rank}</div>
+                    <div class="col-span-4 md:col-span-3 flex flex-col justify-center">
+                        <span class="text-lg md:text-xl font-bold tracking-tight text-white group-hover:tracking-wide transition-all">${team.team_name}</span>
+                        <div class="h-0.5 w-full bg-white/5 mt-1 rounded-full overflow-hidden">
+                            <div class="h-full ${activeBarColor} transition-all duration-1000" style="width: ${barWidth}%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-span-2 text-center font-mono text-lg ${parseFloat(val1) > 0 ? cols[0].color + ' font-bold' : 'text-white/20'}">
+                        ${parseFloat(val1) > 0 ? val1 + '%' : '-'}
+                    </div>
+                    
+                    <div class="col-span-2 text-center font-mono text-base ${parseFloat(val2) > 0 ? cols[1].color : 'text-white/20'}">
+                        ${parseFloat(val2) > 0 ? val2 + '%' : '-'}
+                    </div>
+
+                    <div class="col-span-2 text-center font-mono text-base hidden md:block ${parseFloat(val3) > 0 ? cols[2].color : 'text-white/20'}">
+                        ${parseFloat(val3) > 0 ? val3 + '%' : '-'}
+                    </div>
+
+                    <div class="col-span-3 md:col-span-2 text-right">
+                        <span class="text-2xl font-bold text-white">${team.avg_points}</span>
+                        <span class="text-xs text-white/40 block uppercase tracking-wider">PTS</span>
+                    </div>
+                `;
+
+                grid.appendChild(el);
+            });
+        }
+    </script>
+</body>
+
+</html>

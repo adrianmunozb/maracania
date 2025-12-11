@@ -1,0 +1,231 @@
+﻿id,ronda,local_id,local_nombre,visitante_id,visitante_nombre,fecha
+14025192,16,38,Chelsea,48,Everton,1765638000
+14025198,16,44,Liverpool,30,Brighton & Hove Albion,1765638000
+14025189,16,6,Burnley,43,Fulham,1765647000
+14025183,16,42,Arsenal,3,Wolverhampton,1765656000
+14025195,16,7,Crystal Palace,17,Manchester City,1765720800
+14025204,16,14,Nottingham Forest,33,Tottenham Hotspur,1765720800
+14025207,16,41,Sunderland,39,Newcastle United,1765720800
+14025210,16,37,West Ham United,40,Aston Villa,1765720800
+14025186,16,50,Brentford,34,Leeds United,1765729800
+15035359,16,35,Manchester United,60,Bournemouth,1765828800
+14025228,17,39,Newcastle United,38,Chelsea,1766233800
+14025213,17,60,Bournemouth,6,Burnley,1766242800
+14025218,17,30,Brighton & Hove Albion,41,Sunderland,1766242800
+14025226,17,17,Manchester City,37,West Ham United,1766242800
+14025232,17,3,Wolverhampton,50,Brentford,1766242800
+14025230,17,33,Tottenham Hotspur,44,Liverpool,1766251800
+14025220,17,48,Everton,42,Arsenal,1766260800
+14025224,17,34,Leeds United,7,Crystal Palace,1766260800
+14025216,17,40,Aston Villa,35,Manchester United,1766334600
+14907281,17,43,Fulham,14,Nottingham Forest,1766433600
+14025246,18,35,Manchester United,39,Newcastle United,1766779200
+14025248,18,14,Nottingham Forest,17,Manchester City,1766838600
+14025234,18,42,Arsenal,30,Brighton & Hove Albion,1766847600
+14025236,18,50,Brentford,60,Bournemouth,1766847600
+14025238,18,6,Burnley,48,Everton,1766847600
+14025244,18,44,Liverpool,3,Wolverhampton,1766847600
+14025252,18,37,West Ham United,43,Fulham,1766847600
+14025240,18,38,Chelsea,40,Aston Villa,1766856600
+14025250,18,41,Sunderland,34,Leeds United,1766930400
+14025242,18,7,Crystal Palace,33,Tottenham Hotspur,1766939400
+14025258,19,6,Burnley,39,Newcastle United,1767123000
+14025260,19,38,Chelsea,60,Bournemouth,1767123000
+14025268,19,14,Nottingham Forest,48,Everton,1767123000
+14025272,19,37,West Ham United,30,Brighton & Hove Albion,1767123000
+14025254,19,42,Arsenal,40,Aston Villa,1767125700
+14025266,19,35,Manchester United,3,Wolverhampton,1767125700
+14025262,19,7,Crystal Palace,43,Fulham,1767288600
+14025264,19,44,Liverpool,34,Leeds United,1767288600
+14025256,19,50,Brentford,33,Tottenham Hotspur,1767297600
+14025270,19,41,Sunderland,17,Manchester City,1767297600
+14025276,20,40,Aston Villa,14,Nottingham Forest,1767443400
+14025278,20,30,Brighton & Hove Albion,6,Burnley,1767452400
+14025292,20,3,Wolverhampton,37,West Ham United,1767452400
+14025274,20,60,Bournemouth,42,Arsenal,1767461400
+14025284,20,34,Leeds United,35,Manchester United,1767529800
+14025280,20,48,Everton,50,Brentford,1767538800
+14025282,20,43,Fulham,44,Liverpool,1767538800
+14025288,20,39,Newcastle United,7,Crystal Palace,1767538800
+14025290,20,33,Tottenham Hotspur,41,Sunderland,1767538800
+14025286,20,17,Manchester City,38,Chelsea,1767547800
+14025055,21,37,West Ham United,14,Nottingham Forest,1767729600
+14025015,21,60,Bournemouth,33,Tottenham Hotspur,1767814200
+14025027,21,50,Brentford,41,Sunderland,1767814200
+14025058,21,7,Crystal Palace,40,Aston Villa,1767814200
+14025046,21,48,Everton,3,Wolverhampton,1767814200
+14025049,21,43,Fulham,38,Chelsea,1767814200
+14025061,21,17,Manchester City,30,Brighton & Hove Albion,1767814200
+14025037,21,6,Burnley,35,Manchester United,1767816900
+14025052,21,39,Newcastle United,34,Leeds United,1767816900
+14025019,21,42,Arsenal,44,Liverpool,1767902400
+14025079,22,35,Manchester United,17,Manchester City,1768653000
+14025070,22,38,Chelsea,50,Brentford,1768662000
+14025073,22,34,Leeds United,43,Fulham,1768662000
+14025076,22,44,Liverpool,6,Burnley,1768662000
+14025085,22,41,Sunderland,7,Crystal Palace,1768662000
+14025089,22,33,Tottenham Hotspur,37,West Ham United,1768662000
+14025082,22,14,Nottingham Forest,42,Arsenal,1768671000
+14025092,22,3,Wolverhampton,39,Newcastle United,1768744800
+14025064,22,40,Aston Villa,48,Everton,1768753800
+15129445,22,30,Brighton & Hove Albion,60,Bournemouth,1768852800
+14025122,23,37,West Ham United,41,Sunderland,1769257800
+14025104,23,6,Burnley,33,Tottenham Hotspur,1769266800
+14025113,23,43,Fulham,30,Brighton & Hove Albion,1769266800
+14025116,23,17,Manchester City,3,Wolverhampton,1769266800
+14025095,23,60,Bournemouth,44,Liverpool,1769275800
+14025101,23,50,Brentford,14,Nottingham Forest,1769349600
+14025107,23,7,Crystal Palace,38,Chelsea,1769349600
+14025119,23,39,Newcastle United,40,Aston Villa,1769349600
+14025098,23,42,Arsenal,35,Manchester United,1769358600
+15129439,23,48,Everton,34,Leeds United,1769457600
+14025128,24,30,Brighton & Hove Albion,48,Everton,1769871600
+14025134,24,34,Leeds United,42,Arsenal,1769871600
+14025152,24,3,Wolverhampton,60,Bournemouth,1769871600
+14025131,24,38,Chelsea,37,West Ham United,1769880600
+14025137,24,44,Liverpool,39,Newcastle United,1769889600
+14025125,24,40,Aston Villa,50,Brentford,1769954400
+14025140,24,35,Manchester United,43,Fulham,1769954400
+14025143,24,14,Nottingham Forest,7,Crystal Palace,1769954400
+14025149,24,33,Tottenham Hotspur,17,Manchester City,1769963400
+15129444,24,41,Sunderland,6,Burnley,1770062400
+14025158,25,42,Arsenal,41,Sunderland,1770476400
+14025155,25,60,Bournemouth,40,Aston Villa,1770476400
+14025161,25,30,Brighton & Hove Albion,7,Crystal Palace,1770476400
+14025164,25,6,Burnley,37,West Ham United,1770476400
+14025167,25,43,Fulham,48,Everton,1770476400
+14025170,25,34,Leeds United,14,Nottingham Forest,1770476400
+14025173,25,44,Liverpool,17,Manchester City,1770476400
+14025176,25,35,Manchester United,33,Tottenham Hotspur,1770476400
+14025179,25,39,Newcastle United,50,Brentford,1770476400
+14025182,25,3,Wolverhampton,38,Chelsea,1770476400
+14025206,26,40,Aston Villa,30,Brighton & Hove Albion,1770840000
+14025185,26,50,Brentford,42,Arsenal,1770840000
+14025188,26,38,Chelsea,34,Leeds United,1770840000
+14025209,26,7,Crystal Palace,6,Burnley,1770840000
+14025191,26,48,Everton,60,Bournemouth,1770840000
+14025212,26,17,Manchester City,43,Fulham,1770840000
+14025194,26,14,Nottingham Forest,3,Wolverhampton,1770840000
+14025197,26,41,Sunderland,44,Liverpool,1770840000
+14025200,26,33,Tottenham Hotspur,39,Newcastle United,1770840000
+14025203,26,37,West Ham United,35,Manchester United,1770840000
+14025215,27,40,Aston Villa,34,Leeds United,1771686000
+14024006,27,50,Brentford,30,Brighton & Hove Albion,1771686000
+14024007,27,38,Chelsea,6,Burnley,1771686000
+14024008,27,7,Crystal Palace,3,Wolverhampton,1771686000
+14024009,27,48,Everton,35,Manchester United,1771686000
+14024010,27,17,Manchester City,39,Newcastle United,1771686000
+14024013,27,14,Nottingham Forest,44,Liverpool,1771686000
+14024011,27,41,Sunderland,43,Fulham,1771686000
+14024012,27,33,Tottenham Hotspur,42,Arsenal,1771686000
+14023969,27,37,West Ham United,60,Bournemouth,1771686000
+14023971,28,42,Arsenal,38,Chelsea,1772290800
+14023970,28,60,Bournemouth,41,Sunderland,1772290800
+14023972,28,30,Brighton & Hove Albion,14,Nottingham Forest,1772290800
+14023975,28,6,Burnley,50,Brentford,1772290800
+14023973,28,43,Fulham,33,Tottenham Hotspur,1772290800
+14023974,28,34,Leeds United,17,Manchester City,1772290800
+14023976,28,44,Liverpool,37,West Ham United,1772290800
+14023978,28,35,Manchester United,7,Crystal Palace,1772290800
+14023977,28,39,Newcastle United,48,Everton,1772290800
+14023979,28,3,Wolverhampton,40,Aston Villa,1772290800
+14023986,29,40,Aston Villa,38,Chelsea,1772654400
+14023980,29,60,Bournemouth,50,Brentford,1772654400
+14023933,29,30,Brighton & Hove Albion,42,Arsenal,1772654400
+14023941,29,48,Everton,6,Burnley,1772654400
+14023947,29,43,Fulham,37,West Ham United,1772654400
+14023982,29,34,Leeds United,41,Sunderland,1772654400
+14023984,29,17,Manchester City,14,Nottingham Forest,1772654400
+14023983,29,39,Newcastle United,35,Manchester United,1772654400
+14023981,29,33,Tottenham Hotspur,7,Crystal Palace,1772654400
+14023985,29,3,Wolverhampton,44,Liverpool,1772654400
+14023987,30,42,Arsenal,48,Everton,1773500400
+14023989,30,50,Brentford,3,Wolverhampton,1773500400
+14023988,30,6,Burnley,60,Bournemouth,1773500400
+14023990,30,38,Chelsea,39,Newcastle United,1773500400
+14023991,30,7,Crystal Palace,34,Leeds United,1773500400
+14023992,30,44,Liverpool,33,Tottenham Hotspur,1773500400
+14023994,30,35,Manchester United,40,Aston Villa,1773500400
+14023995,30,14,Nottingham Forest,43,Fulham,1773500400
+14023996,30,41,Sunderland,30,Brighton & Hove Albion,1773500400
+14023993,30,37,West Ham United,17,Manchester City,1773500400
+14024014,31,40,Aston Villa,37,West Ham United,1774105200
+14023997,31,60,Bournemouth,35,Manchester United,1774105200
+14024015,31,30,Brighton & Hove Albion,44,Liverpool,1774105200
+14024017,31,48,Everton,38,Chelsea,1774105200
+14024016,31,43,Fulham,6,Burnley,1774105200
+14024018,31,34,Leeds United,50,Brentford,1774105200
+14024019,31,17,Manchester City,7,Crystal Palace,1774105200
+14024021,31,39,Newcastle United,41,Sunderland,1774105200
+14024020,31,33,Tottenham Hotspur,14,Nottingham Forest,1774105200
+14025018,31,3,Wolverhampton,42,Arsenal,1774105200
+14025021,32,42,Arsenal,60,Bournemouth,1775916000
+14025022,32,50,Brentford,48,Everton,1775916000
+14024002,32,6,Burnley,30,Brighton & Hove Albion,1775916000
+14023998,32,38,Chelsea,17,Manchester City,1775916000
+14023999,32,7,Crystal Palace,39,Newcastle United,1775916000
+14024000,32,44,Liverpool,43,Fulham,1775916000
+14025024,32,35,Manchester United,34,Leeds United,1775916000
+14025025,32,14,Nottingham Forest,40,Aston Villa,1775916000
+14025026,32,41,Sunderland,33,Tottenham Hotspur,1775916000
+14025029,32,37,West Ham United,3,Wolverhampton,1775916000
+14025030,33,40,Aston Villa,41,Sunderland,1776520800
+14025031,33,50,Brentford,43,Fulham,1776520800
+14025032,33,38,Chelsea,35,Manchester United,1776520800
+14025034,33,7,Crystal Palace,37,West Ham United,1776520800
+14025035,33,48,Everton,44,Liverpool,1776520800
+14025036,33,34,Leeds United,3,Wolverhampton,1776520800
+14025039,33,17,Manchester City,42,Arsenal,1776520800
+14025040,33,39,Newcastle United,60,Bournemouth,1776520800
+14025041,33,14,Nottingham Forest,6,Burnley,1776520800
+14025042,33,33,Tottenham Hotspur,30,Brighton & Hove Albion,1776520800
+14025045,34,42,Arsenal,39,Newcastle United,1777125600
+14025044,34,60,Bournemouth,34,Leeds United,1777125600
+14024001,34,30,Brighton & Hove Albion,38,Chelsea,1777125600
+14024003,34,6,Burnley,17,Manchester City,1777125600
+14024004,34,43,Fulham,40,Aston Villa,1777125600
+14024005,34,44,Liverpool,7,Crystal Palace,1777125600
+14023926,34,35,Manchester United,50,Brentford,1777125600
+14023932,34,41,Sunderland,14,Nottingham Forest,1777125600
+14023934,34,37,West Ham United,48,Everton,1777125600
+14024022,34,3,Wolverhampton,33,Tottenham Hotspur,1777125600
+14023931,35,42,Arsenal,43,Fulham,1777730400
+14023927,35,40,Aston Villa,33,Tottenham Hotspur,1777730400
+14024023,35,60,Bournemouth,7,Crystal Palace,1777730400
+14023945,35,50,Brentford,37,West Ham United,1777730400
+14023925,35,38,Chelsea,14,Nottingham Forest,1777730400
+14023930,35,48,Everton,17,Manchester City,1777730400
+14023940,35,34,Leeds United,6,Burnley,1777730400
+14023939,35,35,Manchester United,44,Liverpool,1777730400
+14023949,35,39,Newcastle United,30,Brighton & Hove Albion,1777730400
+14023951,35,3,Wolverhampton,41,Sunderland,1777730400
+14023935,36,30,Brighton & Hove Albion,3,Wolverhampton,1778335200
+14023929,36,6,Burnley,40,Aston Villa,1778335200
+14023937,36,7,Crystal Palace,48,Everton,1778335200
+14023948,36,43,Fulham,60,Bournemouth,1778335200
+14024024,36,44,Liverpool,38,Chelsea,1778335200
+14023946,36,17,Manchester City,50,Brentford,1778335200
+14023943,36,14,Nottingham Forest,39,Newcastle United,1778335200
+14023938,36,41,Sunderland,35,Manchester United,1778335200
+14023944,36,33,Tottenham Hotspur,34,Leeds United,1778335200
+14023942,36,37,West Ham United,42,Arsenal,1778335200
+14023950,37,42,Arsenal,6,Burnley,1779026400
+14023928,37,40,Aston Villa,44,Liverpool,1779026400
+14023936,37,60,Bournemouth,17,Manchester City,1779026400
+14023953,37,50,Brentford,7,Crystal Palace,1779026400
+14023952,37,38,Chelsea,33,Tottenham Hotspur,1779026400
+14023955,37,48,Everton,41,Sunderland,1779026400
+14023954,37,34,Leeds United,30,Brighton & Hove Albion,1779026400
+14023956,37,35,Manchester United,14,Nottingham Forest,1779026400
+14023957,37,39,Newcastle United,37,West Ham United,1779026400
+14023958,37,3,Wolverhampton,43,Fulham,1779026400
+14023959,38,30,Brighton & Hove Albion,35,Manchester United,1779634800
+14023960,38,6,Burnley,3,Wolverhampton,1779634800
+14023963,38,7,Crystal Palace,42,Arsenal,1779634800
+14023965,38,43,Fulham,39,Newcastle United,1779634800
+14023962,38,44,Liverpool,50,Brentford,1779634800
+14023961,38,17,Manchester City,40,Aston Villa,1779634800
+14023964,38,14,Nottingham Forest,60,Bournemouth,1779634800
+14023966,38,41,Sunderland,38,Chelsea,1779634800
+14023967,38,33,Tottenham Hotspur,48,Everton,1779634800
+14023968,38,37,West Ham United,34,Leeds United,1779634800
