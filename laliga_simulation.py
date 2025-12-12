@@ -314,8 +314,52 @@ def run_simulation(stats_df, fixtures_df, n_simulations=1000000):
             
     print(f"  Simulation completed in {time.time() - start_time:.2f} seconds.")
 
-    # 3. Format Output
+    # --- 6. Calculate Strength of Schedule & Performance Delta ---
+    # Need to know remaining opponents for each team
+    # We can iterate through fixtures again or just use the pre-calculated Exp Goals to deduce opp strength?
+    # Better: Re-iterate fixtures to sum opponent ratings.
+    
+    remaining_opp_ratings = defaultdict(list)
+    
+    for _, match in fixtures_df.iterrows():
+        lid = match['local_id']
+        vid = match['visitante_id']
+        match_date = match['fecha']
+        
+        if lid in team_profiles and vid in team_profiles:
+            # Home team faces Away team
+            away_strength = (team_profiles[vid]['away_attack'] + team_profiles[vid]['away_defense']) / 2 # Approx
+            home_strength = (team_profiles[lid]['home_attack'] + team_profiles[lid]['home_defense']) / 2
+            
+            # Normalize to 0-10 scale for easier math later
+            opp_rating_for_home = 5.0 + (away_strength - 1.0) * 5.0
+            opp_rating_for_away = 5.0 + (home_strength - 1.0) * 5.0
+            
+            remaining_opp_ratings[lid].append((match_date, opp_rating_for_home))
+            remaining_opp_ratings[vid].append((match_date, opp_rating_for_away))
+
     final_output = []
+    
+    # Pre-sort for Performance Delta (Power Rank)
+    power_rank_list = []
+    for tid, info in team_profiles.items():
+        att_disp = (info['home_attack'] + info['away_attack']) / 2
+        def_disp = (info['home_defense'] + info['away_defense']) / 2
+        
+        score_att = 5.0 + (att_disp - 1.0) * 5.0
+        score_def = 10 - (def_disp - 0.4) * 8 
+        
+        power_rank_list.append({
+            'id': tid,
+            'power': score_att + score_def
+        })
+    
+    # Sort by Power (Desc) to get "Expected Rank"
+    power_rank_list.sort(key=lambda x: x['power'], reverse=True)
+    expected_ranks = {item['id']: i+1 for i, item in enumerate(power_rank_list)}
+
+    temp_results = []
+    
     for tid, info in team_profiles.items():
         res = results[tid]
         games_simulated = n_simulations
@@ -325,7 +369,15 @@ def run_simulation(stats_df, fixtures_df, n_simulations=1000000):
         score_att = 5.0 + (att_disp - 1.0) * 5.0
         score_def = 10 - (def_disp - 0.4) * 8
         
-        final_output.append({
+        # SoS (Next 5 Matches)
+        opps = remaining_opp_ratings.get(tid, [])
+        opps.sort(key=lambda x: x[0]) # Sort by date ascending
+        next_matches = opps[:5] # Take next 5
+        
+        avg_sos = sum(x[1] for x in next_matches) / len(next_matches) if next_matches else 5.0
+        
+        temp_results.append({
+            'tid': tid,
             'team_name': info['name'],
             'win_probability': round((res['1st'] / games_simulated) * 100, 1),
             'top4_probability': round((res['top4'] / games_simulated) * 100, 1),
@@ -335,10 +387,27 @@ def run_simulation(stats_df, fixtures_df, n_simulations=1000000):
             'avg_points': round(res['total_points'] / games_simulated, 1),
             'attack_rating': max(1.0, min(9.9, round(score_att, 1))),
             'defense_rating': max(1.0, min(9.9, round(score_def, 1))),
-            'position_distribution': [round((x/games_simulated)*100, 1) for x in res['positions'][1:]] 
+            'position_distribution': [round((x/games_simulated)*100, 1) for x in res['positions'][1:]],
+            'strength_of_schedule': round(avg_sos, 1),
+            'matches_remaining': len(next_matches)
         })
+
+    # Sort by metrics (Avg Points) to get "Actual Rank" prediction
+    temp_results.sort(key=lambda x: x['avg_points'], reverse=True)
+    
+    for i, team in enumerate(temp_results):
+        predicted_rank = i + 1
+        expected_rank = expected_ranks[team['tid']]
         
-    final_output.sort(key=lambda x: x['avg_points'], reverse=True)
+        # Delta: Positive means Overperforming (Better rank than expected)
+        # e.g. Pred 1, Exp 5 -> Delta +4
+        # e.g. Pred 10, Exp 5 -> Delta -5
+        performance_delta = expected_rank - predicted_rank
+        
+        team['performance_delta'] = performance_delta
+        del team['tid'] # cleanup
+        final_output.append(team)
+
     return final_output
 
 if __name__ == "__main__":

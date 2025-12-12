@@ -130,6 +130,80 @@
             box-shadow: 0 0 20px rgba(207, 255, 4, 0.15);
             border-color: rgba(207, 255, 4, 0.3);
         }
+
+        /* Modal Styles */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: rgba(5, 5, 5, 0.8);
+            backdrop-filter: blur(8px);
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+        }
+
+        .modal-overlay.active {
+            opacity: 1;
+            pointer-events: all;
+        }
+
+        .modal-content {
+            transform: scale(0.95);
+            transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .modal-overlay.active .modal-content {
+            transform: scale(1);
+        }
+
+        .bar-chart-container {
+            display: flex;
+            align-items: flex-end;
+            gap: 4px;
+            height: 150px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .bar-col {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
+            height: 100%;
+            position: relative;
+        }
+
+        .bar-val {
+            background: #fff;
+            width: 100%;
+            border-radius: 2px 2px 0 0;
+            min-height: 2px;
+            transition: height 0.5s ease;
+            position: relative;
+        }
+
+        .bar-label {
+            font-size: 8px;
+            position: absolute;
+            bottom: -18px;
+            color: rgba(255, 255, 255, 0.4);
+        }
+
+        .stat-card {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            padding: 1rem;
+            border-radius: 0.5rem;
+        }
     </style>
 </head>
 
@@ -185,6 +259,117 @@
         </div>
 
     </main>
+
+    <!-- Team Details Modal -->
+    <div id="team-modal" class="modal-overlay" onclick="closeModal(event)">
+        <div class="modal-content glass-panel w-full max-w-2xl mx-4 rounded-xl p-6 md:p-8 relative border border-white/10 shadow-2xl bg-[#050505]/90"
+            onclick="event.stopPropagation()">
+            <!-- Close Button -->
+            <button onclick="closeModal()"
+                class="absolute top-4 right-4 text-white/30 hover:text-white transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+
+            <!-- Modal Header -->
+            <div class="flex items-center gap-4 mb-8">
+                <div>
+                    <div class="text-neon-lime text-xs font-bold tracking-widest uppercase mb-1">Team Analysis</div>
+                    <h2 id="modal-team-name" class="text-4xl font-cinzel font-bold text-white leading-none">Team Name
+                    </h2>
+                </div>
+                <div class="ml-auto text-right">
+                    <div id="modal-points" class="text-3xl font-bold text-white">00.0</div>
+                    <div class="text-xs text-white/40 uppercase tracking-wider">Avg Points</div>
+                </div>
+            </div>
+
+            <!-- Ratings Section -->
+            <div class="grid grid-cols-2 gap-4 mb-8">
+                <div class="stat-card">
+                    <div class="flex justify-between items-end mb-2">
+                        <span class="text-white/60 text-xs font-bold uppercase tracking-wider">Attack Rating</span>
+                        <span id="modal-att-val" class="text-neon-lime font-mono font-bold text-xl">0.0</span>
+                    </div>
+                    <div class="h-1 bg-white/10 rounded-full overflow-hidden">
+                        <div id="modal-att-bar" class="h-full bg-neon-lime transition-all duration-1000"
+                            style="width: 0%"></div>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="flex justify-between items-end mb-2">
+                        <span class="text-white/60 text-xs font-bold uppercase tracking-wider">Defense Rating</span>
+                        <span id="modal-def-val" class="text-blue-400 font-mono font-bold text-xl">0.0</span>
+                    </div>
+                    <div class="h-1 bg-white/10 rounded-full overflow-hidden">
+                        <div id="modal-def-bar" class="h-full bg-blue-400 transition-all duration-1000"
+                            style="width: 0%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Insights Section -->
+            <div class="grid grid-cols-2 gap-4 mb-8">
+                <div class="stat-card">
+                    <div class="flex flex-col h-full justify-between">
+                        <div class="text-white/60 text-xs font-bold uppercase tracking-wider mb-2">Run-in Difficulty
+                        </div>
+                        <div class="flex items-end gap-2">
+                            <span id="modal-sos-val" class="text-2xl font-bold text-white">5.0</span>
+                            <span id="modal-sos-text"
+                                class="text-xs uppercase font-bold text-white/50 mb-1">Average</span>
+                        </div>
+                        <div class="h-1 bg-white/10 rounded-full overflow-hidden mt-2">
+                            <div id="modal-sos-bar" class="h-full bg-white transition-all duration-1000"
+                                style="width: 50%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="flex flex-col h-full justify-between">
+                        <div class="flex items-center gap-2 mb-2">
+                            <div class="text-white/60 text-xs font-bold uppercase tracking-wider">Performance</div>
+                            <div class="group relative flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="text-white/40 cursor-help hover:text-white transition-colors">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <line x1="12" y1="16" x2="12" y2="12"></line>
+                                    <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                                </svg>
+                                <div
+                                    class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-48 p-2 bg-[#0a0a0a] border border-white/10 rounded shadow-xl text-[10px] text-white/80 leading-relaxed opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none z-10 glass-panel">
+                                    Compares actual rank vs expected rank based on Squad Quality (Attack + Def).
+                                    Positive = Overperforming.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex items-end gap-2">
+                            <div id="modal-perf-val" class="text-2xl font-bold text-green-400">+0</div>
+                            <span class="text-xs uppercase font-bold text-white/50 mb-1">vs Expected</span>
+                        </div>
+                        <div id="modal-perf-text" class="text-[10px] text-white/40 mt-2 leading-tight">
+                            performing as expected based on squad quality.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Position Distribution Chart -->
+            <div class="stat-card">
+                <div class="text-white/60 text-xs font-bold uppercase tracking-wider mb-4 border-b border-white/5 pb-2">
+                    Final Position Probabilities</div>
+                <div id="modal-chart" class="bar-chart-container">
+                    <!-- Bars injected here -->
+                </div>
+            </div>
+
+        </div>
+    </div>
 
     <script src="simulation_data.js"></script>
     <script>
@@ -405,8 +590,9 @@
                 }
 
                 const el = document.createElement('div');
-                el.className = `grid grid-cols-12 gap-4 px-6 py-4 items-center rounded-lg border border-transparent transition-all duration-300 row-animate group ${rowBg}`;
+                el.className = `grid grid-cols-12 gap-4 px-6 py-4 items-center rounded-lg border border-transparent transition-all duration-300 row-animate group cursor-pointer ${rowBg}`;
                 el.style.animationDelay = `${delay}s`;
+                el.onclick = () => openTeamDetails(team.team_name);
 
                 // Calculate Values for Columns
                 const getVal = (key) => {
@@ -452,6 +638,108 @@
                 grid.appendChild(el);
             });
         }
+
+        // --- Team Details Modal Logic ---
+        function openTeamDetails(teamName) {
+            const leagueData = simulationResults[currentLeague];
+            const team = leagueData.find(t => t.team_name === teamName);
+            if (!team) return;
+
+            // Populate Info
+            document.getElementById('modal-team-name').textContent = team.team_name;
+            document.getElementById('modal-points').textContent = team.avg_points.toFixed(1);
+
+            // Populate Ratings
+            document.getElementById('modal-att-val').textContent = team.attack_rating;
+            document.getElementById('modal-def-val').textContent = team.defense_rating;
+            document.getElementById('modal-att-bar').style.width = `${(team.attack_rating / 10) * 100}%`;
+            document.getElementById('modal-def-bar').style.width = `${(team.defense_rating / 10) * 100}%`;
+
+            // Populate Insights (SoS & Delta) IF they exist (they should after update)
+            if (team.strength_of_schedule !== undefined) {
+                // Strength of Schedule
+                const sos = team.strength_of_schedule;
+                document.getElementById('modal-sos-val').textContent = sos.toFixed(1);
+
+                let sosText = 'Average';
+                let sosColor = 'bg-white';
+
+                // Scale 0-10. 5 is Avg. >5 Hard, <5 Easy.
+                if (sos > 6.5) { sosText = 'Nightmare'; sosColor = 'bg-red-500'; }
+                else if (sos > 5.5) { sosText = 'Hard'; sosColor = 'bg-orange-500'; }
+                else if (sos < 3.5) { sosText = 'Walk in Park'; sosColor = 'bg-green-500'; }
+                else if (sos < 4.5) { sosText = 'Favorable'; sosColor = 'bg-neon-lime'; }
+
+                const sosTextEl = document.getElementById('modal-sos-text');
+                const matches = team.matches_remaining || 0;
+                sosTextEl.textContent = `${sosText} (${matches} Match${matches !== 1 ? 'es' : ''})`;
+
+                // Color Logic for Text (Remove bg-, add text-)
+                const textColor = sosColor.replace('bg-', 'text-');
+                sosTextEl.className = `text-xs uppercase font-bold mb-1 ${textColor}`;
+
+                const sosBar = document.getElementById('modal-sos-bar');
+                sosBar.className = `h-full transition-all duration-1000 ${sosColor}`;
+                sosBar.style.width = `${(sos / 10) * 100}%`;
+
+                // Performance Delta
+                const delta = team.performance_delta;
+                const perfVal = document.getElementById('modal-perf-val');
+                const perfText = document.getElementById('modal-perf-text');
+
+                if (delta > 0) {
+                    perfVal.textContent = `+${delta}`;
+                    perfVal.className = 'text-2xl font-bold text-neon-lime';
+                    perfText.innerHTML = `Overperforming by <span class="text-white font-bold">${delta}</span> positions vs stats model.`;
+                } else if (delta < 0) {
+                    perfVal.textContent = `${delta}`;
+                    perfVal.className = 'text-2xl font-bold text-red-500';
+                    perfText.innerHTML = `Underperforming by <span class="text-white font-bold">${Math.abs(delta)}</span> positions vs stats model.`;
+                } else {
+                    perfVal.textContent = '-';
+                    perfVal.className = 'text-2xl font-bold text-white/50';
+                    perfText.textContent = 'Performing exactly as expected based on squad metrics.';
+                }
+            }
+
+            // Populate Chart
+            const chartContainer = document.getElementById('modal-chart');
+            const numTeams = leagueData.length;
+            const positions = team.position_distribution.slice(0, numTeams);
+
+            // Generate Bars
+            chartContainer.innerHTML = positions.map((prob, idx) => {
+                const rank = idx + 1;
+                let barColor = 'bg-white/20';
+
+                // Color Logic
+                if (rank === 1) barColor = 'bg-neon-lime';
+                else if (rank <= 4) barColor = 'bg-blue-500';
+                else if (rank === 5 || rank === 6) barColor = 'bg-orange-500';
+                else if (rank === 7) barColor = 'bg-green-500'; // UECL depending on league size, rough approx
+                else if (rank > numTeams - 3) barColor = 'bg-red-500';
+
+                // Opacity based on value? No, use height
+                const height = Math.max(1, prob); // Ensure at least a sliver
+
+                return `
+                    <div class="bar-col group relative" title="Rank ${rank}: ${prob}%">
+                        <div class="bar-val ${barColor}" style="height: ${prob}%"></div>
+                        <div class="bar-label opacity-0 group-hover:opacity-100 transition-opacity">${rank}</div>
+                        ${prob > 5 ? `<div class="absolute bottom-1 w-full text-center text-[8px] font-bold text-black/80 pointer-events-none">${Math.round(prob)}</div>` : ''}
+                    </div>
+                `;
+            }).join('');
+
+            // Open Modal
+            document.getElementById('team-modal').classList.add('active');
+        }
+
+        function closeModal(event) {
+            if (event && event.target !== event.currentTarget) return; // Only if clicking overlay
+            document.getElementById('team-modal').classList.remove('active');
+        }
+
     </script>
 </body>
 
