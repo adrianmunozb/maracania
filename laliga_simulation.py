@@ -314,29 +314,76 @@ def run_simulation(stats_df, fixtures_df, n_simulations=1000000):
             
     print(f"  Simulation completed in {time.time() - start_time:.2f} seconds.")
 
-    # --- 6. Calculate Strength of Schedule & Performance Delta ---
-    # Need to know remaining opponents for each team
-    # We can iterate through fixtures again or just use the pre-calculated Exp Goals to deduce opp strength?
-    # Better: Re-iterate fixtures to sum opponent ratings.
+    # --- 6. Calculate Strength of Schedule, Run-In & Match Center Data ---
+    
+    current_time = time.time()
     
     remaining_opp_ratings = defaultdict(list)
+    upcoming_round_matches = []
+    
+    # Identify "Next Round" (first future match's round)
+    future_matches = fixtures_df[fixtures_df['fecha'] > current_time].sort_values('fecha')
+    next_round_id = None
+    if not future_matches.empty:
+        next_round_id = future_matches.iloc[0]['ronda']
     
     for _, match in fixtures_df.iterrows():
         lid = match['local_id']
         vid = match['visitante_id']
         match_date = match['fecha']
+        ronda = match['ronda']
         
         if lid in team_profiles and vid in team_profiles:
-            # Home team faces Away team
-            away_strength = (team_profiles[vid]['away_attack'] + team_profiles[vid]['away_defense']) / 2 # Approx
-            home_strength = (team_profiles[lid]['home_attack'] + team_profiles[lid]['home_defense']) / 2
+            home_team = team_profiles[lid]
+            away_team = team_profiles[vid]
             
-            # Normalize to 0-10 scale for easier math later
-            opp_rating_for_home = 5.0 + (away_strength - 1.0) * 5.0
-            opp_rating_for_away = 5.0 + (home_strength - 1.0) * 5.0
+            # Opponent Difficulty (0-10) using Opponent's Average Strength
+            away_strength = (away_team['away_attack'] + away_team['away_defense']) / 2
+            home_strength = (home_team['home_attack'] + home_team['home_defense']) / 2
             
-            remaining_opp_ratings[lid].append((match_date, opp_rating_for_home))
-            remaining_opp_ratings[vid].append((match_date, opp_rating_for_away))
+            opp_rating_for_home = max(0, min(10, 5.0 + (away_strength - 1.0) * 8.0))
+            opp_rating_for_away = max(0, min(10, 5.0 + (home_strength - 1.0) * 8.0))
+            
+            if match_date > current_time:
+                # Add to Run-In List
+                remaining_opp_ratings[lid].append({
+                    'opponent': away_team['name'],
+                    'difficulty': round(opp_rating_for_home, 1),
+                    'date': int(match_date),
+                    'is_home': True
+                })
+                remaining_opp_ratings[vid].append({
+                    'opponent': home_team['name'],
+                    'difficulty': round(opp_rating_for_away, 1),
+                    'date': int(match_date),
+                    'is_home': False
+                })
+                
+                # Check for Match Center (Next Round Only)
+                if ronda == next_round_id:
+                    # Calculate Probabilities
+                    h_exp = league_avgs['home_goals'] * home_team['home_attack'] * away_team['away_defense']
+                    a_exp = league_avgs['away_goals'] * away_team['away_attack'] * home_team['home_defense']
+                    
+                    # 10k sims for match
+                    n_match_sims = 10000
+                    s_home = np.random.poisson(h_exp, n_match_sims)
+                    s_away = np.random.poisson(a_exp, n_match_sims)
+                    
+                    wins = np.sum(s_home > s_away)
+                    draws = np.sum(s_home == s_away)
+                    losses = np.sum(s_home < s_away)
+                    
+                    upcoming_round_matches.append({
+                        'home_team': home_team['name'],
+                        'away_team': away_team['name'],
+                        'date': int(match_date),
+                        'home_win_prob': round(wins / n_match_sims * 100, 1),
+                        'draw_prob': round(draws / n_match_sims * 100, 1),
+                        'away_win_prob': round(losses / n_match_sims * 100, 1),
+                        'home_id': lid,
+                        'away_id': vid
+                    })
 
     final_output = []
     
@@ -371,10 +418,10 @@ def run_simulation(stats_df, fixtures_df, n_simulations=1000000):
         
         # SoS (Next 5 Matches)
         opps = remaining_opp_ratings.get(tid, [])
-        opps.sort(key=lambda x: x[0]) # Sort by date ascending
+        opps.sort(key=lambda x: x['date']) # Sort by date ascending
         next_matches = opps[:5] # Take next 5
         
-        avg_sos = sum(x[1] for x in next_matches) / len(next_matches) if next_matches else 5.0
+        avg_sos = sum(x['difficulty'] for x in next_matches) / len(next_matches) if next_matches else 5.0
         
         temp_results.append({
             'tid': tid,
@@ -389,7 +436,8 @@ def run_simulation(stats_df, fixtures_df, n_simulations=1000000):
             'defense_rating': max(1.0, min(9.9, round(score_def, 1))),
             'position_distribution': [round((x/games_simulated)*100, 1) for x in res['positions'][1:]],
             'strength_of_schedule': round(avg_sos, 1),
-            'matches_remaining': len(next_matches)
+            'matches_remaining': len(opps),
+            'next_opponents': next_matches
         })
 
     # Sort by metrics (Avg Points) to get "Actual Rank" prediction
@@ -408,7 +456,7 @@ def run_simulation(stats_df, fixtures_df, n_simulations=1000000):
         del team['tid'] # cleanup
         final_output.append(team)
 
-    return final_output
+    return final_output, upcoming_round_matches
 
 if __name__ == "__main__":
     
@@ -432,8 +480,9 @@ if __name__ == "__main__":
                     print(f"  SKIPPING {league_name}: Missing home/away split columns in CSV.")
                     continue
                     
-                league_results = run_simulation(stats, fixtures)
+                league_results, upcoming_matches = run_simulation(stats, fixtures)
                 all_results[league_name] = league_results
+                all_results[league_name + "_upcoming"] = upcoming_matches
                 print(f"  {league_name} done. Top Team: {league_results[0]['team_name']} ({league_results[0]['win_probability']}%)")
                 
             except Exception as e:

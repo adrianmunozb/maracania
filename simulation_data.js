@@ -2,313 +2,33 @@ const simulationResults = {
   "La Liga": [
     {
       "team_name": "Barcelona",
-      "win_probability": 50.3,
-      "top4_probability": 99.9,
-      "uel_probability": 0.1,
+      "win_probability": 48.4,
+      "top4_probability": 99.8,
+      "uel_probability": 0.2,
       "uecl_probability": 0.0,
       "relegation_probability": 0.0,
-      "avg_points": 79.8,
-      "attack_rating": 9.6,
-      "defense_rating": 5.6,
+      "avg_points": 81.8,
+      "attack_rating": 9.7,
+      "defense_rating": 5.7,
       "position_distribution": [
-        50.3,
-        30.5,
-        16.0,
-        3.0,
-        0.1,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0
-      ],
-      "strength_of_schedule": 5.0,
-      "matches_remaining": 5,
-      "performance_delta": 0
-    },
-    {
-      "team_name": "Real Madrid",
-      "win_probability": 32.1,
-      "top4_probability": 99.5,
-      "uel_probability": 0.5,
-      "uecl_probability": 0.0,
-      "relegation_probability": 0.0,
-      "avg_points": 78.1,
-      "attack_rating": 7.8,
-      "defense_rating": 6.9,
-      "position_distribution": [
-        32.1,
-        36.1,
-        24.7,
-        6.6,
-        0.4,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0
-      ],
-      "strength_of_schedule": 4.7,
-      "matches_remaining": 5,
-      "performance_delta": 0
-    },
-    {
-      "team_name": "Villarreal",
-      "win_probability": 16.6,
-      "top4_probability": 98.9,
-      "uel_probability": 1.1,
-      "uecl_probability": 0.0,
-      "relegation_probability": 0.0,
-      "avg_points": 75.5,
-      "attack_rating": 6.4,
-      "defense_rating": 7.2,
-      "position_distribution": [
-        16.6,
-        28.4,
-        40.5,
-        13.3,
-        1.0,
-        0.1,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0
-      ],
-      "strength_of_schedule": 5.7,
-      "matches_remaining": 5,
-      "performance_delta": 1
-    },
-    {
-      "team_name": "Atl\u00e9tico Madrid",
-      "win_probability": 1.0,
-      "top4_probability": 88.0,
-      "uel_probability": 11.4,
-      "uecl_probability": 0.4,
-      "relegation_probability": 0.0,
-      "avg_points": 68.0,
-      "attack_rating": 6.7,
-      "defense_rating": 7.0,
-      "position_distribution": [
-        1.0,
-        4.9,
-        17.5,
-        64.6,
-        9.5,
-        1.9,
-        0.4,
-        0.1,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0
-      ],
-      "strength_of_schedule": 5.4,
-      "matches_remaining": 5,
-      "performance_delta": -1
-    },
-    {
-      "team_name": "Espanyol",
-      "win_probability": 0.0,
-      "top4_probability": 5.6,
-      "uel_probability": 53.0,
-      "uecl_probability": 14.6,
-      "relegation_probability": 0.0,
-      "avg_points": 56.5,
-      "attack_rating": 4.8,
-      "defense_rating": 6.0,
-      "position_distribution": [
-        0.0,
-        0.1,
-        0.5,
-        5.1,
-        29.5,
-        23.5,
-        14.6,
-        9.8,
-        6.4,
-        4.4,
-        2.8,
-        1.7,
-        0.9,
-        0.5,
-        0.2,
-        0.1,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0
-      ],
-      "strength_of_schedule": 5.5,
-      "matches_remaining": 5,
-      "performance_delta": 2
-    },
-    {
-      "team_name": "Real Betis",
-      "win_probability": 0.0,
-      "top4_probability": 6.0,
-      "uel_probability": 54.3,
-      "uecl_probability": 14.0,
-      "relegation_probability": 0.0,
-      "avg_points": 56.4,
-      "attack_rating": 5.6,
-      "defense_rating": 5.4,
-      "position_distribution": [
-        0.0,
-        0.1,
-        0.6,
-        5.4,
-        31.5,
-        22.9,
-        14.0,
-        9.3,
-        6.1,
-        4.2,
-        2.7,
-        1.7,
-        1.0,
-        0.5,
-        0.2,
-        0.1,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0
-      ],
-      "strength_of_schedule": 4.4,
-      "matches_remaining": 5,
-      "performance_delta": 0
-    },
-    {
-      "team_name": "Elche",
-      "win_probability": 0.0,
-      "top4_probability": 0.6,
-      "uel_probability": 21.7,
-      "uecl_probability": 16.1,
-      "relegation_probability": 0.3,
-      "avg_points": 51.2,
-      "attack_rating": 4.3,
-      "defense_rating": 5.5,
-      "position_distribution": [
-        0.0,
-        0.0,
-        0.0,
-        0.6,
-        8.0,
-        13.6,
-        16.1,
-        15.2,
-        12.8,
-        10.6,
-        8.2,
-        6.1,
-        4.1,
-        2.5,
-        1.3,
-        0.6,
-        0.2,
-        0.1,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0
-      ],
-      "strength_of_schedule": 4.8,
-      "matches_remaining": 5,
-      "performance_delta": 4
-    },
-    {
-      "team_name": "Athletic Club",
-      "win_probability": 0.0,
-      "top4_probability": 0.7,
-      "uel_probability": 18.9,
-      "uecl_probability": 14.0,
-      "relegation_probability": 0.5,
-      "avg_points": 50.9,
-      "attack_rating": 4.3,
-      "defense_rating": 5.6,
-      "position_distribution": [
-        0.0,
-        0.0,
-        0.0,
-        0.7,
-        7.3,
-        11.6,
-        14.0,
-        14.0,
-        12.7,
-        11.3,
-        9.2,
-        7.3,
+        48.4,
+        30.3,
+        15.9,
         5.2,
-        3.4,
-        1.9,
-        0.9,
-        0.4,
-        0.1,
+        0.2,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
         0.0,
         0.0,
         0.0,
@@ -317,39 +37,503 @@ const simulationResults = {
         0.0
       ],
       "strength_of_schedule": 4.9,
-      "matches_remaining": 5,
+      "matches_remaining": 22,
+      "next_opponents": [
+        {
+          "opponent": "Osasuna",
+          "difficulty": 2.2,
+          "date": 1765647000,
+          "is_home": true
+        },
+        {
+          "opponent": "Villarreal",
+          "difficulty": 4.7,
+          "date": 1766330100,
+          "is_home": false
+        },
+        {
+          "opponent": "Espanyol",
+          "difficulty": 5.3,
+          "date": 1767470400,
+          "is_home": false
+        },
+        {
+          "opponent": "Real Sociedad",
+          "difficulty": 6.5,
+          "date": 1768762800,
+          "is_home": false
+        },
+        {
+          "opponent": "Real Oviedo",
+          "difficulty": 6.0,
+          "date": 1769367600,
+          "is_home": true
+        }
+      ],
+      "performance_delta": 0
+    },
+    {
+      "team_name": "Real Madrid",
+      "win_probability": 34.0,
+      "top4_probability": 99.5,
+      "uel_probability": 0.5,
+      "uecl_probability": 0.0,
+      "relegation_probability": 0.0,
+      "avg_points": 80.5,
+      "attack_rating": 7.9,
+      "defense_rating": 7.0,
+      "position_distribution": [
+        34.0,
+        34.8,
+        21.8,
+        8.8,
+        0.5,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "strength_of_schedule": 4.6,
+      "matches_remaining": 22,
+      "next_opponents": [
+        {
+          "opponent": "Deportivo Alav\u00e9s",
+          "difficulty": 4.0,
+          "date": 1765742400,
+          "is_home": false
+        },
+        {
+          "opponent": "Sevilla",
+          "difficulty": 4.5,
+          "date": 1766260800,
+          "is_home": true
+        },
+        {
+          "opponent": "Real Betis",
+          "difficulty": 4.8,
+          "date": 1767539700,
+          "is_home": true
+        },
+        {
+          "opponent": "Levante UD",
+          "difficulty": 4.8,
+          "date": 1768762800,
+          "is_home": true
+        },
+        {
+          "opponent": "Villarreal",
+          "difficulty": 4.7,
+          "date": 1769367600,
+          "is_home": false
+        }
+      ],
+      "performance_delta": 0
+    },
+    {
+      "team_name": "Villarreal",
+      "win_probability": 14.7,
+      "top4_probability": 98.3,
+      "uel_probability": 1.7,
+      "uecl_probability": 0.0,
+      "relegation_probability": 0.0,
+      "avg_points": 77.1,
+      "attack_rating": 6.5,
+      "defense_rating": 7.4,
+      "position_distribution": [
+        14.7,
+        25.3,
+        36.8,
+        21.4,
+        1.5,
+        0.2,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "strength_of_schedule": 6.0,
+      "matches_remaining": 23,
+      "next_opponents": [
+        {
+          "opponent": "Levante UD",
+          "difficulty": 8.8,
+          "date": 1765733400,
+          "is_home": false
+        },
+        {
+          "opponent": "Barcelona",
+          "difficulty": 10,
+          "date": 1766330100,
+          "is_home": true
+        },
+        {
+          "opponent": "Elche",
+          "difficulty": 3.4,
+          "date": 1767461400,
+          "is_home": false
+        },
+        {
+          "opponent": "Deportivo Alav\u00e9s",
+          "difficulty": 2.0,
+          "date": 1768158000,
+          "is_home": true
+        },
+        {
+          "opponent": "Real Betis",
+          "difficulty": 5.9,
+          "date": 1768762800,
+          "is_home": false
+        }
+      ],
+      "performance_delta": 1
+    },
+    {
+      "team_name": "Atl\u00e9tico Madrid",
+      "win_probability": 2.8,
+      "top4_probability": 92.7,
+      "uel_probability": 7.0,
+      "uecl_probability": 0.2,
+      "relegation_probability": 0.0,
+      "avg_points": 72.3,
+      "attack_rating": 6.7,
+      "defense_rating": 7.2,
+      "position_distribution": [
+        2.8,
+        9.4,
+        24.5,
+        56.0,
+        6.0,
+        1.0,
+        0.2,
+        0.1,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "strength_of_schedule": 5.1,
+      "matches_remaining": 22,
+      "next_opponents": [
+        {
+          "opponent": "Valencia",
+          "difficulty": 5.3,
+          "date": 1765630800,
+          "is_home": true
+        },
+        {
+          "opponent": "Girona FC",
+          "difficulty": 6.0,
+          "date": 1766322000,
+          "is_home": false
+        },
+        {
+          "opponent": "Real Sociedad",
+          "difficulty": 6.5,
+          "date": 1767556800,
+          "is_home": false
+        },
+        {
+          "opponent": "Deportivo Alav\u00e9s",
+          "difficulty": 2.0,
+          "date": 1768762800,
+          "is_home": true
+        },
+        {
+          "opponent": "Mallorca",
+          "difficulty": 5.5,
+          "date": 1769367600,
+          "is_home": true
+        }
+      ],
+      "performance_delta": -1
+    },
+    {
+      "team_name": "Espanyol",
+      "win_probability": 0.0,
+      "top4_probability": 4.2,
+      "uel_probability": 55.1,
+      "uecl_probability": 14.3,
+      "relegation_probability": 0.0,
+      "avg_points": 58.7,
+      "attack_rating": 4.9,
+      "defense_rating": 6.1,
+      "position_distribution": [
+        0.0,
+        0.1,
+        0.5,
+        3.6,
+        31.5,
+        23.7,
+        14.3,
+        9.6,
+        6.2,
+        4.3,
+        2.7,
+        1.7,
+        1.0,
+        0.5,
+        0.2,
+        0.1,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "strength_of_schedule": 6.0,
+      "matches_remaining": 23,
+      "next_opponents": [
+        {
+          "opponent": "Getafe",
+          "difficulty": 2.3,
+          "date": 1765656000,
+          "is_home": false
+        },
+        {
+          "opponent": "Athletic Club",
+          "difficulty": 3.6,
+          "date": 1766433600,
+          "is_home": false
+        },
+        {
+          "opponent": "Barcelona",
+          "difficulty": 10,
+          "date": 1767470400,
+          "is_home": true
+        },
+        {
+          "opponent": "Levante UD",
+          "difficulty": 8.8,
+          "date": 1768158000,
+          "is_home": false
+        },
+        {
+          "opponent": "Girona FC",
+          "difficulty": 5.5,
+          "date": 1768762800,
+          "is_home": true
+        }
+      ],
       "performance_delta": 2
     },
     {
-      "team_name": "Rayo Vallecano",
+      "team_name": "Real Betis",
       "win_probability": 0.0,
-      "top4_probability": 0.2,
-      "uel_probability": 10.6,
-      "uecl_probability": 9.5,
-      "relegation_probability": 1.7,
-      "avg_points": 48.1,
-      "attack_rating": 4.5,
-      "defense_rating": 6.5,
+      "top4_probability": 4.3,
+      "uel_probability": 55.5,
+      "uecl_probability": 13.9,
+      "relegation_probability": 0.0,
+      "avg_points": 58.4,
+      "attack_rating": 5.7,
+      "defense_rating": 5.6,
+      "position_distribution": [
+        0.0,
+        0.1,
+        0.5,
+        3.7,
+        32.3,
+        23.2,
+        13.9,
+        9.3,
+        6.1,
+        4.2,
+        2.8,
+        1.8,
+        1.1,
+        0.6,
+        0.3,
+        0.1,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "strength_of_schedule": 4.0,
+      "matches_remaining": 23,
+      "next_opponents": [
+        {
+          "opponent": "Rayo Vallecano",
+          "difficulty": 2.1,
+          "date": 1765828800,
+          "is_home": false
+        },
+        {
+          "opponent": "Getafe",
+          "difficulty": 3.9,
+          "date": 1766347200,
+          "is_home": true
+        },
+        {
+          "opponent": "Real Madrid",
+          "difficulty": 5.4,
+          "date": 1767539700,
+          "is_home": false
+        },
+        {
+          "opponent": "Real Oviedo",
+          "difficulty": 2.9,
+          "date": 1768158000,
+          "is_home": false
+        },
+        {
+          "opponent": "Villarreal",
+          "difficulty": 5.6,
+          "date": 1768762800,
+          "is_home": true
+        }
+      ],
+      "performance_delta": -1
+    },
+    {
+      "team_name": "Athletic Club",
+      "win_probability": 0.0,
+      "top4_probability": 0.4,
+      "uel_probability": 17.0,
+      "uecl_probability": 13.0,
+      "relegation_probability": 0.3,
+      "avg_points": 52.4,
+      "attack_rating": 4.3,
+      "defense_rating": 5.8,
       "position_distribution": [
         0.0,
         0.0,
         0.0,
-        0.2,
-        3.7,
-        6.9,
-        9.5,
-        10.9,
-        11.8,
-        11.8,
-        11.4,
-        10.3,
-        8.6,
-        6.3,
-        4.2,
-        2.5,
-        1.2,
         0.4,
+        6.5,
+        10.5,
+        13.0,
+        13.1,
+        12.3,
+        11.3,
+        9.6,
+        8.0,
+        6.0,
+        4.2,
+        2.6,
+        1.5,
+        0.7,
+        0.2,
         0.1,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "strength_of_schedule": 4.8,
+      "matches_remaining": 22,
+      "next_opponents": [
+        {
+          "opponent": "Celta Vigo",
+          "difficulty": 5.1,
+          "date": 1765725300,
+          "is_home": false
+        },
+        {
+          "opponent": "Espanyol",
+          "difficulty": 3.6,
+          "date": 1766433600,
+          "is_home": true
+        },
+        {
+          "opponent": "Osasuna",
+          "difficulty": 5.5,
+          "date": 1767453300,
+          "is_home": false
+        },
+        {
+          "opponent": "Mallorca",
+          "difficulty": 3.9,
+          "date": 1768762800,
+          "is_home": false
+        },
+        {
+          "opponent": "Sevilla",
+          "difficulty": 6.0,
+          "date": 1769367600,
+          "is_home": false
+        }
+      ],
+      "performance_delta": 3
+    },
+    {
+      "team_name": "Elche",
+      "win_probability": 0.0,
+      "top4_probability": 0.3,
+      "uel_probability": 17.3,
+      "uecl_probability": 14.0,
+      "relegation_probability": 0.2,
+      "avg_points": 52.2,
+      "attack_rating": 4.4,
+      "defense_rating": 5.7,
+      "position_distribution": [
+        0.0,
+        0.0,
+        0.0,
+        0.3,
+        6.2,
+        11.1,
+        14.0,
+        14.2,
+        12.8,
+        11.4,
+        9.4,
+        7.5,
+        5.4,
+        3.6,
+        2.1,
+        1.2,
+        0.5,
+        0.2,
+        0.0,
         0.0,
         0.0,
         0.0,
@@ -357,37 +541,69 @@ const simulationResults = {
         0.0
       ],
       "strength_of_schedule": 4.7,
-      "matches_remaining": 5,
-      "performance_delta": -4
+      "matches_remaining": 23,
+      "next_opponents": [
+        {
+          "opponent": "Mallorca",
+          "difficulty": 3.9,
+          "date": 1765638900,
+          "is_home": false
+        },
+        {
+          "opponent": "Rayo Vallecano",
+          "difficulty": 5.7,
+          "date": 1766338200,
+          "is_home": true
+        },
+        {
+          "opponent": "Villarreal",
+          "difficulty": 5.6,
+          "date": 1767461400,
+          "is_home": true
+        },
+        {
+          "opponent": "Valencia",
+          "difficulty": 3.7,
+          "date": 1768158000,
+          "is_home": false
+        },
+        {
+          "opponent": "Sevilla",
+          "difficulty": 4.5,
+          "date": 1768762800,
+          "is_home": true
+        }
+      ],
+      "performance_delta": 3
     },
     {
-      "team_name": "Getafe",
+      "team_name": "Real Sociedad",
       "win_probability": 0.0,
-      "top4_probability": 0.2,
-      "uel_probability": 7.9,
-      "uecl_probability": 8.0,
-      "relegation_probability": 1.8,
-      "avg_points": 47.7,
-      "attack_rating": 3.4,
-      "defense_rating": 6.3,
+      "top4_probability": 0.3,
+      "uel_probability": 14.9,
+      "uecl_probability": 12.2,
+      "relegation_probability": 0.6,
+      "avg_points": 51.2,
+      "attack_rating": 5.3,
+      "defense_rating": 5.1,
       "position_distribution": [
         0.0,
         0.0,
         0.0,
-        0.1,
-        2.6,
-        5.3,
-        8.0,
-        10.0,
-        11.4,
-        12.1,
+        0.3,
+        5.5,
+        9.4,
+        12.2,
+        12.4,
         12.3,
-        11.6,
-        9.9,
-        7.4,
-        4.7,
-        2.8,
-        1.3,
+        11.1,
+        10.0,
+        8.4,
+        6.7,
+        4.8,
+        3.2,
+        2.0,
+        1.0,
         0.4,
         0.1,
         0.0,
@@ -396,128 +612,328 @@ const simulationResults = {
         0.0,
         0.0
       ],
-      "strength_of_schedule": 4.5,
-      "matches_remaining": 5,
-      "performance_delta": 2
+      "strength_of_schedule": 6.1,
+      "matches_remaining": 23,
+      "next_opponents": [
+        {
+          "opponent": "Girona FC",
+          "difficulty": 5.5,
+          "date": 1765569600,
+          "is_home": true
+        },
+        {
+          "opponent": "Levante UD",
+          "difficulty": 8.8,
+          "date": 1766243700,
+          "is_home": false
+        },
+        {
+          "opponent": "Atl\u00e9tico Madrid",
+          "difficulty": 4.0,
+          "date": 1767556800,
+          "is_home": true
+        },
+        {
+          "opponent": "Getafe",
+          "difficulty": 2.3,
+          "date": 1768158000,
+          "is_home": false
+        },
+        {
+          "opponent": "Barcelona",
+          "difficulty": 10,
+          "date": 1768762800,
+          "is_home": true
+        }
+      ],
+      "performance_delta": 0
     },
     {
-      "team_name": "Real Sociedad",
+      "team_name": "Rayo Vallecano",
       "win_probability": 0.0,
-      "top4_probability": 0.2,
-      "uel_probability": 8.3,
-      "uecl_probability": 8.5,
-      "relegation_probability": 2.1,
-      "avg_points": 47.3,
-      "attack_rating": 5.3,
-      "defense_rating": 4.9,
+      "top4_probability": 0.1,
+      "uel_probability": 10.4,
+      "uecl_probability": 9.5,
+      "relegation_probability": 0.9,
+      "avg_points": 50.0,
+      "attack_rating": 4.6,
+      "defense_rating": 6.6,
       "position_distribution": [
         0.0,
         0.0,
         0.0,
-        0.2,
-        2.7,
-        5.6,
-        8.5,
-        10.3,
-        11.7,
-        12.0,
-        12.0,
-        11.0,
-        9.5,
-        7.0,
-        4.7,
-        2.8,
-        1.4,
-        0.5,
         0.1,
+        3.6,
+        6.8,
+        9.5,
+        10.7,
+        11.6,
+        11.4,
+        11.1,
+        10.0,
+        8.6,
+        6.5,
+        4.6,
+        3.0,
+        1.6,
+        0.7,
+        0.2,
         0.0,
         0.0,
         0.0,
         0.0,
         0.0
       ],
-      "strength_of_schedule": 5.7,
-      "matches_remaining": 5,
-      "performance_delta": -2
+      "strength_of_schedule": 4.5,
+      "matches_remaining": 23,
+      "next_opponents": [
+        {
+          "opponent": "Real Betis",
+          "difficulty": 4.8,
+          "date": 1765828800,
+          "is_home": true
+        },
+        {
+          "opponent": "Elche",
+          "difficulty": 3.4,
+          "date": 1766338200,
+          "is_home": false
+        },
+        {
+          "opponent": "Getafe",
+          "difficulty": 3.9,
+          "date": 1767384000,
+          "is_home": true
+        },
+        {
+          "opponent": "Mallorca",
+          "difficulty": 5.5,
+          "date": 1768158000,
+          "is_home": true
+        },
+        {
+          "opponent": "Celta Vigo",
+          "difficulty": 5.1,
+          "date": 1768762800,
+          "is_home": false
+        }
+      ],
+      "performance_delta": -4
     },
     {
       "team_name": "Celta Vigo",
       "win_probability": 0.0,
       "top4_probability": 0.1,
-      "uel_probability": 6.9,
-      "uecl_probability": 7.3,
-      "relegation_probability": 2.9,
-      "avg_points": 46.8,
+      "uel_probability": 7.4,
+      "uecl_probability": 7.5,
+      "relegation_probability": 1.4,
+      "avg_points": 48.9,
       "attack_rating": 4.7,
-      "defense_rating": 4.2,
+      "defense_rating": 4.4,
       "position_distribution": [
         0.0,
         0.0,
         0.0,
         0.1,
-        2.2,
-        4.7,
-        7.3,
-        9.0,
-        10.5,
-        11.4,
+        2.4,
+        5.0,
+        7.5,
+        9.1,
+        10.3,
+        11.1,
+        11.3,
+        11.1,
+        9.9,
+        8.2,
+        6.0,
+        4.1,
+        2.4,
+        1.0,
+        0.3,
+        0.1,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "strength_of_schedule": 4.9,
+      "matches_remaining": 23,
+      "next_opponents": [
+        {
+          "opponent": "Athletic Club",
+          "difficulty": 4.7,
+          "date": 1765725300,
+          "is_home": true
+        },
+        {
+          "opponent": "Real Oviedo",
+          "difficulty": 2.9,
+          "date": 1766235600,
+          "is_home": false
+        },
+        {
+          "opponent": "Valencia",
+          "difficulty": 5.3,
+          "date": 1767445200,
+          "is_home": true
+        },
+        {
+          "opponent": "Sevilla",
+          "difficulty": 6.0,
+          "date": 1768158000,
+          "is_home": false
+        },
+        {
+          "opponent": "Rayo Vallecano",
+          "difficulty": 5.7,
+          "date": 1768762800,
+          "is_home": true
+        }
+      ],
+      "performance_delta": 2
+    },
+    {
+      "team_name": "Getafe",
+      "win_probability": 0.0,
+      "top4_probability": 0.1,
+      "uel_probability": 6.4,
+      "uecl_probability": 6.7,
+      "relegation_probability": 1.3,
+      "avg_points": 48.8,
+      "attack_rating": 3.4,
+      "defense_rating": 6.5,
+      "position_distribution": [
+        0.0,
+        0.0,
+        0.0,
+        0.1,
+        2.1,
+        4.4,
+        6.7,
+        8.6,
+        10.1,
+        11.2,
         11.8,
         11.7,
-        10.4,
-        8.3,
-        5.9,
-        3.8,
-        2.0,
-        0.7,
-        0.1,
+        10.7,
+        8.7,
+        6.3,
+        4.2,
+        2.3,
+        1.0,
+        0.3,
         0.0,
         0.0,
         0.0,
         0.0,
         0.0
       ],
-      "strength_of_schedule": 5.0,
-      "matches_remaining": 5,
-      "performance_delta": 1
+      "strength_of_schedule": 4.2,
+      "matches_remaining": 23,
+      "next_opponents": [
+        {
+          "opponent": "Espanyol",
+          "difficulty": 3.6,
+          "date": 1765656000,
+          "is_home": true
+        },
+        {
+          "opponent": "Real Betis",
+          "difficulty": 5.9,
+          "date": 1766347200,
+          "is_home": false
+        },
+        {
+          "opponent": "Rayo Vallecano",
+          "difficulty": 2.1,
+          "date": 1767384000,
+          "is_home": false
+        },
+        {
+          "opponent": "Real Sociedad",
+          "difficulty": 4.1,
+          "date": 1768158000,
+          "is_home": true
+        },
+        {
+          "opponent": "Valencia",
+          "difficulty": 5.3,
+          "date": 1768762800,
+          "is_home": true
+        }
+      ],
+      "performance_delta": 0
     },
     {
       "team_name": "Deportivo Alav\u00e9s",
       "win_probability": 0.0,
-      "top4_probability": 0.1,
-      "uel_probability": 4.4,
-      "uecl_probability": 5.5,
-      "relegation_probability": 3.3,
-      "avg_points": 45.9,
-      "attack_rating": 3.5,
-      "defense_rating": 6.7,
+      "top4_probability": 0.0,
+      "uel_probability": 5.0,
+      "uecl_probability": 6.1,
+      "relegation_probability": 1.5,
+      "avg_points": 48.1,
+      "attack_rating": 3.6,
+      "defense_rating": 6.9,
       "position_distribution": [
         0.0,
         0.0,
         0.0,
-        0.1,
-        1.2,
-        3.1,
-        5.5,
-        7.6,
-        9.8,
-        11.3,
-        12.5,
-        12.9,
-        12.0,
-        9.6,
-        6.7,
-        4.3,
-        2.3,
-        0.8,
-        0.2,
         0.0,
+        1.5,
+        3.6,
+        6.1,
+        8.1,
+        9.9,
+        11.2,
+        12.0,
+        12.1,
+        11.1,
+        9.1,
+        6.7,
+        4.5,
+        2.5,
+        1.1,
+        0.3,
+        0.1,
         0.0,
         0.0,
         0.0,
         0.0
       ],
-      "strength_of_schedule": 5.7,
-      "matches_remaining": 5,
+      "strength_of_schedule": 6.1,
+      "matches_remaining": 23,
+      "next_opponents": [
+        {
+          "opponent": "Real Madrid",
+          "difficulty": 7.5,
+          "date": 1765742400,
+          "is_home": true
+        },
+        {
+          "opponent": "Osasuna",
+          "difficulty": 5.5,
+          "date": 1766251800,
+          "is_home": false
+        },
+        {
+          "opponent": "Real Oviedo",
+          "difficulty": 6.0,
+          "date": 1767547800,
+          "is_home": true
+        },
+        {
+          "opponent": "Villarreal",
+          "difficulty": 4.7,
+          "date": 1768158000,
+          "is_home": false
+        },
+        {
+          "opponent": "Atl\u00e9tico Madrid",
+          "difficulty": 6.8,
+          "date": 1768762800,
+          "is_home": false
+        }
+      ],
       "performance_delta": -5
     },
     {
@@ -526,10 +942,10 @@ const simulationResults = {
       "top4_probability": 0.0,
       "uel_probability": 0.5,
       "uecl_probability": 0.9,
-      "relegation_probability": 22.5,
-      "avg_points": 40.3,
+      "relegation_probability": 15.3,
+      "avg_points": 41.9,
       "attack_rating": 4.1,
-      "defense_rating": 3.1,
+      "defense_rating": 3.3,
       "position_distribution": [
         0.0,
         0.0,
@@ -539,119 +955,214 @@ const simulationResults = {
         0.4,
         0.9,
         1.5,
-        2.6,
-        3.8,
-        5.6,
-        7.7,
-        10.6,
-        13.9,
-        15.4,
-        15.0,
-        12.3,
-        7.5,
-        2.7,
-        0.0,
+        2.4,
+        3.5,
+        5.1,
+        6.9,
+        9.5,
+        12.2,
+        14.2,
+        14.8,
+        13.2,
+        9.0,
+        4.7,
+        1.7,
         0.0,
         0.0,
         0.0,
         0.0
       ],
       "strength_of_schedule": 5.0,
-      "matches_remaining": 5,
+      "matches_remaining": 23,
+      "next_opponents": [
+        {
+          "opponent": "Real Oviedo",
+          "difficulty": 6.0,
+          "date": 1765717200,
+          "is_home": true
+        },
+        {
+          "opponent": "Real Madrid",
+          "difficulty": 5.4,
+          "date": 1766260800,
+          "is_home": false
+        },
+        {
+          "opponent": "Levante UD",
+          "difficulty": 4.8,
+          "date": 1767531600,
+          "is_home": true
+        },
+        {
+          "opponent": "Celta Vigo",
+          "difficulty": 5.2,
+          "date": 1768158000,
+          "is_home": true
+        },
+        {
+          "opponent": "Elche",
+          "difficulty": 3.4,
+          "date": 1768762800,
+          "is_home": false
+        }
+      ],
       "performance_delta": 3
     },
     {
       "team_name": "Valencia",
       "win_probability": 0.0,
       "top4_probability": 0.0,
-      "uel_probability": 0.2,
-      "uecl_probability": 0.5,
-      "relegation_probability": 25.9,
-      "avg_points": 39.7,
-      "attack_rating": 3.7,
-      "defense_rating": 4.0,
+      "uel_probability": 0.3,
+      "uecl_probability": 0.6,
+      "relegation_probability": 14.6,
+      "avg_points": 41.9,
+      "attack_rating": 3.8,
+      "defense_rating": 4.2,
       "position_distribution": [
         0.0,
         0.0,
         0.0,
         0.0,
-        0.0,
+        0.1,
         0.2,
-        0.5,
-        1.0,
-        1.8,
-        2.9,
-        4.5,
+        0.6,
+        1.2,
+        2.0,
+        3.1,
+        4.8,
         6.8,
-        10.0,
-        13.6,
-        16.3,
-        16.6,
-        14.5,
-        8.6,
-        2.8,
-        0.0,
+        9.6,
+        12.5,
+        15.0,
+        15.5,
+        14.0,
+        8.9,
+        4.3,
+        1.3,
         0.0,
         0.0,
         0.0,
         0.0
       ],
       "strength_of_schedule": 5.0,
-      "matches_remaining": 5,
+      "matches_remaining": 23,
+      "next_opponents": [
+        {
+          "opponent": "Atl\u00e9tico Madrid",
+          "difficulty": 6.8,
+          "date": 1765630800,
+          "is_home": false
+        },
+        {
+          "opponent": "Mallorca",
+          "difficulty": 5.5,
+          "date": 1766174400,
+          "is_home": true
+        },
+        {
+          "opponent": "Celta Vigo",
+          "difficulty": 5.1,
+          "date": 1767445200,
+          "is_home": false
+        },
+        {
+          "opponent": "Elche",
+          "difficulty": 5.1,
+          "date": 1768158000,
+          "is_home": true
+        },
+        {
+          "opponent": "Getafe",
+          "difficulty": 2.3,
+          "date": 1768762800,
+          "is_home": false
+        }
+      ],
       "performance_delta": 1
     },
     {
       "team_name": "Osasuna",
       "win_probability": 0.0,
       "top4_probability": 0.0,
-      "uel_probability": 0.1,
-      "uecl_probability": 0.3,
-      "relegation_probability": 32.0,
-      "avg_points": 38.2,
+      "uel_probability": 0.3,
+      "uecl_probability": 0.6,
+      "relegation_probability": 16.0,
+      "avg_points": 41.3,
       "attack_rating": 3.5,
-      "defense_rating": 5.0,
+      "defense_rating": 5.1,
       "position_distribution": [
-        0.0,
         0.0,
         0.0,
         0.0,
         0.0,
         0.1,
         0.3,
-        0.7,
-        1.3,
-        2.2,
-        3.6,
-        5.5,
-        8.5,
-        12.1,
-        15.8,
-        17.9,
-        17.0,
-        11.0,
-        4.0,
-        0.0,
+        0.6,
+        1.2,
+        2.0,
+        3.0,
+        4.7,
+        6.6,
+        9.3,
+        12.2,
+        14.6,
+        15.4,
+        14.1,
+        9.4,
+        4.9,
+        1.7,
         0.0,
         0.0,
         0.0,
         0.0
       ],
-      "strength_of_schedule": 4.6,
-      "matches_remaining": 5,
+      "strength_of_schedule": 5.1,
+      "matches_remaining": 23,
+      "next_opponents": [
+        {
+          "opponent": "Barcelona",
+          "difficulty": 6.9,
+          "date": 1765647000,
+          "is_home": false
+        },
+        {
+          "opponent": "Deportivo Alav\u00e9s",
+          "difficulty": 2.0,
+          "date": 1766251800,
+          "is_home": true
+        },
+        {
+          "opponent": "Athletic Club",
+          "difficulty": 4.7,
+          "date": 1767453300,
+          "is_home": true
+        },
+        {
+          "opponent": "Girona FC",
+          "difficulty": 6.0,
+          "date": 1768158000,
+          "is_home": false
+        },
+        {
+          "opponent": "Real Oviedo",
+          "difficulty": 6.0,
+          "date": 1768762800,
+          "is_home": true
+        }
+      ],
       "performance_delta": -2
     },
     {
       "team_name": "Mallorca",
       "win_probability": 0.0,
       "top4_probability": 0.0,
-      "uel_probability": 0.1,
-      "uecl_probability": 0.2,
-      "relegation_probability": 41.9,
-      "avg_points": 37.3,
-      "attack_rating": 4.0,
-      "defense_rating": 4.1,
+      "uel_probability": 0.3,
+      "uecl_probability": 0.5,
+      "relegation_probability": 22.4,
+      "avg_points": 40.5,
+      "attack_rating": 4.1,
+      "defense_rating": 4.3,
       "position_distribution": [
-        0.0,
         0.0,
         0.0,
         0.0,
@@ -659,25 +1170,58 @@ const simulationResults = {
         0.1,
         0.2,
         0.5,
-        0.9,
+        1.0,
         1.6,
-        2.7,
-        4.2,
-        6.6,
-        10.0,
-        13.8,
-        17.4,
-        20.1,
-        15.2,
-        6.5,
-        0.0,
+        2.5,
+        3.7,
+        5.4,
+        7.6,
+        10.5,
+        13.2,
+        15.3,
+        16.1,
+        12.2,
+        7.3,
+        2.9,
         0.0,
         0.0,
         0.0,
         0.0
       ],
-      "strength_of_schedule": 4.7,
-      "matches_remaining": 5,
+      "strength_of_schedule": 4.2,
+      "matches_remaining": 23,
+      "next_opponents": [
+        {
+          "opponent": "Elche",
+          "difficulty": 5.1,
+          "date": 1765638900,
+          "is_home": true
+        },
+        {
+          "opponent": "Valencia",
+          "difficulty": 3.7,
+          "date": 1766174400,
+          "is_home": false
+        },
+        {
+          "opponent": "Girona FC",
+          "difficulty": 5.5,
+          "date": 1767547800,
+          "is_home": true
+        },
+        {
+          "opponent": "Rayo Vallecano",
+          "difficulty": 2.1,
+          "date": 1768158000,
+          "is_home": false
+        },
+        {
+          "opponent": "Athletic Club",
+          "difficulty": 4.7,
+          "date": 1768762800,
+          "is_home": true
+        }
+      ],
       "performance_delta": -2
     },
     {
@@ -686,8 +1230,8 @@ const simulationResults = {
       "top4_probability": 0.0,
       "uel_probability": 0.0,
       "uecl_probability": 0.0,
-      "relegation_probability": 74.2,
-      "avg_points": 32.8,
+      "relegation_probability": 67.0,
+      "avg_points": 34.1,
       "attack_rating": 4.6,
       "defense_rating": 1.0,
       "position_distribution": [
@@ -700,25 +1244,129 @@ const simulationResults = {
         0.0,
         0.1,
         0.2,
-        0.4,
-        0.7,
-        1.2,
-        2.2,
-        3.9,
-        6.6,
-        10.4,
-        17.5,
-        30.8,
-        25.9,
-        0.0,
+        0.3,
+        0.6,
+        1.0,
+        1.8,
+        3.0,
+        5.1,
+        8.0,
+        13.1,
+        21.3,
+        24.9,
+        20.7,
         0.0,
         0.0,
         0.0,
         0.0
       ],
-      "strength_of_schedule": 5.0,
-      "matches_remaining": 5,
-      "performance_delta": 1
+      "strength_of_schedule": 4.9,
+      "matches_remaining": 23,
+      "next_opponents": [
+        {
+          "opponent": "Villarreal",
+          "difficulty": 5.6,
+          "date": 1765733400,
+          "is_home": true
+        },
+        {
+          "opponent": "Real Sociedad",
+          "difficulty": 4.1,
+          "date": 1766243700,
+          "is_home": true
+        },
+        {
+          "opponent": "Sevilla",
+          "difficulty": 6.0,
+          "date": 1767531600,
+          "is_home": false
+        },
+        {
+          "opponent": "Espanyol",
+          "difficulty": 3.6,
+          "date": 1768158000,
+          "is_home": true
+        },
+        {
+          "opponent": "Real Madrid",
+          "difficulty": 5.4,
+          "date": 1768762800,
+          "is_home": false
+        }
+      ],
+      "performance_delta": 2
+    },
+    {
+      "team_name": "Girona FC",
+      "win_probability": 0.0,
+      "top4_probability": 0.0,
+      "uel_probability": 0.0,
+      "uecl_probability": 0.0,
+      "relegation_probability": 70.5,
+      "avg_points": 34.0,
+      "attack_rating": 3.9,
+      "defense_rating": 2.0,
+      "position_distribution": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.1,
+        0.2,
+        0.4,
+        0.8,
+        1.4,
+        2.5,
+        4.4,
+        7.3,
+        12.3,
+        21.2,
+        26.9,
+        22.4,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "strength_of_schedule": 4.4,
+      "matches_remaining": 23,
+      "next_opponents": [
+        {
+          "opponent": "Real Sociedad",
+          "difficulty": 6.5,
+          "date": 1765569600,
+          "is_home": false
+        },
+        {
+          "opponent": "Atl\u00e9tico Madrid",
+          "difficulty": 4.0,
+          "date": 1766322000,
+          "is_home": true
+        },
+        {
+          "opponent": "Mallorca",
+          "difficulty": 3.9,
+          "date": 1767547800,
+          "is_home": false
+        },
+        {
+          "opponent": "Osasuna",
+          "difficulty": 2.2,
+          "date": 1768158000,
+          "is_home": true
+        },
+        {
+          "opponent": "Espanyol",
+          "difficulty": 5.3,
+          "date": 1768762800,
+          "is_home": false
+        }
+      ],
+      "performance_delta": 0
     },
     {
       "team_name": "Real Oviedo",
@@ -726,10 +1374,10 @@ const simulationResults = {
       "top4_probability": 0.0,
       "uel_probability": 0.0,
       "uecl_probability": 0.0,
-      "relegation_probability": 91.1,
-      "avg_points": 29.3,
+      "relegation_probability": 88.0,
+      "avg_points": 30.4,
       "attack_rating": 3.1,
-      "defense_rating": 3.1,
+      "defense_rating": 3.3,
       "position_distribution": [
         0.0,
         0.0,
@@ -743,37 +1391,171 @@ const simulationResults = {
         0.0,
         0.1,
         0.2,
-        0.5,
-        1.1,
-        2.3,
-        4.6,
-        9.8,
-        23.7,
-        57.5,
-        0.0,
+        0.3,
+        0.7,
+        1.5,
+        3.0,
+        6.1,
+        13.4,
+        25.6,
+        49.0,
         0.0,
         0.0,
         0.0,
         0.0
       ],
       "strength_of_schedule": 5.1,
-      "matches_remaining": 5,
-      "performance_delta": -1
+      "matches_remaining": 23,
+      "next_opponents": [
+        {
+          "opponent": "Sevilla",
+          "difficulty": 6.0,
+          "date": 1765717200,
+          "is_home": false
+        },
+        {
+          "opponent": "Celta Vigo",
+          "difficulty": 5.2,
+          "date": 1766235600,
+          "is_home": true
+        },
+        {
+          "opponent": "Deportivo Alav\u00e9s",
+          "difficulty": 4.0,
+          "date": 1767547800,
+          "is_home": false
+        },
+        {
+          "opponent": "Real Betis",
+          "difficulty": 4.8,
+          "date": 1768158000,
+          "is_home": true
+        },
+        {
+          "opponent": "Osasuna",
+          "difficulty": 5.5,
+          "date": 1768762800,
+          "is_home": false
+        }
+      ],
+      "performance_delta": -2
+    }
+  ],
+  "La Liga_upcoming": [
+    {
+      "home_team": "Real Sociedad",
+      "away_team": "Girona FC",
+      "date": 1765569600,
+      "home_win_prob": 69.1,
+      "draw_prob": 17.0,
+      "away_win_prob": 13.9,
+      "home_id": 2824,
+      "away_id": 24264
+    },
+    {
+      "home_team": "Atl\u00e9tico Madrid",
+      "away_team": "Valencia",
+      "date": 1765630800,
+      "home_win_prob": 93.7,
+      "draw_prob": 4.8,
+      "away_win_prob": 1.5,
+      "home_id": 2836,
+      "away_id": 2828
+    },
+    {
+      "home_team": "Mallorca",
+      "away_team": "Elche",
+      "date": 1765638900,
+      "home_win_prob": 49.2,
+      "draw_prob": 27.9,
+      "away_win_prob": 22.9,
+      "home_id": 2826,
+      "away_id": 2846
+    },
+    {
+      "home_team": "Barcelona",
+      "away_team": "Osasuna",
+      "date": 1765647000,
+      "home_win_prob": 88.7,
+      "draw_prob": 9.6,
+      "away_win_prob": 1.7,
+      "home_id": 2817,
+      "away_id": 2820
+    },
+    {
+      "home_team": "Getafe",
+      "away_team": "Espanyol",
+      "date": 1765656000,
+      "home_win_prob": 35.0,
+      "draw_prob": 38.7,
+      "away_win_prob": 26.3,
+      "home_id": 2859,
+      "away_id": 2814
+    },
+    {
+      "home_team": "Sevilla",
+      "away_team": "Real Oviedo",
+      "date": 1765717200,
+      "home_win_prob": 35.6,
+      "draw_prob": 24.2,
+      "away_win_prob": 40.2,
+      "home_id": 2833,
+      "away_id": 2851
+    },
+    {
+      "home_team": "Celta Vigo",
+      "away_team": "Athletic Club",
+      "date": 1765725300,
+      "home_win_prob": 23.8,
+      "draw_prob": 27.0,
+      "away_win_prob": 49.2,
+      "home_id": 2821,
+      "away_id": 2825
+    },
+    {
+      "home_team": "Levante UD",
+      "away_team": "Villarreal",
+      "date": 1765733400,
+      "home_win_prob": 12.4,
+      "draw_prob": 15.5,
+      "away_win_prob": 72.1,
+      "home_id": 2849,
+      "away_id": 2819
+    },
+    {
+      "home_team": "Deportivo Alav\u00e9s",
+      "away_team": "Real Madrid",
+      "date": 1765742400,
+      "home_win_prob": 31.0,
+      "draw_prob": 24.9,
+      "away_win_prob": 44.1,
+      "home_id": 2885,
+      "away_id": 2829
+    },
+    {
+      "home_team": "Rayo Vallecano",
+      "away_team": "Real Betis",
+      "date": 1765828800,
+      "home_win_prob": 28.1,
+      "draw_prob": 36.8,
+      "away_win_prob": 35.1,
+      "home_id": 2818,
+      "away_id": 2816
     }
   ],
   "Premier League": [
     {
       "team_name": "Arsenal",
-      "win_probability": 84.2,
+      "win_probability": 84.1,
       "top4_probability": 100.0,
       "uel_probability": 0.0,
       "uecl_probability": 0.0,
       "relegation_probability": 0.0,
-      "avg_points": 83.0,
+      "avg_points": 82.9,
       "attack_rating": 6.6,
       "defense_rating": 9.6,
       "position_distribution": [
-        84.2,
+        84.1,
         14.7,
         1.0,
         0.1,
@@ -798,26 +1580,58 @@ const simulationResults = {
         0.0,
         0.0
       ],
-      "strength_of_schedule": 4.1,
-      "matches_remaining": 5,
+      "strength_of_schedule": 3.6,
+      "matches_remaining": 23,
+      "next_opponents": [
+        {
+          "opponent": "Wolverhampton",
+          "difficulty": 1.4,
+          "date": 1765656000,
+          "is_home": true
+        },
+        {
+          "opponent": "Everton",
+          "difficulty": 4.8,
+          "date": 1766260800,
+          "is_home": false
+        },
+        {
+          "opponent": "Brighton & Hove Albion",
+          "difficulty": 4.5,
+          "date": 1766847600,
+          "is_home": true
+        },
+        {
+          "opponent": "Aston Villa",
+          "difficulty": 5.2,
+          "date": 1767125700,
+          "is_home": true
+        },
+        {
+          "opponent": "Bournemouth",
+          "difficulty": 1.9,
+          "date": 1767461400,
+          "is_home": false
+        }
+      ],
       "performance_delta": 0
     },
     {
       "team_name": "Manchester City",
-      "win_probability": 14.5,
+      "win_probability": 14.6,
       "top4_probability": 96.8,
       "uel_probability": 2.6,
       "uecl_probability": 0.3,
       "relegation_probability": 0.0,
-      "avg_points": 75.3,
+      "avg_points": 75.2,
       "attack_rating": 7.3,
       "defense_rating": 6.8,
       "position_distribution": [
-        14.5,
-        63.7,
-        13.9,
+        14.6,
+        63.6,
+        13.8,
         4.7,
-        1.8,
+        1.9,
         0.8,
         0.3,
         0.1,
@@ -838,16 +1652,48 @@ const simulationResults = {
         0.0,
         0.0
       ],
-      "strength_of_schedule": 5.3,
-      "matches_remaining": 5,
+      "strength_of_schedule": 5.4,
+      "matches_remaining": 23,
+      "next_opponents": [
+        {
+          "opponent": "Crystal Palace",
+          "difficulty": 5.4,
+          "date": 1765720800,
+          "is_home": false
+        },
+        {
+          "opponent": "West Ham United",
+          "difficulty": 4.2,
+          "date": 1766242800,
+          "is_home": true
+        },
+        {
+          "opponent": "Nottingham Forest",
+          "difficulty": 6.2,
+          "date": 1766838600,
+          "is_home": false
+        },
+        {
+          "opponent": "Sunderland",
+          "difficulty": 5.3,
+          "date": 1767297600,
+          "is_home": false
+        },
+        {
+          "opponent": "Chelsea",
+          "difficulty": 5.9,
+          "date": 1767547800,
+          "is_home": true
+        }
+      ],
       "performance_delta": 0
     },
     {
       "team_name": "Chelsea",
       "win_probability": 0.7,
-      "top4_probability": 58.1,
-      "uel_probability": 23.4,
-      "uecl_probability": 6.5,
+      "top4_probability": 58.2,
+      "uel_probability": 23.3,
+      "uecl_probability": 6.4,
       "relegation_probability": 0.0,
       "avg_points": 65.5,
       "attack_rating": 6.3,
@@ -855,15 +1701,15 @@ const simulationResults = {
       "position_distribution": [
         0.7,
         9.3,
-        28.1,
+        28.3,
         19.9,
         13.8,
-        9.6,
-        6.5,
+        9.5,
+        6.4,
         4.4,
         2.9,
         2.0,
-        1.3,
+        1.2,
         0.8,
         0.4,
         0.2,
@@ -878,8 +1724,40 @@ const simulationResults = {
         0.0,
         0.0
       ],
-      "strength_of_schedule": 5.4,
-      "matches_remaining": 5,
+      "strength_of_schedule": 5.6,
+      "matches_remaining": 23,
+      "next_opponents": [
+        {
+          "opponent": "Everton",
+          "difficulty": 3.7,
+          "date": 1765638000,
+          "is_home": true
+        },
+        {
+          "opponent": "Newcastle United",
+          "difficulty": 5.5,
+          "date": 1766233800,
+          "is_home": false
+        },
+        {
+          "opponent": "Aston Villa",
+          "difficulty": 5.2,
+          "date": 1766856600,
+          "is_home": true
+        },
+        {
+          "opponent": "Bournemouth",
+          "difficulty": 7.9,
+          "date": 1767123000,
+          "is_home": true
+        },
+        {
+          "opponent": "Manchester City",
+          "difficulty": 5.8,
+          "date": 1767547800,
+          "is_home": false
+        }
+      ],
       "performance_delta": 0
     },
     {
@@ -895,8 +1773,8 @@ const simulationResults = {
       "position_distribution": [
         0.2,
         3.7,
-        16.0,
-        17.7,
+        15.9,
+        17.6,
         15.8,
         12.9,
         9.9,
@@ -905,7 +1783,7 @@ const simulationResults = {
         4.0,
         2.8,
         1.9,
-        1.1,
+        1.2,
         0.6,
         0.2,
         0.1,
@@ -918,15 +1796,47 @@ const simulationResults = {
         0.0,
         0.0
       ],
-      "strength_of_schedule": 4.6,
-      "matches_remaining": 5,
+      "strength_of_schedule": 4.3,
+      "matches_remaining": 23,
+      "next_opponents": [
+        {
+          "opponent": "Bournemouth",
+          "difficulty": 7.9,
+          "date": 1765828800,
+          "is_home": true
+        },
+        {
+          "opponent": "Aston Villa",
+          "difficulty": 4.0,
+          "date": 1766334600,
+          "is_home": false
+        },
+        {
+          "opponent": "Newcastle United",
+          "difficulty": 3.6,
+          "date": 1766779200,
+          "is_home": true
+        },
+        {
+          "opponent": "Wolverhampton",
+          "difficulty": 1.4,
+          "date": 1767125700,
+          "is_home": true
+        },
+        {
+          "opponent": "Leeds United",
+          "difficulty": 4.8,
+          "date": 1767529800,
+          "is_home": false
+        }
+      ],
       "performance_delta": 1
     },
     {
       "team_name": "Crystal Palace",
       "win_probability": 0.2,
-      "top4_probability": 37.3,
-      "uel_probability": 28.3,
+      "top4_probability": 37.2,
+      "uel_probability": 28.4,
       "uecl_probability": 9.8,
       "relegation_probability": 0.0,
       "avg_points": 62.7,
@@ -934,11 +1844,11 @@ const simulationResults = {
       "defense_rating": 6.3,
       "position_distribution": [
         0.2,
-        4.2,
-        15.5,
+        4.1,
+        15.4,
         17.4,
-        15.5,
-        12.7,
+        15.6,
+        12.8,
         9.8,
         7.6,
         5.5,
@@ -958,33 +1868,65 @@ const simulationResults = {
         0.0,
         0.0
       ],
-      "strength_of_schedule": 5.3,
-      "matches_remaining": 5,
+      "strength_of_schedule": 5.4,
+      "matches_remaining": 23,
+      "next_opponents": [
+        {
+          "opponent": "Manchester City",
+          "difficulty": 6.2,
+          "date": 1765720800,
+          "is_home": true
+        },
+        {
+          "opponent": "Leeds United",
+          "difficulty": 4.8,
+          "date": 1766260800,
+          "is_home": false
+        },
+        {
+          "opponent": "Tottenham Hotspur",
+          "difficulty": 6.2,
+          "date": 1766939400,
+          "is_home": true
+        },
+        {
+          "opponent": "Fulham",
+          "difficulty": 4.4,
+          "date": 1767288600,
+          "is_home": true
+        },
+        {
+          "opponent": "Newcastle United",
+          "difficulty": 5.5,
+          "date": 1767538800,
+          "is_home": false
+        }
+      ],
       "performance_delta": -1
     },
     {
       "team_name": "Aston Villa",
       "win_probability": 0.1,
-      "top4_probability": 31.1,
+      "top4_probability": 31.0,
       "uel_probability": 29.0,
-      "uecl_probability": 11.1,
+      "uecl_probability": 11.2,
       "relegation_probability": 0.0,
       "avg_points": 62.2,
       "attack_rating": 4.8,
       "defense_rating": 5.7,
       "position_distribution": [
         0.1,
-        2.8,
+        2.7,
         12.8,
         15.4,
         15.2,
         13.8,
-        11.1,
+        11.2,
         8.9,
-        6.6,
+        6.7,
         5.0,
-        3.5,
-        2.4,
+        3.4,
+        2.3,
         1.4,
         0.7,
         0.3,
@@ -998,8 +1940,40 @@ const simulationResults = {
         0.0,
         0.0
       ],
-      "strength_of_schedule": 5.3,
-      "matches_remaining": 5,
+      "strength_of_schedule": 5.4,
+      "matches_remaining": 23,
+      "next_opponents": [
+        {
+          "opponent": "West Ham United",
+          "difficulty": 7.5,
+          "date": 1765720800,
+          "is_home": false
+        },
+        {
+          "opponent": "Manchester United",
+          "difficulty": 7.1,
+          "date": 1766334600,
+          "is_home": true
+        },
+        {
+          "opponent": "Chelsea",
+          "difficulty": 4.3,
+          "date": 1766856600,
+          "is_home": false
+        },
+        {
+          "opponent": "Arsenal",
+          "difficulty": 4.5,
+          "date": 1767125700,
+          "is_home": false
+        },
+        {
+          "opponent": "Nottingham Forest",
+          "difficulty": 3.6,
+          "date": 1767443400,
+          "is_home": true
+        }
+      ],
       "performance_delta": 5
     },
     {
@@ -1007,7 +1981,7 @@ const simulationResults = {
       "win_probability": 0.0,
       "top4_probability": 11.9,
       "uel_probability": 20.4,
-      "uecl_probability": 11.6,
+      "uecl_probability": 11.5,
       "relegation_probability": 0.0,
       "avg_points": 58.0,
       "attack_rating": 6.0,
@@ -1017,14 +1991,14 @@ const simulationResults = {
         0.7,
         4.1,
         7.1,
-        9.5,
+        9.4,
         11.0,
-        11.6,
+        11.5,
         11.2,
         10.3,
         9.2,
         7.9,
-        6.5,
+        6.6,
         4.9,
         3.4,
         1.7,
@@ -1038,8 +2012,40 @@ const simulationResults = {
         0.0,
         0.0
       ],
-      "strength_of_schedule": 4.3,
-      "matches_remaining": 5,
+      "strength_of_schedule": 3.9,
+      "matches_remaining": 23,
+      "next_opponents": [
+        {
+          "opponent": "Brighton & Hove Albion",
+          "difficulty": 4.5,
+          "date": 1765638000,
+          "is_home": true
+        },
+        {
+          "opponent": "Tottenham Hotspur",
+          "difficulty": 3.6,
+          "date": 1766251800,
+          "is_home": false
+        },
+        {
+          "opponent": "Wolverhampton",
+          "difficulty": 1.4,
+          "date": 1766847600,
+          "is_home": true
+        },
+        {
+          "opponent": "Leeds United",
+          "difficulty": 5.1,
+          "date": 1767288600,
+          "is_home": true
+        },
+        {
+          "opponent": "Fulham",
+          "difficulty": 4.8,
+          "date": 1767538800,
+          "is_home": false
+        }
+      ],
       "performance_delta": 1
     },
     {
@@ -1058,19 +2064,19 @@ const simulationResults = {
         2.5,
         4.6,
         6.7,
-        8.4,
+        8.5,
         10.0,
-        10.7,
+        10.8,
         11.1,
-        10.6,
+        10.5,
         9.8,
         8.6,
         7.1,
-        5.1,
+        5.2,
         2.8,
         1.2,
         0.3,
-        0.0,
+        0.1,
         0.0,
         0.0,
         0.0,
@@ -1078,8 +2084,40 @@ const simulationResults = {
         0.0,
         0.0
       ],
-      "strength_of_schedule": 4.7,
-      "matches_remaining": 5,
+      "strength_of_schedule": 4.5,
+      "matches_remaining": 23,
+      "next_opponents": [
+        {
+          "opponent": "Sunderland",
+          "difficulty": 5.3,
+          "date": 1765720800,
+          "is_home": false
+        },
+        {
+          "opponent": "Chelsea",
+          "difficulty": 5.9,
+          "date": 1766233800,
+          "is_home": true
+        },
+        {
+          "opponent": "Manchester United",
+          "difficulty": 5.1,
+          "date": 1766779200,
+          "is_home": false
+        },
+        {
+          "opponent": "Burnley",
+          "difficulty": 2.0,
+          "date": 1767123000,
+          "is_home": false
+        },
+        {
+          "opponent": "Crystal Palace",
+          "difficulty": 4.4,
+          "date": 1767538800,
+          "is_home": true
+        }
+      ],
       "performance_delta": -1
     },
     {
@@ -1095,18 +2133,18 @@ const simulationResults = {
       "position_distribution": [
         0.0,
         0.2,
-        2.0,
+        2.1,
         4.1,
         6.3,
         8.2,
         9.8,
-        10.8,
+        10.7,
         10.9,
         10.8,
         10.1,
         9.1,
         7.5,
-        5.5,
+        5.6,
         3.0,
         1.3,
         0.3,
@@ -1118,8 +2156,40 @@ const simulationResults = {
         0.0,
         0.0
       ],
-      "strength_of_schedule": 5.4,
-      "matches_remaining": 5,
+      "strength_of_schedule": 5.6,
+      "matches_remaining": 23,
+      "next_opponents": [
+        {
+          "opponent": "Liverpool",
+          "difficulty": 5.1,
+          "date": 1765638000,
+          "is_home": false
+        },
+        {
+          "opponent": "Sunderland",
+          "difficulty": 2.3,
+          "date": 1766242800,
+          "is_home": true
+        },
+        {
+          "opponent": "Arsenal",
+          "difficulty": 4.5,
+          "date": 1766847600,
+          "is_home": false
+        },
+        {
+          "opponent": "West Ham United",
+          "difficulty": 7.5,
+          "date": 1767123000,
+          "is_home": false
+        },
+        {
+          "opponent": "Burnley",
+          "difficulty": 8.4,
+          "date": 1767452400,
+          "is_home": true
+        }
+      ],
       "performance_delta": 0
     },
     {
@@ -1127,7 +2197,7 @@ const simulationResults = {
       "win_probability": 0.0,
       "top4_probability": 6.8,
       "uel_probability": 14.1,
-      "uecl_probability": 9.4,
+      "uecl_probability": 9.3,
       "relegation_probability": 0.1,
       "avg_points": 55.4,
       "attack_rating": 5.3,
@@ -1136,13 +2206,13 @@ const simulationResults = {
         0.0,
         0.3,
         2.2,
-        4.3,
+        4.2,
         6.2,
         7.9,
-        9.4,
+        9.3,
         10.1,
         10.5,
-        10.3,
+        10.4,
         9.9,
         9.1,
         7.8,
@@ -1158,8 +2228,40 @@ const simulationResults = {
         0.0,
         0.0
       ],
-      "strength_of_schedule": 5.3,
-      "matches_remaining": 5,
+      "strength_of_schedule": 5.4,
+      "matches_remaining": 23,
+      "next_opponents": [
+        {
+          "opponent": "Nottingham Forest",
+          "difficulty": 6.2,
+          "date": 1765720800,
+          "is_home": false
+        },
+        {
+          "opponent": "Liverpool",
+          "difficulty": 6.8,
+          "date": 1766251800,
+          "is_home": true
+        },
+        {
+          "opponent": "Crystal Palace",
+          "difficulty": 5.4,
+          "date": 1766939400,
+          "is_home": false
+        },
+        {
+          "opponent": "Brentford",
+          "difficulty": 6.4,
+          "date": 1767297600,
+          "is_home": false
+        },
+        {
+          "opponent": "Sunderland",
+          "difficulty": 2.3,
+          "date": 1767538800,
+          "is_home": true
+        }
+      ],
       "performance_delta": -4
     },
     {
@@ -1182,13 +2284,13 @@ const simulationResults = {
         6.4,
         8.3,
         10.5,
-        11.7,
-        12.8,
+        11.6,
+        12.7,
         12.6,
         11.7,
-        9.2,
+        9.3,
         5.2,
-        2.2,
+        2.3,
         0.6,
         0.1,
         0.0,
@@ -1198,8 +2300,40 @@ const simulationResults = {
         0.0,
         0.0
       ],
-      "strength_of_schedule": 5.7,
-      "matches_remaining": 5,
+      "strength_of_schedule": 6.2,
+      "matches_remaining": 23,
+      "next_opponents": [
+        {
+          "opponent": "Leeds United",
+          "difficulty": 5.1,
+          "date": 1765729800,
+          "is_home": true
+        },
+        {
+          "opponent": "Wolverhampton",
+          "difficulty": 6.9,
+          "date": 1766242800,
+          "is_home": false
+        },
+        {
+          "opponent": "Bournemouth",
+          "difficulty": 7.9,
+          "date": 1766847600,
+          "is_home": true
+        },
+        {
+          "opponent": "Tottenham Hotspur",
+          "difficulty": 6.2,
+          "date": 1767297600,
+          "is_home": true
+        },
+        {
+          "opponent": "Everton",
+          "difficulty": 4.8,
+          "date": 1767538800,
+          "is_home": false
+        }
+      ],
       "performance_delta": -1
     },
     {
@@ -1217,10 +2351,10 @@ const simulationResults = {
         0.1,
         0.8,
         1.8,
-        3.0,
+        3.1,
         4.5,
         6.1,
-        7.7,
+        7.8,
         9.1,
         10.5,
         11.3,
@@ -1238,8 +2372,40 @@ const simulationResults = {
         0.0,
         0.0
       ],
-      "strength_of_schedule": 4.4,
-      "matches_remaining": 5,
+      "strength_of_schedule": 4.1,
+      "matches_remaining": 23,
+      "next_opponents": [
+        {
+          "opponent": "Chelsea",
+          "difficulty": 4.3,
+          "date": 1765638000,
+          "is_home": false
+        },
+        {
+          "opponent": "Arsenal",
+          "difficulty": 3.6,
+          "date": 1766260800,
+          "is_home": true
+        },
+        {
+          "opponent": "Burnley",
+          "difficulty": 2.0,
+          "date": 1766847600,
+          "is_home": false
+        },
+        {
+          "opponent": "Nottingham Forest",
+          "difficulty": 6.2,
+          "date": 1767123000,
+          "is_home": false
+        },
+        {
+          "opponent": "Brentford",
+          "difficulty": 4.5,
+          "date": 1767538800,
+          "is_home": true
+        }
+      ],
       "performance_delta": 2
     },
     {
@@ -1256,14 +2422,14 @@ const simulationResults = {
         0.0,
         0.0,
         0.5,
-        1.3,
+        1.2,
         2.4,
         3.7,
         5.5,
-        7.1,
+        7.0,
         8.8,
         10.1,
-        11.7,
+        11.6,
         12.4,
         12.7,
         11.4,
@@ -1278,8 +2444,40 @@ const simulationResults = {
         0.0,
         0.0
       ],
-      "strength_of_schedule": 5.4,
-      "matches_remaining": 5,
+      "strength_of_schedule": 5.6,
+      "matches_remaining": 23,
+      "next_opponents": [
+        {
+          "opponent": "Manchester United",
+          "difficulty": 5.1,
+          "date": 1765828800,
+          "is_home": false
+        },
+        {
+          "opponent": "Burnley",
+          "difficulty": 8.4,
+          "date": 1766242800,
+          "is_home": true
+        },
+        {
+          "opponent": "Brentford",
+          "difficulty": 6.4,
+          "date": 1766847600,
+          "is_home": false
+        },
+        {
+          "opponent": "Chelsea",
+          "difficulty": 4.3,
+          "date": 1767123000,
+          "is_home": false
+        },
+        {
+          "opponent": "Arsenal",
+          "difficulty": 3.6,
+          "date": 1767461400,
+          "is_home": true
+        }
+      ],
       "performance_delta": -1
     },
     {
@@ -1300,15 +2498,15 @@ const simulationResults = {
         1.0,
         1.9,
         3.0,
-        4.4,
+        4.5,
         6.1,
-        8.0,
+        8.1,
         10.2,
-        12.7,
+        12.6,
         14.9,
         16.1,
         11.7,
-        6.5,
+        6.6,
         2.3,
         0.5,
         0.0,
@@ -1318,8 +2516,40 @@ const simulationResults = {
         0.0,
         0.0
       ],
-      "strength_of_schedule": 5.0,
-      "matches_remaining": 5,
+      "strength_of_schedule": 4.9,
+      "matches_remaining": 23,
+      "next_opponents": [
+        {
+          "opponent": "Newcastle United",
+          "difficulty": 3.6,
+          "date": 1765720800,
+          "is_home": true
+        },
+        {
+          "opponent": "Brighton & Hove Albion",
+          "difficulty": 6.1,
+          "date": 1766242800,
+          "is_home": false
+        },
+        {
+          "opponent": "Leeds United",
+          "difficulty": 5.1,
+          "date": 1766930400,
+          "is_home": true
+        },
+        {
+          "opponent": "Manchester City",
+          "difficulty": 6.2,
+          "date": 1767297600,
+          "is_home": true
+        },
+        {
+          "opponent": "Tottenham Hotspur",
+          "difficulty": 3.6,
+          "date": 1767538800,
+          "is_home": false
+        }
+      ],
       "performance_delta": -1
     },
     {
@@ -1347,8 +2577,8 @@ const simulationResults = {
         4.5,
         7.5,
         12.4,
-        21.5,
-        23.6,
+        21.6,
+        23.5,
         15.6,
         6.8,
         1.5,
@@ -1358,8 +2588,40 @@ const simulationResults = {
         0.0,
         0.0
       ],
-      "strength_of_schedule": 5.0,
-      "matches_remaining": 5,
+      "strength_of_schedule": 5.1,
+      "matches_remaining": 23,
+      "next_opponents": [
+        {
+          "opponent": "Burnley",
+          "difficulty": 2.0,
+          "date": 1765647000,
+          "is_home": false
+        },
+        {
+          "opponent": "Nottingham Forest",
+          "difficulty": 3.6,
+          "date": 1766433600,
+          "is_home": true
+        },
+        {
+          "opponent": "West Ham United",
+          "difficulty": 7.5,
+          "date": 1766847600,
+          "is_home": false
+        },
+        {
+          "opponent": "Crystal Palace",
+          "difficulty": 5.4,
+          "date": 1767288600,
+          "is_home": false
+        },
+        {
+          "opponent": "Liverpool",
+          "difficulty": 6.8,
+          "date": 1767538800,
+          "is_home": true
+        }
+      ],
       "performance_delta": 1
     },
     {
@@ -1369,7 +2631,7 @@ const simulationResults = {
       "uel_probability": 0.2,
       "uecl_probability": 0.2,
       "relegation_probability": 7.8,
-      "avg_points": 43.8,
+      "avg_points": 43.9,
       "attack_rating": 4.5,
       "defense_rating": 4.5,
       "position_distribution": [
@@ -1381,16 +2643,16 @@ const simulationResults = {
         0.1,
         0.2,
         0.5,
-        0.9,
+        0.8,
         1.5,
         2.5,
         4.1,
-        7.1,
-        12.0,
-        21.1,
+        7.0,
+        11.9,
+        21.2,
         25.8,
-        16.5,
-        6.6,
+        16.4,
+        6.5,
         1.2,
         0.0,
         0.0,
@@ -1398,8 +2660,40 @@ const simulationResults = {
         0.0,
         0.0
       ],
-      "strength_of_schedule": 5.4,
-      "matches_remaining": 5,
+      "strength_of_schedule": 5.7,
+      "matches_remaining": 23,
+      "next_opponents": [
+        {
+          "opponent": "Brentford",
+          "difficulty": 6.4,
+          "date": 1765729800,
+          "is_home": false
+        },
+        {
+          "opponent": "Crystal Palace",
+          "difficulty": 4.4,
+          "date": 1766260800,
+          "is_home": true
+        },
+        {
+          "opponent": "Sunderland",
+          "difficulty": 5.3,
+          "date": 1766930400,
+          "is_home": false
+        },
+        {
+          "opponent": "Liverpool",
+          "difficulty": 5.1,
+          "date": 1767288600,
+          "is_home": false
+        },
+        {
+          "opponent": "Manchester United",
+          "difficulty": 7.1,
+          "date": 1767529800,
+          "is_home": true
+        }
+      ],
       "performance_delta": -1
     },
     {
@@ -1408,7 +2702,7 @@ const simulationResults = {
       "top4_probability": 0.0,
       "uel_probability": 0.0,
       "uecl_probability": 0.0,
-      "relegation_probability": 31.0,
+      "relegation_probability": 30.9,
       "avg_points": 39.0,
       "attack_rating": 4.0,
       "defense_rating": 3.7,
@@ -1427,10 +2721,10 @@ const simulationResults = {
         1.1,
         2.1,
         4.4,
-        9.7,
-        18.2,
+        9.6,
+        18.3,
         32.3,
-        23.0,
+        22.9,
         7.9,
         0.1,
         0.0,
@@ -1439,7 +2733,39 @@ const simulationResults = {
         0.0
       ],
       "strength_of_schedule": 5.0,
-      "matches_remaining": 5,
+      "matches_remaining": 23,
+      "next_opponents": [
+        {
+          "opponent": "Tottenham Hotspur",
+          "difficulty": 6.2,
+          "date": 1765720800,
+          "is_home": true
+        },
+        {
+          "opponent": "Fulham",
+          "difficulty": 4.8,
+          "date": 1766433600,
+          "is_home": false
+        },
+        {
+          "opponent": "Manchester City",
+          "difficulty": 6.2,
+          "date": 1766838600,
+          "is_home": true
+        },
+        {
+          "opponent": "Everton",
+          "difficulty": 3.7,
+          "date": 1767123000,
+          "is_home": true
+        },
+        {
+          "opponent": "Aston Villa",
+          "difficulty": 4.0,
+          "date": 1767443400,
+          "is_home": false
+        }
+      ],
       "performance_delta": 0
     },
     {
@@ -1448,8 +2774,8 @@ const simulationResults = {
       "top4_probability": 0.0,
       "uel_probability": 0.0,
       "uecl_probability": 0.0,
-      "relegation_probability": 61.7,
-      "avg_points": 35.5,
+      "relegation_probability": 61.8,
+      "avg_points": 35.4,
       "attack_rating": 3.9,
       "defense_rating": 1.7,
       "position_distribution": [
@@ -1466,11 +2792,11 @@ const simulationResults = {
         0.1,
         0.3,
         0.6,
-        1.6,
-        4.2,
+        1.5,
+        4.1,
         9.5,
         21.9,
-        40.4,
+        40.5,
         20.8,
         0.5,
         0.0,
@@ -1478,8 +2804,40 @@ const simulationResults = {
         0.0,
         0.0
       ],
-      "strength_of_schedule": 5.2,
-      "matches_remaining": 5,
+      "strength_of_schedule": 5.4,
+      "matches_remaining": 23,
+      "next_opponents": [
+        {
+          "opponent": "Aston Villa",
+          "difficulty": 5.2,
+          "date": 1765720800,
+          "is_home": true
+        },
+        {
+          "opponent": "Manchester City",
+          "difficulty": 5.8,
+          "date": 1766242800,
+          "is_home": false
+        },
+        {
+          "opponent": "Fulham",
+          "difficulty": 4.4,
+          "date": 1766847600,
+          "is_home": true
+        },
+        {
+          "opponent": "Brighton & Hove Albion",
+          "difficulty": 4.5,
+          "date": 1767123000,
+          "is_home": true
+        },
+        {
+          "opponent": "Wolverhampton",
+          "difficulty": 6.9,
+          "date": 1767452400,
+          "is_home": false
+        }
+      ],
       "performance_delta": 1
     },
     {
@@ -1488,7 +2846,7 @@ const simulationResults = {
       "top4_probability": 0.0,
       "uel_probability": 0.0,
       "uecl_probability": 0.0,
-      "relegation_probability": 89.8,
+      "relegation_probability": 89.9,
       "avg_points": 30.3,
       "attack_rating": 3.7,
       "defense_rating": 2.8,
@@ -1505,21 +2863,53 @@ const simulationResults = {
         0.0,
         0.0,
         0.0,
-        0.0,
+        0.1,
         0.2,
         0.6,
         2.1,
         7.2,
         21.7,
-        65.6,
+        65.7,
         2.5,
         0.0,
         0.0,
         0.0,
         0.0
       ],
-      "strength_of_schedule": 4.3,
-      "matches_remaining": 5,
+      "strength_of_schedule": 3.9,
+      "matches_remaining": 23,
+      "next_opponents": [
+        {
+          "opponent": "Fulham",
+          "difficulty": 4.4,
+          "date": 1765647000,
+          "is_home": true
+        },
+        {
+          "opponent": "Bournemouth",
+          "difficulty": 1.9,
+          "date": 1766242800,
+          "is_home": false
+        },
+        {
+          "opponent": "Everton",
+          "difficulty": 3.7,
+          "date": 1766847600,
+          "is_home": true
+        },
+        {
+          "opponent": "Newcastle United",
+          "difficulty": 3.6,
+          "date": 1767123000,
+          "is_home": true
+        },
+        {
+          "opponent": "Brighton & Hove Albion",
+          "difficulty": 6.1,
+          "date": 1767452400,
+          "is_home": false
+        }
+      ],
       "performance_delta": -1
     },
     {
@@ -1558,15 +2948,149 @@ const simulationResults = {
         0.0,
         0.0
       ],
-      "strength_of_schedule": 4.8,
-      "matches_remaining": 5,
+      "strength_of_schedule": 4.7,
+      "matches_remaining": 23,
+      "next_opponents": [
+        {
+          "opponent": "Arsenal",
+          "difficulty": 4.5,
+          "date": 1765656000,
+          "is_home": false
+        },
+        {
+          "opponent": "Brentford",
+          "difficulty": 4.5,
+          "date": 1766242800,
+          "is_home": true
+        },
+        {
+          "opponent": "Liverpool",
+          "difficulty": 5.1,
+          "date": 1766847600,
+          "is_home": false
+        },
+        {
+          "opponent": "Manchester United",
+          "difficulty": 5.1,
+          "date": 1767125700,
+          "is_home": false
+        },
+        {
+          "opponent": "West Ham United",
+          "difficulty": 4.2,
+          "date": 1767452400,
+          "is_home": true
+        }
+      ],
       "performance_delta": 0
+    }
+  ],
+  "Premier League_upcoming": [
+    {
+      "home_team": "Chelsea",
+      "away_team": "Everton",
+      "date": 1765638000,
+      "home_win_prob": 49.4,
+      "draw_prob": 28.2,
+      "away_win_prob": 22.4,
+      "home_id": 38,
+      "away_id": 48
+    },
+    {
+      "home_team": "Liverpool",
+      "away_team": "Brighton & Hove Albion",
+      "date": 1765638000,
+      "home_win_prob": 44.4,
+      "draw_prob": 26.6,
+      "away_win_prob": 29.0,
+      "home_id": 44,
+      "away_id": 30
+    },
+    {
+      "home_team": "Burnley",
+      "away_team": "Fulham",
+      "date": 1765647000,
+      "home_win_prob": 38.6,
+      "draw_prob": 36.8,
+      "away_win_prob": 24.6,
+      "home_id": 6,
+      "away_id": 43
+    },
+    {
+      "home_team": "Arsenal",
+      "away_team": "Wolverhampton",
+      "date": 1765656000,
+      "home_win_prob": 90.0,
+      "draw_prob": 9.4,
+      "away_win_prob": 0.6,
+      "home_id": 42,
+      "away_id": 3
+    },
+    {
+      "home_team": "Crystal Palace",
+      "away_team": "Manchester City",
+      "date": 1765720800,
+      "home_win_prob": 31.1,
+      "draw_prob": 23.0,
+      "away_win_prob": 45.8,
+      "home_id": 7,
+      "away_id": 17
+    },
+    {
+      "home_team": "Nottingham Forest",
+      "away_team": "Tottenham Hotspur",
+      "date": 1765720800,
+      "home_win_prob": 16.8,
+      "draw_prob": 18.3,
+      "away_win_prob": 64.9,
+      "home_id": 14,
+      "away_id": 33
+    },
+    {
+      "home_team": "Sunderland",
+      "away_team": "Newcastle United",
+      "date": 1765720800,
+      "home_win_prob": 48.1,
+      "draw_prob": 26.0,
+      "away_win_prob": 25.9,
+      "home_id": 41,
+      "away_id": 39
+    },
+    {
+      "home_team": "West Ham United",
+      "away_team": "Aston Villa",
+      "date": 1765720800,
+      "home_win_prob": 19.5,
+      "draw_prob": 20.4,
+      "away_win_prob": 60.1,
+      "home_id": 37,
+      "away_id": 40
+    },
+    {
+      "home_team": "Brentford",
+      "away_team": "Leeds United",
+      "date": 1765729800,
+      "home_win_prob": 83.2,
+      "draw_prob": 10.6,
+      "away_win_prob": 6.2,
+      "home_id": 50,
+      "away_id": 34
+    },
+    {
+      "home_team": "Manchester United",
+      "away_team": "Bournemouth",
+      "date": 1765828800,
+      "home_win_prob": 67.9,
+      "draw_prob": 16.2,
+      "away_win_prob": 15.9,
+      "home_id": 35,
+      "away_id": 60
     }
   ],
   "Serie A": [
     {
       "team_name": "Inter",
-      "win_probability": 69.7,
+      "win_probability": 69.8,
       "top4_probability": 99.2,
       "uel_probability": 0.7,
       "uecl_probability": 0.0,
@@ -1575,8 +3099,8 @@ const simulationResults = {
       "attack_rating": 8.6,
       "defense_rating": 7.2,
       "position_distribution": [
-        69.7,
-        20.6,
+        69.8,
+        20.5,
         7.0,
         1.9,
         0.6,
@@ -1600,27 +3124,59 @@ const simulationResults = {
         0.0,
         0.0
       ],
-      "strength_of_schedule": 4.7,
-      "matches_remaining": 5,
+      "strength_of_schedule": 4.6,
+      "matches_remaining": 24,
+      "next_opponents": [
+        {
+          "opponent": "Genoa",
+          "difficulty": 3.4,
+          "date": 1765731600,
+          "is_home": false
+        },
+        {
+          "opponent": "Atalanta",
+          "difficulty": 4.3,
+          "date": 1766951100,
+          "is_home": false
+        },
+        {
+          "opponent": "Bologna",
+          "difficulty": 5.9,
+          "date": 1767555900,
+          "is_home": true
+        },
+        {
+          "opponent": "Parma",
+          "difficulty": 5.8,
+          "date": 1767815100,
+          "is_home": false
+        },
+        {
+          "opponent": "Napoli",
+          "difficulty": 3.5,
+          "date": 1768160700,
+          "is_home": true
+        }
+      ],
       "performance_delta": 0
     },
     {
       "team_name": "Milan",
-      "win_probability": 16.4,
+      "win_probability": 16.3,
       "top4_probability": 89.7,
-      "uel_probability": 8.8,
+      "uel_probability": 8.7,
       "uecl_probability": 1.1,
       "relegation_probability": 0.0,
       "avg_points": 74.1,
       "attack_rating": 6.2,
       "defense_rating": 7.2,
       "position_distribution": [
-        16.4,
+        16.3,
         35.4,
-        25.7,
-        12.2,
+        25.8,
+        12.3,
         5.9,
-        2.9,
+        2.8,
         1.1,
         0.3,
         0.1,
@@ -1640,13 +3196,45 @@ const simulationResults = {
         0.0,
         0.0
       ],
-      "strength_of_schedule": 5.6,
-      "matches_remaining": 5,
+      "strength_of_schedule": 6.0,
+      "matches_remaining": 24,
+      "next_opponents": [
+        {
+          "opponent": "Sassuolo",
+          "difficulty": 5.0,
+          "date": 1765711800,
+          "is_home": true
+        },
+        {
+          "opponent": "Hellas Verona",
+          "difficulty": 3.7,
+          "date": 1766921400,
+          "is_home": true
+        },
+        {
+          "opponent": "Cagliari",
+          "difficulty": 6.1,
+          "date": 1767383100,
+          "is_home": false
+        },
+        {
+          "opponent": "Genoa",
+          "difficulty": 8.2,
+          "date": 1767901500,
+          "is_home": true
+        },
+        {
+          "opponent": "Fiorentina",
+          "difficulty": 6.8,
+          "date": 1768140000,
+          "is_home": false
+        }
+      ],
       "performance_delta": 0
     },
     {
       "team_name": "Napoli",
-      "win_probability": 11.4,
+      "win_probability": 11.5,
       "top4_probability": 86.4,
       "uel_probability": 11.4,
       "uecl_probability": 1.5,
@@ -1655,9 +3243,9 @@ const simulationResults = {
       "attack_rating": 5.9,
       "defense_rating": 7.4,
       "position_distribution": [
-        11.4,
+        11.5,
         29.6,
-        30.3,
+        30.2,
         15.1,
         7.6,
         3.8,
@@ -1680,28 +3268,60 @@ const simulationResults = {
         0.0,
         0.0
       ],
-      "strength_of_schedule": 5.4,
-      "matches_remaining": 5,
+      "strength_of_schedule": 5.7,
+      "matches_remaining": 24,
+      "next_opponents": [
+        {
+          "opponent": "Udinese",
+          "difficulty": 5.6,
+          "date": 1765720800,
+          "is_home": false
+        },
+        {
+          "opponent": "Cremonese",
+          "difficulty": 6.3,
+          "date": 1766930400,
+          "is_home": false
+        },
+        {
+          "opponent": "Lazio",
+          "difficulty": 6.1,
+          "date": 1767526200,
+          "is_home": false
+        },
+        {
+          "opponent": "Hellas Verona",
+          "difficulty": 3.7,
+          "date": 1767807000,
+          "is_home": true
+        },
+        {
+          "opponent": "Inter",
+          "difficulty": 6.6,
+          "date": 1768160700,
+          "is_home": false
+        }
+      ],
       "performance_delta": 0
     },
     {
       "team_name": "Bologna",
-      "win_probability": 1.1,
+      "win_probability": 1.0,
       "top4_probability": 39.7,
       "uel_probability": 38.1,
-      "uecl_probability": 12.0,
+      "uecl_probability": 12.1,
       "relegation_probability": 0.0,
       "avg_points": 64.8,
       "attack_rating": 6.1,
       "defense_rating": 6.6,
       "position_distribution": [
-        1.1,
+        1.0,
         5.3,
         12.2,
-        21.0,
+        21.1,
         20.6,
         17.5,
-        12.0,
+        12.1,
         5.7,
         2.6,
         1.1,
@@ -1720,30 +3340,62 @@ const simulationResults = {
         0.0,
         0.0
       ],
-      "strength_of_schedule": 4.9,
-      "matches_remaining": 5,
+      "strength_of_schedule": 4.8,
+      "matches_remaining": 24,
+      "next_opponents": [
+        {
+          "opponent": "Juventus",
+          "difficulty": 3.3,
+          "date": 1765741500,
+          "is_home": true
+        },
+        {
+          "opponent": "Sassuolo",
+          "difficulty": 5.0,
+          "date": 1766941200,
+          "is_home": true
+        },
+        {
+          "opponent": "Inter",
+          "difficulty": 6.6,
+          "date": 1767555900,
+          "is_home": false
+        },
+        {
+          "opponent": "Atalanta",
+          "difficulty": 5.1,
+          "date": 1767807000,
+          "is_home": true
+        },
+        {
+          "opponent": "Como",
+          "difficulty": 3.9,
+          "date": 1768053600,
+          "is_home": false
+        }
+      ],
       "performance_delta": 0
     },
     {
       "team_name": "Juventus",
       "win_probability": 0.5,
-      "top4_probability": 31.2,
+      "top4_probability": 31.3,
       "uel_probability": 40.1,
       "uecl_probability": 15.1,
       "relegation_probability": 0.0,
-      "avg_points": 63.7,
+      "avg_points": 63.8,
       "attack_rating": 5.3,
       "defense_rating": 7.3,
       "position_distribution": [
         0.5,
         3.5,
         9.4,
-        17.8,
-        20.6,
-        19.5,
+        17.9,
+        20.7,
+        19.4,
         15.1,
-        7.4,
-        3.4,
+        7.3,
+        3.5,
         1.6,
         0.7,
         0.3,
@@ -1760,8 +3412,40 @@ const simulationResults = {
         0.0,
         0.0
       ],
-      "strength_of_schedule": 4.3,
-      "matches_remaining": 5,
+      "strength_of_schedule": 3.9,
+      "matches_remaining": 24,
+      "next_opponents": [
+        {
+          "opponent": "Bologna",
+          "difficulty": 4.5,
+          "date": 1765741500,
+          "is_home": false
+        },
+        {
+          "opponent": "Roma",
+          "difficulty": 4.4,
+          "date": 1766259900,
+          "is_home": true
+        },
+        {
+          "opponent": "Pisa",
+          "difficulty": 0,
+          "date": 1766864700,
+          "is_home": false
+        },
+        {
+          "opponent": "Lecce",
+          "difficulty": 4.4,
+          "date": 1767459600,
+          "is_home": true
+        },
+        {
+          "opponent": "Sassuolo",
+          "difficulty": 6.0,
+          "date": 1767728700,
+          "is_home": false
+        }
+      ],
       "performance_delta": 0
     },
     {
@@ -1779,13 +3463,13 @@ const simulationResults = {
         3.3,
         8.3,
         16.0,
-        19.9,
+        20.0,
         20.1,
         16.2,
         8.3,
         4.0,
         1.9,
-        0.9,
+        0.8,
         0.4,
         0.1,
         0.0,
@@ -1800,15 +3484,47 @@ const simulationResults = {
         0.0,
         0.0
       ],
-      "strength_of_schedule": 4.2,
-      "matches_remaining": 5,
+      "strength_of_schedule": 3.7,
+      "matches_remaining": 24,
+      "next_opponents": [
+        {
+          "opponent": "Roma",
+          "difficulty": 3.8,
+          "date": 1765827900,
+          "is_home": false
+        },
+        {
+          "opponent": "Lecce",
+          "difficulty": 3.4,
+          "date": 1766844000,
+          "is_home": false
+        },
+        {
+          "opponent": "Udinese",
+          "difficulty": 5.2,
+          "date": 1767439800,
+          "is_home": true
+        },
+        {
+          "opponent": "Pisa",
+          "difficulty": 0,
+          "date": 1767708000,
+          "is_home": false
+        },
+        {
+          "opponent": "Bologna",
+          "difficulty": 5.9,
+          "date": 1768053600,
+          "is_home": true
+        }
+      ],
       "performance_delta": 0
     },
     {
       "team_name": "Roma",
       "win_probability": 0.4,
-      "top4_probability": 22.0,
-      "uel_probability": 37.3,
+      "top4_probability": 21.9,
+      "uel_probability": 37.4,
       "uecl_probability": 19.2,
       "relegation_probability": 0.0,
       "avg_points": 62.2,
@@ -1818,9 +3534,9 @@ const simulationResults = {
         0.4,
         2.2,
         6.3,
-        13.2,
+        13.0,
         17.5,
-        19.8,
+        19.9,
         19.2,
         10.8,
         5.5,
@@ -1840,8 +3556,40 @@ const simulationResults = {
         0.0,
         0.0
       ],
-      "strength_of_schedule": 5.2,
-      "matches_remaining": 5,
+      "strength_of_schedule": 5.4,
+      "matches_remaining": 24,
+      "next_opponents": [
+        {
+          "opponent": "Como",
+          "difficulty": 5.9,
+          "date": 1765827900,
+          "is_home": true
+        },
+        {
+          "opponent": "Juventus",
+          "difficulty": 5.0,
+          "date": 1766259900,
+          "is_home": false
+        },
+        {
+          "opponent": "Genoa",
+          "difficulty": 8.2,
+          "date": 1767037500,
+          "is_home": true
+        },
+        {
+          "opponent": "Atalanta",
+          "difficulty": 4.3,
+          "date": 1767469500,
+          "is_home": false
+        },
+        {
+          "opponent": "Lecce",
+          "difficulty": 3.4,
+          "date": 1767718800,
+          "is_home": false
+        }
+      ],
       "performance_delta": 0
     },
     {
@@ -1867,9 +3615,9 @@ const simulationResults = {
         14.2,
         10.8,
         7.5,
-        4.7,
-        2.8,
-        1.5,
+        4.8,
+        2.9,
+        1.6,
         0.8,
         0.3,
         0.1,
@@ -1880,16 +3628,48 @@ const simulationResults = {
         0.0,
         0.0
       ],
-      "strength_of_schedule": 4.4,
-      "matches_remaining": 5,
+      "strength_of_schedule": 4.0,
+      "matches_remaining": 24,
+      "next_opponents": [
+        {
+          "opponent": "Milan",
+          "difficulty": 4.6,
+          "date": 1765711800,
+          "is_home": false
+        },
+        {
+          "opponent": "Torino",
+          "difficulty": 4.7,
+          "date": 1766325600,
+          "is_home": true
+        },
+        {
+          "opponent": "Bologna",
+          "difficulty": 4.5,
+          "date": 1766941200,
+          "is_home": false
+        },
+        {
+          "opponent": "Parma",
+          "difficulty": 2.9,
+          "date": 1767448800,
+          "is_home": true
+        },
+        {
+          "opponent": "Juventus",
+          "difficulty": 3.3,
+          "date": 1767728700,
+          "is_home": true
+        }
+      ],
       "performance_delta": 2
     },
     {
       "team_name": "Lazio",
       "win_probability": 0.0,
       "top4_probability": 0.7,
-      "uel_probability": 5.2,
-      "uecl_probability": 8.1,
+      "uel_probability": 5.3,
+      "uecl_probability": 8.0,
       "relegation_probability": 0.2,
       "avg_points": 51.4,
       "attack_rating": 4.5,
@@ -1901,12 +3681,12 @@ const simulationResults = {
         0.5,
         1.6,
         3.7,
-        8.1,
+        8.0,
         15.2,
         17.3,
-        15.9,
+        16.0,
         13.2,
-        9.9,
+        9.8,
         6.5,
         4.0,
         2.2,
@@ -1920,8 +3700,40 @@ const simulationResults = {
         0.0,
         0.0
       ],
-      "strength_of_schedule": 5.0,
-      "matches_remaining": 5,
+      "strength_of_schedule": 4.9,
+      "matches_remaining": 24,
+      "next_opponents": [
+        {
+          "opponent": "Parma",
+          "difficulty": 5.8,
+          "date": 1765645200,
+          "is_home": false
+        },
+        {
+          "opponent": "Cremonese",
+          "difficulty": 5.4,
+          "date": 1766250000,
+          "is_home": true
+        },
+        {
+          "opponent": "Udinese",
+          "difficulty": 5.6,
+          "date": 1766854800,
+          "is_home": false
+        },
+        {
+          "opponent": "Napoli",
+          "difficulty": 3.5,
+          "date": 1767526200,
+          "is_home": true
+        },
+        {
+          "opponent": "Fiorentina",
+          "difficulty": 4.3,
+          "date": 1767815100,
+          "is_home": true
+        }
+      ],
       "performance_delta": 0
     },
     {
@@ -1940,14 +3752,14 @@ const simulationResults = {
         0.1,
         0.4,
         1.0,
-        2.4,
+        2.5,
         5.5,
         10.7,
         14.2,
         15.3,
         14.5,
         12.2,
-        9.2,
+        9.1,
         6.3,
         4.0,
         2.4,
@@ -1961,15 +3773,47 @@ const simulationResults = {
         0.0
       ],
       "strength_of_schedule": 4.8,
-      "matches_remaining": 5,
+      "matches_remaining": 24,
+      "next_opponents": [
+        {
+          "opponent": "Cagliari",
+          "difficulty": 4.4,
+          "date": 1765655100,
+          "is_home": true
+        },
+        {
+          "opponent": "Genoa",
+          "difficulty": 3.4,
+          "date": 1766346300,
+          "is_home": false
+        },
+        {
+          "opponent": "Inter",
+          "difficulty": 7.1,
+          "date": 1766951100,
+          "is_home": true
+        },
+        {
+          "opponent": "Roma",
+          "difficulty": 4.4,
+          "date": 1767469500,
+          "is_home": true
+        },
+        {
+          "opponent": "Bologna",
+          "difficulty": 4.5,
+          "date": 1767807000,
+          "is_home": false
+        }
+      ],
       "performance_delta": -2
     },
     {
       "team_name": "Cremonese",
       "win_probability": 0.0,
-      "top4_probability": 0.3,
+      "top4_probability": 0.4,
       "uel_probability": 2.8,
-      "uecl_probability": 4.5,
+      "uecl_probability": 4.6,
       "relegation_probability": 1.0,
       "avg_points": 49.3,
       "attack_rating": 4.8,
@@ -1981,16 +3825,16 @@ const simulationResults = {
         0.3,
         0.8,
         2.0,
-        4.5,
-        9.5,
+        4.6,
+        9.6,
         12.8,
         14.6,
         14.6,
         13.1,
         10.1,
         7.3,
-        4.7,
-        3.0,
+        4.8,
+        2.9,
         1.5,
         0.7,
         0.2,
@@ -2000,8 +3844,40 @@ const simulationResults = {
         0.0,
         0.0
       ],
-      "strength_of_schedule": 5.3,
-      "matches_remaining": 5,
+      "strength_of_schedule": 5.5,
+      "matches_remaining": 24,
+      "next_opponents": [
+        {
+          "opponent": "Torino",
+          "difficulty": 6.9,
+          "date": 1765634400,
+          "is_home": false
+        },
+        {
+          "opponent": "Lazio",
+          "difficulty": 6.1,
+          "date": 1766250000,
+          "is_home": false
+        },
+        {
+          "opponent": "Napoli",
+          "difficulty": 3.5,
+          "date": 1766930400,
+          "is_home": true
+        },
+        {
+          "opponent": "Fiorentina",
+          "difficulty": 6.8,
+          "date": 1767535200,
+          "is_home": false
+        },
+        {
+          "opponent": "Cagliari",
+          "difficulty": 4.4,
+          "date": 1767893400,
+          "is_home": true
+        }
+      ],
       "performance_delta": 4
     },
     {
@@ -2017,7 +3893,7 @@ const simulationResults = {
       "position_distribution": [
         0.0,
         0.0,
-        0.1,
+        0.0,
         0.2,
         0.7,
         1.7,
@@ -2025,13 +3901,13 @@ const simulationResults = {
         8.4,
         11.8,
         13.9,
-        14.6,
+        14.5,
         13.7,
-        10.9,
+        11.0,
         8.0,
         5.4,
         3.4,
-        1.8,
+        1.9,
         0.9,
         0.3,
         0.1,
@@ -2040,15 +3916,47 @@ const simulationResults = {
         0.0,
         0.0
       ],
-      "strength_of_schedule": 4.8,
-      "matches_remaining": 5,
+      "strength_of_schedule": 4.7,
+      "matches_remaining": 24,
+      "next_opponents": [
+        {
+          "opponent": "Napoli",
+          "difficulty": 3.5,
+          "date": 1765720800,
+          "is_home": true
+        },
+        {
+          "opponent": "Fiorentina",
+          "difficulty": 6.8,
+          "date": 1766336400,
+          "is_home": false
+        },
+        {
+          "opponent": "Lazio",
+          "difficulty": 2.2,
+          "date": 1766854800,
+          "is_home": true
+        },
+        {
+          "opponent": "Como",
+          "difficulty": 3.9,
+          "date": 1767439800,
+          "is_home": false
+        },
+        {
+          "opponent": "Torino",
+          "difficulty": 6.9,
+          "date": 1767815100,
+          "is_home": false
+        }
+      ],
       "performance_delta": 0
     },
     {
       "team_name": "Cagliari",
       "win_probability": 0.0,
       "top4_probability": 0.0,
-      "uel_probability": 0.3,
+      "uel_probability": 0.2,
       "uecl_probability": 0.7,
       "relegation_probability": 8.6,
       "avg_points": 43.1,
@@ -2064,13 +3972,13 @@ const simulationResults = {
         0.7,
         1.9,
         3.8,
-        5.9,
-        8.5,
-        11.2,
-        13.6,
-        14.1,
+        6.0,
+        8.6,
+        11.3,
+        13.5,
+        14.0,
         12.8,
-        10.7,
+        10.8,
         7.8,
         5.1,
         2.7,
@@ -2080,8 +3988,40 @@ const simulationResults = {
         0.0,
         0.0
       ],
-      "strength_of_schedule": 6.0,
-      "matches_remaining": 5,
+      "strength_of_schedule": 6.5,
+      "matches_remaining": 24,
+      "next_opponents": [
+        {
+          "opponent": "Atalanta",
+          "difficulty": 4.3,
+          "date": 1765655100,
+          "is_home": false
+        },
+        {
+          "opponent": "Pisa",
+          "difficulty": 10,
+          "date": 1766316600,
+          "is_home": true
+        },
+        {
+          "opponent": "Torino",
+          "difficulty": 6.9,
+          "date": 1766844000,
+          "is_home": false
+        },
+        {
+          "opponent": "Milan",
+          "difficulty": 5.2,
+          "date": 1767383100,
+          "is_home": true
+        },
+        {
+          "opponent": "Cremonese",
+          "difficulty": 6.3,
+          "date": 1767893400,
+          "is_home": false
+        }
+      ],
       "performance_delta": 4
     },
     {
@@ -2104,24 +4044,56 @@ const simulationResults = {
         0.5,
         1.4,
         2.9,
-        4.9,
+        5.0,
         7.6,
-        10.5,
+        10.6,
         13.5,
         14.8,
-        14.0,
+        13.9,
         11.8,
         8.6,
         5.6,
-        3.0,
+        2.9,
         0.8,
         0.0,
         0.0,
         0.0,
         0.0
       ],
-      "strength_of_schedule": 5.8,
-      "matches_remaining": 5,
+      "strength_of_schedule": 6.1,
+      "matches_remaining": 24,
+      "next_opponents": [
+        {
+          "opponent": "Inter",
+          "difficulty": 7.1,
+          "date": 1765731600,
+          "is_home": true
+        },
+        {
+          "opponent": "Atalanta",
+          "difficulty": 5.1,
+          "date": 1766346300,
+          "is_home": true
+        },
+        {
+          "opponent": "Roma",
+          "difficulty": 3.8,
+          "date": 1767037500,
+          "is_home": false
+        },
+        {
+          "opponent": "Pisa",
+          "difficulty": 10,
+          "date": 1767448800,
+          "is_home": true
+        },
+        {
+          "opponent": "Milan",
+          "difficulty": 4.6,
+          "date": 1767901500,
+          "is_home": false
+        }
+      ],
       "performance_delta": -3
     },
     {
@@ -2130,7 +4102,7 @@ const simulationResults = {
       "top4_probability": 0.0,
       "uel_probability": 0.1,
       "uecl_probability": 0.3,
-      "relegation_probability": 15.8,
+      "relegation_probability": 15.7,
       "avg_points": 41.2,
       "attack_rating": 4.4,
       "defense_rating": 2.7,
@@ -2143,16 +4115,16 @@ const simulationResults = {
         0.1,
         0.3,
         1.0,
-        2.1,
+        2.0,
         3.6,
-        5.6,
-        8.0,
-        10.9,
+        5.5,
+        8.1,
+        10.8,
         13.0,
-        14.2,
+        14.3,
         13.8,
         11.7,
-        8.8,
+        8.7,
         5.3,
         1.7,
         0.0,
@@ -2160,8 +4132,40 @@ const simulationResults = {
         0.0,
         0.0
       ],
-      "strength_of_schedule": 5.2,
-      "matches_remaining": 5,
+      "strength_of_schedule": 5.3,
+      "matches_remaining": 24,
+      "next_opponents": [
+        {
+          "opponent": "Cremonese",
+          "difficulty": 5.4,
+          "date": 1765634400,
+          "is_home": true
+        },
+        {
+          "opponent": "Sassuolo",
+          "difficulty": 6.0,
+          "date": 1766325600,
+          "is_home": false
+        },
+        {
+          "opponent": "Cagliari",
+          "difficulty": 4.4,
+          "date": 1766844000,
+          "is_home": true
+        },
+        {
+          "opponent": "Hellas Verona",
+          "difficulty": 5.6,
+          "date": 1767546000,
+          "is_home": false
+        },
+        {
+          "opponent": "Udinese",
+          "difficulty": 5.2,
+          "date": 1767815100,
+          "is_home": true
+        }
+      ],
       "performance_delta": 4
     },
     {
@@ -2184,24 +4188,56 @@ const simulationResults = {
         0.2,
         0.7,
         1.6,
-        2.9,
+        2.8,
         4.7,
         7.1,
         10.3,
         12.9,
         14.8,
-        14.7,
-        12.6,
+        14.8,
+        12.7,
         9.5,
-        5.9,
+        5.8,
         2.0,
         0.0,
         0.0,
         0.0,
         0.0
       ],
-      "strength_of_schedule": 4.8,
-      "matches_remaining": 5,
+      "strength_of_schedule": 4.6,
+      "matches_remaining": 24,
+      "next_opponents": [
+        {
+          "opponent": "Lazio",
+          "difficulty": 2.2,
+          "date": 1765645200,
+          "is_home": true
+        },
+        {
+          "opponent": "Fiorentina",
+          "difficulty": 4.3,
+          "date": 1766835000,
+          "is_home": true
+        },
+        {
+          "opponent": "Sassuolo",
+          "difficulty": 6.0,
+          "date": 1767448800,
+          "is_home": false
+        },
+        {
+          "opponent": "Inter",
+          "difficulty": 7.1,
+          "date": 1767815100,
+          "is_home": true
+        },
+        {
+          "opponent": "Lecce",
+          "difficulty": 3.4,
+          "date": 1768131000,
+          "is_home": false
+        }
+      ],
       "performance_delta": -2
     },
     {
@@ -2210,7 +4246,7 @@ const simulationResults = {
       "top4_probability": 0.0,
       "uel_probability": 0.0,
       "uecl_probability": 0.0,
-      "relegation_probability": 42.7,
+      "relegation_probability": 42.8,
       "avg_points": 36.0,
       "attack_rating": 4.1,
       "defense_rating": 4.5,
@@ -2225,23 +4261,55 @@ const simulationResults = {
         0.1,
         0.3,
         0.6,
-        1.3,
+        1.4,
         2.5,
         4.5,
         7.0,
-        10.3,
-        13.5,
+        10.2,
+        13.6,
         17.1,
         18.2,
         16.4,
-        8.1,
+        8.2,
         0.0,
         0.0,
         0.0,
         0.0
       ],
-      "strength_of_schedule": 4.9,
-      "matches_remaining": 5,
+      "strength_of_schedule": 4.8,
+      "matches_remaining": 24,
+      "next_opponents": [
+        {
+          "opponent": "Fiorentina",
+          "difficulty": 6.8,
+          "date": 1765720800,
+          "is_home": false
+        },
+        {
+          "opponent": "Milan",
+          "difficulty": 4.6,
+          "date": 1766921400,
+          "is_home": false
+        },
+        {
+          "opponent": "Torino",
+          "difficulty": 4.7,
+          "date": 1767546000,
+          "is_home": true
+        },
+        {
+          "opponent": "Napoli",
+          "difficulty": 5.7,
+          "date": 1767807000,
+          "is_home": false
+        },
+        {
+          "opponent": "Lazio",
+          "difficulty": 2.2,
+          "date": 1768150800,
+          "is_home": true
+        }
+      ],
       "performance_delta": -4
     },
     {
@@ -2264,24 +4332,56 @@ const simulationResults = {
         0.0,
         0.0,
         0.1,
-        0.3,
+        0.4,
         0.8,
         1.5,
         2.9,
         5.0,
-        7.9,
+        7.8,
         11.6,
         16.3,
-        20.6,
-        21.9,
-        11.0,
+        20.5,
+        22.1,
+        10.9,
         0.0,
         0.0,
         0.0,
         0.0
       ],
-      "strength_of_schedule": 5.5,
-      "matches_remaining": 5,
+      "strength_of_schedule": 5.6,
+      "matches_remaining": 24,
+      "next_opponents": [
+        {
+          "opponent": "Pisa",
+          "difficulty": 10,
+          "date": 1765568700,
+          "is_home": true
+        },
+        {
+          "opponent": "Como",
+          "difficulty": 5.9,
+          "date": 1766844000,
+          "is_home": true
+        },
+        {
+          "opponent": "Juventus",
+          "difficulty": 5.0,
+          "date": 1767459600,
+          "is_home": false
+        },
+        {
+          "opponent": "Roma",
+          "difficulty": 4.4,
+          "date": 1767718800,
+          "is_home": true
+        },
+        {
+          "opponent": "Parma",
+          "difficulty": 2.9,
+          "date": 1768131000,
+          "is_home": true
+        }
+      ],
       "performance_delta": 0
     },
     {
@@ -2308,20 +4408,52 @@ const simulationResults = {
         0.4,
         1.0,
         2.2,
-        4.0,
+        4.1,
         6.8,
-        10.6,
+        10.5,
         15.6,
-        20.7,
-        25.0,
-        13.4,
+        20.8,
+        24.9,
+        13.5,
         0.0,
         0.0,
         0.0,
         0.0
       ],
-      "strength_of_schedule": 4.7,
-      "matches_remaining": 5,
+      "strength_of_schedule": 4.4,
+      "matches_remaining": 24,
+      "next_opponents": [
+        {
+          "opponent": "Lecce",
+          "difficulty": 3.4,
+          "date": 1765568700,
+          "is_home": false
+        },
+        {
+          "opponent": "Cagliari",
+          "difficulty": 6.1,
+          "date": 1766316600,
+          "is_home": false
+        },
+        {
+          "opponent": "Juventus",
+          "difficulty": 3.3,
+          "date": 1766864700,
+          "is_home": true
+        },
+        {
+          "opponent": "Genoa",
+          "difficulty": 3.4,
+          "date": 1767448800,
+          "is_home": false
+        },
+        {
+          "opponent": "Como",
+          "difficulty": 5.9,
+          "date": 1767708000,
+          "is_home": true
+        }
+      ],
       "performance_delta": -3
     },
     {
@@ -2330,7 +4462,7 @@ const simulationResults = {
       "top4_probability": 0.0,
       "uel_probability": 0.0,
       "uecl_probability": 0.0,
-      "relegation_probability": 90.1,
+      "relegation_probability": 90.2,
       "avg_points": 27.7,
       "attack_rating": 3.9,
       "defense_rating": 2.3,
@@ -2354,15 +4486,149 @@ const simulationResults = {
         4.9,
         9.1,
         19.0,
-        62.1,
+        62.0,
         0.0,
         0.0,
         0.0,
         0.0
       ],
       "strength_of_schedule": 5.2,
-      "matches_remaining": 5,
+      "matches_remaining": 24,
+      "next_opponents": [
+        {
+          "opponent": "Hellas Verona",
+          "difficulty": 3.7,
+          "date": 1765720800,
+          "is_home": true
+        },
+        {
+          "opponent": "Udinese",
+          "difficulty": 5.2,
+          "date": 1766336400,
+          "is_home": true
+        },
+        {
+          "opponent": "Parma",
+          "difficulty": 5.8,
+          "date": 1766835000,
+          "is_home": false
+        },
+        {
+          "opponent": "Cremonese",
+          "difficulty": 5.4,
+          "date": 1767535200,
+          "is_home": true
+        },
+        {
+          "opponent": "Lazio",
+          "difficulty": 6.1,
+          "date": 1767815100,
+          "is_home": false
+        }
+      ],
       "performance_delta": 0
+    }
+  ],
+  "Serie A_upcoming": [
+    {
+      "home_team": "Lecce",
+      "away_team": "Pisa",
+      "date": 1765568700,
+      "home_win_prob": 28.4,
+      "draw_prob": 23.8,
+      "away_win_prob": 47.8,
+      "home_id": 2689,
+      "away_id": 2737
+    },
+    {
+      "home_team": "Torino",
+      "away_team": "Cremonese",
+      "date": 1765634400,
+      "home_win_prob": 26.8,
+      "draw_prob": 23.6,
+      "away_win_prob": 49.5,
+      "home_id": 2696,
+      "away_id": 2761
+    },
+    {
+      "home_team": "Parma",
+      "away_team": "Lazio",
+      "date": 1765645200,
+      "home_win_prob": 42.2,
+      "draw_prob": 34.1,
+      "away_win_prob": 23.6,
+      "home_id": 2690,
+      "away_id": 2699
+    },
+    {
+      "home_team": "Atalanta",
+      "away_team": "Cagliari",
+      "date": 1765655100,
+      "home_win_prob": 49.2,
+      "draw_prob": 29.4,
+      "away_win_prob": 21.5,
+      "home_id": 2686,
+      "away_id": 2719
+    },
+    {
+      "home_team": "Milan",
+      "away_team": "Sassuolo",
+      "date": 1765711800,
+      "home_win_prob": 40.3,
+      "draw_prob": 28.7,
+      "away_win_prob": 31.1,
+      "home_id": 2692,
+      "away_id": 2793
+    },
+    {
+      "home_team": "Fiorentina",
+      "away_team": "Hellas Verona",
+      "date": 1765720800,
+      "home_win_prob": 45.5,
+      "draw_prob": 28.3,
+      "away_win_prob": 26.2,
+      "home_id": 2693,
+      "away_id": 2701
+    },
+    {
+      "home_team": "Udinese",
+      "away_team": "Napoli",
+      "date": 1765720800,
+      "home_win_prob": 19.1,
+      "draw_prob": 26.8,
+      "away_win_prob": 54.1,
+      "home_id": 2695,
+      "away_id": 2714
+    },
+    {
+      "home_team": "Genoa",
+      "away_team": "Inter",
+      "date": 1765731600,
+      "home_win_prob": 12.2,
+      "draw_prob": 22.3,
+      "away_win_prob": 65.5,
+      "home_id": 2713,
+      "away_id": 2697
+    },
+    {
+      "home_team": "Bologna",
+      "away_team": "Juventus",
+      "date": 1765741500,
+      "home_win_prob": 46.3,
+      "draw_prob": 31.9,
+      "away_win_prob": 21.8,
+      "home_id": 2685,
+      "away_id": 2687
+    },
+    {
+      "home_team": "Roma",
+      "away_team": "Como",
+      "date": 1765827900,
+      "home_win_prob": 41.3,
+      "draw_prob": 28.9,
+      "away_win_prob": 29.7,
+      "home_id": 2702,
+      "away_id": 2704
     }
   ],
   "Bundesliga": [
@@ -2402,8 +4668,40 @@ const simulationResults = {
         0.0,
         0.0
       ],
-      "strength_of_schedule": 5.2,
-      "matches_remaining": 5,
+      "strength_of_schedule": 5.3,
+      "matches_remaining": 21,
+      "next_opponents": [
+        {
+          "opponent": "1. FSV Mainz 05",
+          "difficulty": 5.4,
+          "date": 1765729800,
+          "is_home": true
+        },
+        {
+          "opponent": "1. FC Heidenheim",
+          "difficulty": 5.1,
+          "date": 1766334600,
+          "is_home": false
+        },
+        {
+          "opponent": "VfL Wolfsburg",
+          "difficulty": 3.6,
+          "date": 1768149000,
+          "is_home": true
+        },
+        {
+          "opponent": "1. FC K\u00f6ln",
+          "difficulty": 7.1,
+          "date": 1768419000,
+          "is_home": false
+        },
+        {
+          "opponent": "RB Leipzig",
+          "difficulty": 5.4,
+          "date": 1768671000,
+          "is_home": false
+        }
+      ],
       "performance_delta": 0
     },
     {
@@ -2419,7 +4717,7 @@ const simulationResults = {
       "position_distribution": [
         0.0,
         52.5,
-        34.3,
+        34.2,
         9.5,
         2.8,
         0.8,
@@ -2442,15 +4740,47 @@ const simulationResults = {
         0.0,
         0.0
       ],
-      "strength_of_schedule": 5.4,
-      "matches_remaining": 5,
+      "strength_of_schedule": 5.6,
+      "matches_remaining": 21,
+      "next_opponents": [
+        {
+          "opponent": "1. FC Union Berlin",
+          "difficulty": 4.3,
+          "date": 1765567800,
+          "is_home": false
+        },
+        {
+          "opponent": "Bayer 04 Leverkusen",
+          "difficulty": 7.4,
+          "date": 1766251800,
+          "is_home": true
+        },
+        {
+          "opponent": "FC St. Pauli",
+          "difficulty": 6.2,
+          "date": 1768055400,
+          "is_home": false
+        },
+        {
+          "opponent": "SC Freiburg",
+          "difficulty": 3.8,
+          "date": 1768419000,
+          "is_home": true
+        },
+        {
+          "opponent": "FC Bayern M\u00fcnchen",
+          "difficulty": 6.5,
+          "date": 1768671000,
+          "is_home": true
+        }
+      ],
       "performance_delta": 0
     },
     {
       "team_name": "Borussia Dortmund",
       "win_probability": 0.0,
       "top4_probability": 93.1,
-      "uel_probability": 6.2,
+      "uel_probability": 6.3,
       "uecl_probability": 0.5,
       "relegation_probability": 0.0,
       "avg_points": 66.9,
@@ -2458,9 +4788,9 @@ const simulationResults = {
       "defense_rating": 8.3,
       "position_distribution": [
         0.0,
-        40.2,
+        40.1,
         39.9,
-        13.0,
+        13.1,
         4.6,
         1.6,
         0.5,
@@ -2482,15 +4812,47 @@ const simulationResults = {
         0.0,
         0.0
       ],
-      "strength_of_schedule": 4.7,
-      "matches_remaining": 5,
+      "strength_of_schedule": 4.5,
+      "matches_remaining": 21,
+      "next_opponents": [
+        {
+          "opponent": "SC Freiburg",
+          "difficulty": 5.0,
+          "date": 1765722600,
+          "is_home": false
+        },
+        {
+          "opponent": "Borussia M'gladbach",
+          "difficulty": 3.7,
+          "date": 1766172600,
+          "is_home": true
+        },
+        {
+          "opponent": "Eintracht Frankfurt",
+          "difficulty": 4.3,
+          "date": 1767987000,
+          "is_home": false
+        },
+        {
+          "opponent": "SV Werder Bremen",
+          "difficulty": 6.4,
+          "date": 1768332600,
+          "is_home": true
+        },
+        {
+          "opponent": "FC St. Pauli",
+          "difficulty": 3.0,
+          "date": 1768660200,
+          "is_home": true
+        }
+      ],
       "performance_delta": 0
     },
     {
       "team_name": "Bayer 04 Leverkusen",
       "win_probability": 0.0,
-      "top4_probability": 49.3,
-      "uel_probability": 38.2,
+      "top4_probability": 49.2,
+      "uel_probability": 38.3,
       "uecl_probability": 7.5,
       "relegation_probability": 0.0,
       "avg_points": 58.5,
@@ -2500,11 +4862,11 @@ const simulationResults = {
         0.0,
         4.1,
         12.7,
-        32.5,
-        23.7,
+        32.3,
+        23.8,
         14.5,
         7.5,
-        3.2,
+        3.1,
         1.2,
         0.4,
         0.1,
@@ -2522,14 +4884,46 @@ const simulationResults = {
         0.0,
         0.0
       ],
-      "strength_of_schedule": 5.1,
-      "matches_remaining": 5,
+      "strength_of_schedule": 5.2,
+      "matches_remaining": 21,
+      "next_opponents": [
+        {
+          "opponent": "1. FC K\u00f6ln",
+          "difficulty": 3.9,
+          "date": 1765647000,
+          "is_home": true
+        },
+        {
+          "opponent": "RB Leipzig",
+          "difficulty": 5.4,
+          "date": 1766251800,
+          "is_home": false
+        },
+        {
+          "opponent": "VfB Stuttgart",
+          "difficulty": 6.1,
+          "date": 1768066200,
+          "is_home": true
+        },
+        {
+          "opponent": "Hamburger SV",
+          "difficulty": 5.0,
+          "date": 1768332600,
+          "is_home": false
+        },
+        {
+          "opponent": "TSG Hoffenheim",
+          "difficulty": 5.7,
+          "date": 1768660200,
+          "is_home": false
+        }
+      ],
       "performance_delta": 0
     },
     {
       "team_name": "TSG Hoffenheim",
       "win_probability": 0.0,
-      "top4_probability": 28.5,
+      "top4_probability": 28.6,
       "uel_probability": 45.4,
       "uecl_probability": 13.3,
       "relegation_probability": 0.0,
@@ -2540,9 +4934,9 @@ const simulationResults = {
         0.0,
         1.8,
         6.6,
-        20.1,
-        25.0,
-        20.4,
+        20.2,
+        24.9,
+        20.5,
         13.3,
         6.9,
         3.3,
@@ -2562,8 +4956,40 @@ const simulationResults = {
         0.0,
         0.0
       ],
-      "strength_of_schedule": 4.7,
-      "matches_remaining": 5,
+      "strength_of_schedule": 4.5,
+      "matches_remaining": 21,
+      "next_opponents": [
+        {
+          "opponent": "Hamburger SV",
+          "difficulty": 3.2,
+          "date": 1765636200,
+          "is_home": true
+        },
+        {
+          "opponent": "VfB Stuttgart",
+          "difficulty": 4.1,
+          "date": 1766241000,
+          "is_home": false
+        },
+        {
+          "opponent": "SV Werder Bremen",
+          "difficulty": 4.0,
+          "date": 1768055400,
+          "is_home": false
+        },
+        {
+          "opponent": "Borussia M'gladbach",
+          "difficulty": 3.7,
+          "date": 1768419000,
+          "is_home": true
+        },
+        {
+          "opponent": "Bayer 04 Leverkusen",
+          "difficulty": 7.4,
+          "date": 1768660200,
+          "is_home": true
+        }
+      ],
       "performance_delta": 0
     },
     {
@@ -2573,7 +4999,7 @@ const simulationResults = {
       "uel_probability": 39.5,
       "uecl_probability": 19.4,
       "relegation_probability": 0.0,
-      "avg_points": 53.6,
+      "avg_points": 53.7,
       "attack_rating": 5.0,
       "defense_rating": 5.0,
       "position_distribution": [
@@ -2584,7 +5010,7 @@ const simulationResults = {
         18.2,
         21.3,
         19.4,
-        12.0,
+        11.9,
         6.7,
         3.6,
         1.7,
@@ -2602,14 +5028,46 @@ const simulationResults = {
         0.0,
         0.0
       ],
-      "strength_of_schedule": 5.2,
-      "matches_remaining": 5,
+      "strength_of_schedule": 5.3,
+      "matches_remaining": 21,
+      "next_opponents": [
+        {
+          "opponent": "SV Werder Bremen",
+          "difficulty": 4.0,
+          "date": 1765737000,
+          "is_home": false
+        },
+        {
+          "opponent": "TSG Hoffenheim",
+          "difficulty": 5.2,
+          "date": 1766241000,
+          "is_home": true
+        },
+        {
+          "opponent": "Bayer 04 Leverkusen",
+          "difficulty": 4.5,
+          "date": 1768066200,
+          "is_home": false
+        },
+        {
+          "opponent": "Eintracht Frankfurt",
+          "difficulty": 8.5,
+          "date": 1768325400,
+          "is_home": true
+        },
+        {
+          "opponent": "1. FC Union Berlin",
+          "difficulty": 4.4,
+          "date": 1768746600,
+          "is_home": true
+        }
+      ],
       "performance_delta": 4
     },
     {
       "team_name": "Eintracht Frankfurt",
       "win_probability": 0.0,
-      "top4_probability": 14.3,
+      "top4_probability": 14.2,
       "uel_probability": 39.8,
       "uecl_probability": 20.0,
       "relegation_probability": 0.0,
@@ -2625,9 +5083,9 @@ const simulationResults = {
         22.0,
         20.0,
         12.2,
-        6.9,
+        7.0,
         3.7,
-        1.7,
+        1.8,
         0.8,
         0.3,
         0.1,
@@ -2642,8 +5100,40 @@ const simulationResults = {
         0.0,
         0.0
       ],
-      "strength_of_schedule": 4.6,
-      "matches_remaining": 5,
+      "strength_of_schedule": 4.4,
+      "matches_remaining": 21,
+      "next_opponents": [
+        {
+          "opponent": "FC Augsburg",
+          "difficulty": 4.6,
+          "date": 1765636200,
+          "is_home": true
+        },
+        {
+          "opponent": "Hamburger SV",
+          "difficulty": 5.0,
+          "date": 1766241000,
+          "is_home": false
+        },
+        {
+          "opponent": "Borussia Dortmund",
+          "difficulty": 4.1,
+          "date": 1767987000,
+          "is_home": true
+        },
+        {
+          "opponent": "VfB Stuttgart",
+          "difficulty": 4.1,
+          "date": 1768325400,
+          "is_home": false
+        },
+        {
+          "opponent": "SV Werder Bremen",
+          "difficulty": 4.0,
+          "date": 1768591800,
+          "is_home": false
+        }
+      ],
       "performance_delta": 2
     },
     {
@@ -2664,9 +5154,9 @@ const simulationResults = {
         3.0,
         7.0,
         12.9,
-        19.2,
-        18.7,
-        15.2,
+        19.3,
+        18.8,
+        15.1,
         10.0,
         6.2,
         3.5,
@@ -2683,14 +5173,46 @@ const simulationResults = {
         0.0
       ],
       "strength_of_schedule": 4.9,
-      "matches_remaining": 5,
+      "matches_remaining": 21,
+      "next_opponents": [
+        {
+          "opponent": "Borussia Dortmund",
+          "difficulty": 4.1,
+          "date": 1765722600,
+          "is_home": true
+        },
+        {
+          "opponent": "VfL Wolfsburg",
+          "difficulty": 6.6,
+          "date": 1766241000,
+          "is_home": false
+        },
+        {
+          "opponent": "Hamburger SV",
+          "difficulty": 3.2,
+          "date": 1768055400,
+          "is_home": true
+        },
+        {
+          "opponent": "RB Leipzig",
+          "difficulty": 5.4,
+          "date": 1768419000,
+          "is_home": false
+        },
+        {
+          "opponent": "FC Augsburg",
+          "difficulty": 5.2,
+          "date": 1768753800,
+          "is_home": false
+        }
+      ],
       "performance_delta": -2
     },
     {
       "team_name": "1. FC K\u00f6ln",
       "win_probability": 0.0,
       "top4_probability": 0.8,
-      "uel_probability": 7.6,
+      "uel_probability": 7.7,
       "uecl_probability": 10.3,
       "relegation_probability": 0.9,
       "avg_points": 44.9,
@@ -2704,12 +5226,12 @@ const simulationResults = {
         2.3,
         5.3,
         10.3,
-        16.2,
+        16.3,
         18.2,
-        16.4,
+        16.3,
         12.0,
         8.0,
-        5.1,
+        5.0,
         2.9,
         1.5,
         0.7,
@@ -2722,16 +5244,48 @@ const simulationResults = {
         0.0,
         0.0
       ],
-      "strength_of_schedule": 5.1,
-      "matches_remaining": 5,
+      "strength_of_schedule": 5.2,
+      "matches_remaining": 21,
+      "next_opponents": [
+        {
+          "opponent": "Bayer 04 Leverkusen",
+          "difficulty": 4.5,
+          "date": 1765647000,
+          "is_home": false
+        },
+        {
+          "opponent": "1. FC Union Berlin",
+          "difficulty": 4.4,
+          "date": 1766241000,
+          "is_home": true
+        },
+        {
+          "opponent": "1. FC Heidenheim",
+          "difficulty": 5.1,
+          "date": 1768055400,
+          "is_home": false
+        },
+        {
+          "opponent": "FC Bayern M\u00fcnchen",
+          "difficulty": 6.5,
+          "date": 1768419000,
+          "is_home": true
+        },
+        {
+          "opponent": "1. FSV Mainz 05",
+          "difficulty": 5.4,
+          "date": 1768660200,
+          "is_home": true
+        }
+      ],
       "performance_delta": -2
     },
     {
       "team_name": "Borussia M'gladbach",
       "win_probability": 0.0,
       "top4_probability": 0.7,
-      "uel_probability": 6.9,
-      "uecl_probability": 9.9,
+      "uel_probability": 6.8,
+      "uecl_probability": 9.8,
       "relegation_probability": 0.8,
       "avg_points": 44.9,
       "attack_rating": 4.6,
@@ -2742,13 +5296,13 @@ const simulationResults = {
         0.1,
         0.6,
         2.0,
-        4.9,
-        9.9,
-        15.9,
-        18.6,
-        17.2,
+        4.8,
+        9.8,
+        16.0,
+        18.5,
+        17.3,
         12.5,
-        8.3,
+        8.2,
         5.0,
         2.9,
         1.4,
@@ -2762,8 +5316,40 @@ const simulationResults = {
         0.0,
         0.0
       ],
-      "strength_of_schedule": 4.6,
-      "matches_remaining": 5,
+      "strength_of_schedule": 4.4,
+      "matches_remaining": 21,
+      "next_opponents": [
+        {
+          "opponent": "VfL Wolfsburg",
+          "difficulty": 3.6,
+          "date": 1765636200,
+          "is_home": true
+        },
+        {
+          "opponent": "Borussia Dortmund",
+          "difficulty": 3.1,
+          "date": 1766172600,
+          "is_home": false
+        },
+        {
+          "opponent": "FC Augsburg",
+          "difficulty": 4.6,
+          "date": 1768141800,
+          "is_home": true
+        },
+        {
+          "opponent": "TSG Hoffenheim",
+          "difficulty": 5.7,
+          "date": 1768419000,
+          "is_home": false
+        },
+        {
+          "opponent": "Hamburger SV",
+          "difficulty": 5.0,
+          "date": 1768660200,
+          "is_home": false
+        }
+      ],
       "performance_delta": -2
     },
     {
@@ -2785,11 +5371,11 @@ const simulationResults = {
         1.0,
         2.5,
         5.3,
-        8.8,
+        8.7,
         12.6,
-        15.8,
+        15.7,
         15.6,
-        13.2,
+        13.4,
         10.5,
         7.3,
         4.4,
@@ -2802,8 +5388,40 @@ const simulationResults = {
         0.0,
         0.0
       ],
-      "strength_of_schedule": 5.4,
-      "matches_remaining": 5,
+      "strength_of_schedule": 5.6,
+      "matches_remaining": 21,
+      "next_opponents": [
+        {
+          "opponent": "VfB Stuttgart",
+          "difficulty": 6.1,
+          "date": 1765737000,
+          "is_home": true
+        },
+        {
+          "opponent": "FC Augsburg",
+          "difficulty": 5.2,
+          "date": 1766241000,
+          "is_home": false
+        },
+        {
+          "opponent": "TSG Hoffenheim",
+          "difficulty": 5.2,
+          "date": 1768055400,
+          "is_home": true
+        },
+        {
+          "opponent": "Borussia Dortmund",
+          "difficulty": 3.1,
+          "date": 1768332600,
+          "is_home": false
+        },
+        {
+          "opponent": "Eintracht Frankfurt",
+          "difficulty": 8.5,
+          "date": 1768591800,
+          "is_home": true
+        }
+      ],
       "performance_delta": 2
     },
     {
@@ -2812,7 +5430,7 @@ const simulationResults = {
       "top4_probability": 0.0,
       "uel_probability": 0.8,
       "uecl_probability": 1.7,
-      "relegation_probability": 10.1,
+      "relegation_probability": 10.2,
       "avg_points": 38.9,
       "attack_rating": 3.9,
       "defense_rating": 4.8,
@@ -2826,14 +5444,14 @@ const simulationResults = {
         1.7,
         4.0,
         7.0,
-        10.5,
-        14.1,
+        10.6,
+        14.0,
         15.5,
         14.6,
-        12.3,
-        9.4,
+        12.4,
+        9.3,
         6.1,
-        3.0,
+        3.1,
         1.0,
         0.0,
         0.0,
@@ -2842,8 +5460,40 @@ const simulationResults = {
         0.0,
         0.0
       ],
-      "strength_of_schedule": 5.2,
-      "matches_remaining": 5,
+      "strength_of_schedule": 5.3,
+      "matches_remaining": 21,
+      "next_opponents": [
+        {
+          "opponent": "RB Leipzig",
+          "difficulty": 4.9,
+          "date": 1765567800,
+          "is_home": true
+        },
+        {
+          "opponent": "1. FC K\u00f6ln",
+          "difficulty": 7.1,
+          "date": 1766241000,
+          "is_home": false
+        },
+        {
+          "opponent": "1. FSV Mainz 05",
+          "difficulty": 5.4,
+          "date": 1768055400,
+          "is_home": true
+        },
+        {
+          "opponent": "FC Augsburg",
+          "difficulty": 5.2,
+          "date": 1768505400,
+          "is_home": false
+        },
+        {
+          "opponent": "VfB Stuttgart",
+          "difficulty": 4.1,
+          "date": 1768746600,
+          "is_home": false
+        }
+      ],
       "performance_delta": -1
     },
     {
@@ -2870,7 +5520,7 @@ const simulationResults = {
         12.3,
         14.7,
         15.7,
-        14.2,
+        14.3,
         11.5,
         7.8,
         4.3,
@@ -2882,8 +5532,40 @@ const simulationResults = {
         0.0,
         0.0
       ],
-      "strength_of_schedule": 4.7,
-      "matches_remaining": 5,
+      "strength_of_schedule": 4.6,
+      "matches_remaining": 21,
+      "next_opponents": [
+        {
+          "opponent": "Borussia M'gladbach",
+          "difficulty": 5.0,
+          "date": 1765636200,
+          "is_home": false
+        },
+        {
+          "opponent": "SC Freiburg",
+          "difficulty": 3.8,
+          "date": 1766241000,
+          "is_home": true
+        },
+        {
+          "opponent": "FC Bayern M\u00fcnchen",
+          "difficulty": 6.3,
+          "date": 1768149000,
+          "is_home": false
+        },
+        {
+          "opponent": "FC St. Pauli",
+          "difficulty": 3.0,
+          "date": 1768411800,
+          "is_home": true
+        },
+        {
+          "opponent": "1. FC Heidenheim",
+          "difficulty": 4.7,
+          "date": 1768660200,
+          "is_home": true
+        }
+      ],
       "performance_delta": -1
     },
     {
@@ -2892,7 +5574,7 @@ const simulationResults = {
       "top4_probability": 0.0,
       "uel_probability": 0.1,
       "uecl_probability": 0.3,
-      "relegation_probability": 18.0,
+      "relegation_probability": 18.1,
       "avg_points": 36.1,
       "attack_rating": 3.5,
       "defense_rating": 4.6,
@@ -2909,11 +5591,11 @@ const simulationResults = {
         5.1,
         9.0,
         13.3,
-        16.8,
+        16.7,
         18.1,
         15.6,
         10.9,
-        5.5,
+        5.6,
         1.6,
         0.0,
         0.0,
@@ -2922,8 +5604,40 @@ const simulationResults = {
         0.0,
         0.0
       ],
-      "strength_of_schedule": 5.7,
-      "matches_remaining": 5,
+      "strength_of_schedule": 6.1,
+      "matches_remaining": 21,
+      "next_opponents": [
+        {
+          "opponent": "TSG Hoffenheim",
+          "difficulty": 5.7,
+          "date": 1765636200,
+          "is_home": false
+        },
+        {
+          "opponent": "Eintracht Frankfurt",
+          "difficulty": 8.5,
+          "date": 1766241000,
+          "is_home": true
+        },
+        {
+          "opponent": "SC Freiburg",
+          "difficulty": 5.0,
+          "date": 1768055400,
+          "is_home": false
+        },
+        {
+          "opponent": "Bayer 04 Leverkusen",
+          "difficulty": 7.4,
+          "date": 1768332600,
+          "is_home": true
+        },
+        {
+          "opponent": "Borussia M'gladbach",
+          "difficulty": 3.7,
+          "date": 1768660200,
+          "is_home": true
+        }
+      ],
       "performance_delta": 0
     },
     {
@@ -2932,7 +5646,7 @@ const simulationResults = {
       "top4_probability": 0.0,
       "uel_probability": 0.1,
       "uecl_probability": 0.3,
-      "relegation_probability": 33.6,
+      "relegation_probability": 33.5,
       "avg_points": 34.2,
       "attack_rating": 3.9,
       "defense_rating": 3.7,
@@ -2949,12 +5663,12 @@ const simulationResults = {
         3.5,
         6.1,
         9.0,
-        12.1,
+        12.0,
         15.1,
         17.7,
-        16.5,
+        16.4,
         11.7,
-        5.3,
+        5.4,
         0.0,
         0.0,
         0.0,
@@ -2962,8 +5676,40 @@ const simulationResults = {
         0.0,
         0.0
       ],
-      "strength_of_schedule": 4.9,
-      "matches_remaining": 5,
+      "strength_of_schedule": 4.8,
+      "matches_remaining": 21,
+      "next_opponents": [
+        {
+          "opponent": "Eintracht Frankfurt",
+          "difficulty": 4.3,
+          "date": 1765636200,
+          "is_home": false
+        },
+        {
+          "opponent": "SV Werder Bremen",
+          "difficulty": 6.4,
+          "date": 1766241000,
+          "is_home": true
+        },
+        {
+          "opponent": "Borussia M'gladbach",
+          "difficulty": 5.0,
+          "date": 1768141800,
+          "is_home": false
+        },
+        {
+          "opponent": "1. FC Union Berlin",
+          "difficulty": 4.4,
+          "date": 1768505400,
+          "is_home": true
+        },
+        {
+          "opponent": "SC Freiburg",
+          "difficulty": 3.8,
+          "date": 1768753800,
+          "is_home": true
+        }
+      ],
       "performance_delta": 0
     },
     {
@@ -2990,10 +5736,10 @@ const simulationResults = {
         2.3,
         4.1,
         6.8,
-        10.5,
-        15.5,
-        21.0,
-        22.2,
+        10.4,
+        15.6,
+        21.1,
+        22.1,
         15.8,
         0.0,
         0.0,
@@ -3002,8 +5748,40 @@ const simulationResults = {
         0.0,
         0.0
       ],
-      "strength_of_schedule": 5.2,
-      "matches_remaining": 5,
+      "strength_of_schedule": 5.3,
+      "matches_remaining": 21,
+      "next_opponents": [
+        {
+          "opponent": "FC St. Pauli",
+          "difficulty": 6.2,
+          "date": 1765636200,
+          "is_home": false
+        },
+        {
+          "opponent": "FC Bayern M\u00fcnchen",
+          "difficulty": 6.5,
+          "date": 1766334600,
+          "is_home": true
+        },
+        {
+          "opponent": "1. FC K\u00f6ln",
+          "difficulty": 3.9,
+          "date": 1768055400,
+          "is_home": true
+        },
+        {
+          "opponent": "1. FSV Mainz 05",
+          "difficulty": 3.4,
+          "date": 1768332600,
+          "is_home": false
+        },
+        {
+          "opponent": "VfL Wolfsburg",
+          "difficulty": 6.6,
+          "date": 1768660200,
+          "is_home": false
+        }
+      ],
       "performance_delta": 2
     },
     {
@@ -3027,11 +5805,11 @@ const simulationResults = {
         0.1,
         0.2,
         0.6,
-        1.4,
+        1.3,
         2.6,
         4.6,
         7.5,
-        12.0,
+        12.1,
         18.6,
         26.6,
         25.8,
@@ -3042,8 +5820,40 @@ const simulationResults = {
         0.0,
         0.0
       ],
-      "strength_of_schedule": 4.7,
-      "matches_remaining": 5,
+      "strength_of_schedule": 4.5,
+      "matches_remaining": 21,
+      "next_opponents": [
+        {
+          "opponent": "1. FC Heidenheim",
+          "difficulty": 4.7,
+          "date": 1765636200,
+          "is_home": true
+        },
+        {
+          "opponent": "1. FSV Mainz 05",
+          "difficulty": 3.4,
+          "date": 1766327400,
+          "is_home": false
+        },
+        {
+          "opponent": "RB Leipzig",
+          "difficulty": 4.9,
+          "date": 1768055400,
+          "is_home": true
+        },
+        {
+          "opponent": "VfL Wolfsburg",
+          "difficulty": 6.6,
+          "date": 1768411800,
+          "is_home": false
+        },
+        {
+          "opponent": "Borussia Dortmund",
+          "difficulty": 3.1,
+          "date": 1768660200,
+          "is_home": false
+        }
+      ],
       "performance_delta": 0
     },
     {
@@ -3068,13 +5878,13 @@ const simulationResults = {
         0.0,
         0.2,
         0.4,
-        0.9,
+        1.0,
         2.0,
         3.7,
         7.1,
-        13.0,
-        24.3,
-        48.4,
+        13.1,
+        24.2,
+        48.3,
         0.0,
         0.0,
         0.0,
@@ -3082,15 +5892,139 @@ const simulationResults = {
         0.0,
         0.0
       ],
-      "strength_of_schedule": 5.0,
-      "matches_remaining": 5,
+      "strength_of_schedule": 5.1,
+      "matches_remaining": 21,
+      "next_opponents": [
+        {
+          "opponent": "FC Bayern M\u00fcnchen",
+          "difficulty": 6.3,
+          "date": 1765729800,
+          "is_home": false
+        },
+        {
+          "opponent": "FC St. Pauli",
+          "difficulty": 3.0,
+          "date": 1766327400,
+          "is_home": true
+        },
+        {
+          "opponent": "1. FC Union Berlin",
+          "difficulty": 4.3,
+          "date": 1768055400,
+          "is_home": false
+        },
+        {
+          "opponent": "1. FC Heidenheim",
+          "difficulty": 4.7,
+          "date": 1768332600,
+          "is_home": true
+        },
+        {
+          "opponent": "1. FC K\u00f6ln",
+          "difficulty": 7.1,
+          "date": 1768660200,
+          "is_home": false
+        }
+      ],
       "performance_delta": -2
+    }
+  ],
+  "Bundesliga_upcoming": [
+    {
+      "home_team": "1. FC Union Berlin",
+      "away_team": "RB Leipzig",
+      "date": 1765567800,
+      "home_win_prob": 38.2,
+      "draw_prob": 24.4,
+      "away_win_prob": 37.3,
+      "home_id": 2547,
+      "away_id": 36360
+    },
+    {
+      "home_team": "Borussia M'gladbach",
+      "away_team": "VfL Wolfsburg",
+      "date": 1765636200,
+      "home_win_prob": 16.9,
+      "draw_prob": 23.2,
+      "away_win_prob": 59.9,
+      "home_id": 2527,
+      "away_id": 2524
+    },
+    {
+      "home_team": "Eintracht Frankfurt",
+      "away_team": "FC Augsburg",
+      "date": 1765636200,
+      "home_win_prob": 51.4,
+      "draw_prob": 23.1,
+      "away_win_prob": 25.6,
+      "home_id": 2674,
+      "away_id": 2600
+    },
+    {
+      "home_team": "FC St. Pauli",
+      "away_team": "1. FC Heidenheim",
+      "date": 1765636200,
+      "home_win_prob": 44.9,
+      "draw_prob": 23.9,
+      "away_win_prob": 31.2,
+      "home_id": 2526,
+      "away_id": 5885
+    },
+    {
+      "home_team": "TSG Hoffenheim",
+      "away_team": "Hamburger SV",
+      "date": 1765636200,
+      "home_win_prob": 76.1,
+      "draw_prob": 16.8,
+      "away_win_prob": 7.1,
+      "home_id": 2569,
+      "away_id": 2676
+    },
+    {
+      "home_team": "Bayer 04 Leverkusen",
+      "away_team": "1. FC K\u00f6ln",
+      "date": 1765647000,
+      "home_win_prob": 67.5,
+      "draw_prob": 20.0,
+      "away_win_prob": 12.5,
+      "home_id": 2681,
+      "away_id": 2671
+    },
+    {
+      "home_team": "SC Freiburg",
+      "away_team": "Borussia Dortmund",
+      "date": 1765722600,
+      "home_win_prob": 38.4,
+      "draw_prob": 25.7,
+      "away_win_prob": 35.8,
+      "home_id": 2538,
+      "away_id": 2673
+    },
+    {
+      "home_team": "FC Bayern M\u00fcnchen",
+      "away_team": "1. FSV Mainz 05",
+      "date": 1765729800,
+      "home_win_prob": 95.2,
+      "draw_prob": 3.6,
+      "away_win_prob": 1.2,
+      "home_id": 2672,
+      "away_id": 2556
+    },
+    {
+      "home_team": "SV Werder Bremen",
+      "away_team": "VfB Stuttgart",
+      "date": 1765737000,
+      "home_win_prob": 35.9,
+      "draw_prob": 23.6,
+      "away_win_prob": 40.4,
+      "home_id": 2534,
+      "away_id": 2677
     }
   ],
   "Ligue 1": [
     {
       "team_name": "Paris Saint-Germain",
-      "win_probability": 56.1,
+      "win_probability": 56.2,
       "top4_probability": 99.5,
       "uel_probability": 0.5,
       "uecl_probability": 0.0,
@@ -3099,8 +6033,8 @@ const simulationResults = {
       "attack_rating": 7.4,
       "defense_rating": 8.6,
       "position_distribution": [
-        56.1,
-        27.1,
+        56.2,
+        27.0,
         12.7,
         3.6,
         0.5,
@@ -3124,13 +6058,45 @@ const simulationResults = {
         0.0,
         0.0
       ],
-      "strength_of_schedule": 4.4,
-      "matches_remaining": 5,
+      "strength_of_schedule": 4.0,
+      "matches_remaining": 19,
+      "next_opponents": [
+        {
+          "opponent": "Metz",
+          "difficulty": 1.7,
+          "date": 1765648800,
+          "is_home": false
+        },
+        {
+          "opponent": "Paris FC",
+          "difficulty": 4.7,
+          "date": 1767555900,
+          "is_home": true
+        },
+        {
+          "opponent": "Lille",
+          "difficulty": 6.9,
+          "date": 1768593600,
+          "is_home": true
+        },
+        {
+          "opponent": "Auxerre",
+          "difficulty": 3.0,
+          "date": 1769194800,
+          "is_home": false
+        },
+        {
+          "opponent": "RC Strasbourg",
+          "difficulty": 3.5,
+          "date": 1769975100,
+          "is_home": false
+        }
+      ],
       "performance_delta": 0
     },
     {
       "team_name": "RC Lens",
-      "win_probability": 25.8,
+      "win_probability": 25.7,
       "top4_probability": 97.6,
       "uel_probability": 2.3,
       "uecl_probability": 0.1,
@@ -3139,11 +6105,11 @@ const simulationResults = {
       "attack_rating": 6.8,
       "defense_rating": 6.9,
       "position_distribution": [
-        25.8,
-        35.2,
+        25.7,
+        35.3,
         26.1,
         10.5,
-        1.9,
+        2.0,
         0.4,
         0.1,
         0.0,
@@ -3164,15 +6130,47 @@ const simulationResults = {
         0.0,
         0.0
       ],
-      "strength_of_schedule": 5.4,
-      "matches_remaining": 5,
+      "strength_of_schedule": 5.6,
+      "matches_remaining": 19,
+      "next_opponents": [
+        {
+          "opponent": "Nice",
+          "difficulty": 6.5,
+          "date": 1765728900,
+          "is_home": true
+        },
+        {
+          "opponent": "Toulouse",
+          "difficulty": 4.9,
+          "date": 1767383100,
+          "is_home": false
+        },
+        {
+          "opponent": "Auxerre",
+          "difficulty": 4.8,
+          "date": 1768665600,
+          "is_home": true
+        },
+        {
+          "opponent": "Olympique de Marseille",
+          "difficulty": 8.2,
+          "date": 1769285100,
+          "is_home": false
+        },
+        {
+          "opponent": "Le Havre",
+          "difficulty": 3.7,
+          "date": 1769802300,
+          "is_home": true
+        }
+      ],
       "performance_delta": 0
     },
     {
       "team_name": "Olympique de Marseille",
       "win_probability": 15.0,
-      "top4_probability": 93.9,
-      "uel_probability": 5.7,
+      "top4_probability": 93.8,
+      "uel_probability": 5.8,
       "uecl_probability": 0.3,
       "relegation_probability": 0.0,
       "avg_points": 66.7,
@@ -3180,9 +6178,9 @@ const simulationResults = {
       "defense_rating": 6.3,
       "position_distribution": [
         15.0,
-        27.1,
+        27.2,
         33.9,
-        17.8,
+        17.7,
         4.5,
         1.2,
         0.3,
@@ -3204,14 +6202,46 @@ const simulationResults = {
         0.0,
         0.0
       ],
-      "strength_of_schedule": 5.0,
-      "matches_remaining": 5,
+      "strength_of_schedule": 5.1,
+      "matches_remaining": 19,
+      "next_opponents": [
+        {
+          "opponent": "AS Monaco",
+          "difficulty": 6.0,
+          "date": 1765741500,
+          "is_home": true
+        },
+        {
+          "opponent": "Nantes",
+          "difficulty": 3.0,
+          "date": 1767535200,
+          "is_home": true
+        },
+        {
+          "opponent": "Angers",
+          "difficulty": 3.8,
+          "date": 1768680300,
+          "is_home": false
+        },
+        {
+          "opponent": "RC Lens",
+          "difficulty": 6.2,
+          "date": 1769285100,
+          "is_home": true
+        },
+        {
+          "opponent": "Paris FC",
+          "difficulty": 6.4,
+          "date": 1769875200,
+          "is_home": false
+        }
+      ],
       "performance_delta": 0
     },
     {
       "team_name": "Lille",
       "win_probability": 3.0,
-      "top4_probability": 75.8,
+      "top4_probability": 75.7,
       "uel_probability": 21.5,
       "uecl_probability": 1.9,
       "relegation_probability": 0.0,
@@ -3220,11 +6250,11 @@ const simulationResults = {
       "defense_rating": 6.5,
       "position_distribution": [
         3.0,
-        9.5,
+        9.4,
         21.4,
-        41.9,
-        15.6,
-        5.9,
+        42.0,
+        15.5,
+        6.0,
         1.9,
         0.6,
         0.2,
@@ -3244,8 +6274,40 @@ const simulationResults = {
         0.0,
         0.0
       ],
-      "strength_of_schedule": 4.9,
-      "matches_remaining": 5,
+      "strength_of_schedule": 4.8,
+      "matches_remaining": 19,
+      "next_opponents": [
+        {
+          "opponent": "Auxerre",
+          "difficulty": 3.0,
+          "date": 1765728900,
+          "is_home": false
+        },
+        {
+          "opponent": "Stade Rennais",
+          "difficulty": 5.7,
+          "date": 1767470700,
+          "is_home": true
+        },
+        {
+          "opponent": "Paris Saint-Germain",
+          "difficulty": 4.4,
+          "date": 1768593600,
+          "is_home": false
+        },
+        {
+          "opponent": "RC Strasbourg",
+          "difficulty": 6.0,
+          "date": 1769370300,
+          "is_home": true
+        },
+        {
+          "opponent": "Olympique Lyonnais",
+          "difficulty": 4.9,
+          "date": 1769954400,
+          "is_home": false
+        }
+      ],
       "performance_delta": 0
     },
     {
@@ -3262,16 +6324,16 @@ const simulationResults = {
         0.1,
         0.7,
         3.3,
-        13.0,
+        13.1,
         33.1,
-        25.5,
+        25.4,
         13.3,
-        6.6,
+        6.7,
         2.8,
-        1.1,
+        1.0,
         0.4,
         0.1,
-        0.1,
+        0.0,
         0.0,
         0.0,
         0.0,
@@ -3284,16 +6346,48 @@ const simulationResults = {
         0.0,
         0.0
       ],
-      "strength_of_schedule": 4.8,
-      "matches_remaining": 5,
+      "strength_of_schedule": 4.7,
+      "matches_remaining": 19,
+      "next_opponents": [
+        {
+          "opponent": "Le Havre",
+          "difficulty": 3.7,
+          "date": 1765720800,
+          "is_home": true
+        },
+        {
+          "opponent": "AS Monaco",
+          "difficulty": 6.2,
+          "date": 1767456000,
+          "is_home": false
+        },
+        {
+          "opponent": "Stade Brestois",
+          "difficulty": 4.9,
+          "date": 1768765500,
+          "is_home": true
+        },
+        {
+          "opponent": "Metz",
+          "difficulty": 1.7,
+          "date": 1769357700,
+          "is_home": false
+        },
+        {
+          "opponent": "Lille",
+          "difficulty": 6.9,
+          "date": 1769954400,
+          "is_home": true
+        }
+      ],
       "performance_delta": 1
     },
     {
       "team_name": "RC Strasbourg",
       "win_probability": 0.0,
       "top4_probability": 12.1,
-      "uel_probability": 57.3,
-      "uecl_probability": 16.5,
+      "uel_probability": 57.4,
+      "uecl_probability": 16.4,
       "relegation_probability": 0.0,
       "avg_points": 54.8,
       "attack_rating": 5.6,
@@ -3303,9 +6397,9 @@ const simulationResults = {
         0.4,
         2.1,
         9.6,
-        27.8,
-        29.5,
-        16.5,
+        27.7,
+        29.6,
+        16.4,
         8.3,
         3.6,
         1.4,
@@ -3324,16 +6418,48 @@ const simulationResults = {
         0.0,
         0.0
       ],
-      "strength_of_schedule": 5.1,
-      "matches_remaining": 5,
+      "strength_of_schedule": 5.2,
+      "matches_remaining": 19,
+      "next_opponents": [
+        {
+          "opponent": "Lorient",
+          "difficulty": 2.2,
+          "date": 1765728900,
+          "is_home": true
+        },
+        {
+          "opponent": "Nice",
+          "difficulty": 5.0,
+          "date": 1767463200,
+          "is_home": false
+        },
+        {
+          "opponent": "Metz",
+          "difficulty": 8.3,
+          "date": 1768744800,
+          "is_home": true
+        },
+        {
+          "opponent": "Lille",
+          "difficulty": 4.4,
+          "date": 1769370300,
+          "is_home": false
+        },
+        {
+          "opponent": "Paris Saint-Germain",
+          "difficulty": 6.0,
+          "date": 1769975100,
+          "is_home": true
+        }
+      ],
       "performance_delta": -1
     },
     {
       "team_name": "Stade Rennais",
       "win_probability": 0.0,
       "top4_probability": 1.4,
-      "uel_probability": 19.8,
-      "uecl_probability": 23.7,
+      "uel_probability": 19.7,
+      "uecl_probability": 23.6,
       "relegation_probability": 0.0,
       "avg_points": 49.9,
       "attack_rating": 5.1,
@@ -3341,12 +6467,12 @@ const simulationResults = {
       "position_distribution": [
         0.0,
         0.0,
-        0.2,
-        1.3,
+        0.1,
+        1.2,
         6.0,
-        13.8,
-        23.7,
-        23.0,
+        13.7,
+        23.6,
+        23.2,
         15.5,
         8.5,
         4.3,
@@ -3364,8 +6490,40 @@ const simulationResults = {
         0.0,
         0.0
       ],
-      "strength_of_schedule": 4.5,
-      "matches_remaining": 5,
+      "strength_of_schedule": 4.3,
+      "matches_remaining": 19,
+      "next_opponents": [
+        {
+          "opponent": "Stade Brestois",
+          "difficulty": 4.9,
+          "date": 1765641600,
+          "is_home": true
+        },
+        {
+          "opponent": "Lille",
+          "difficulty": 4.4,
+          "date": 1767470700,
+          "is_home": false
+        },
+        {
+          "opponent": "Le Havre",
+          "difficulty": 3.7,
+          "date": 1768752900,
+          "is_home": true
+        },
+        {
+          "opponent": "Lorient",
+          "difficulty": 2.2,
+          "date": 1769270400,
+          "is_home": true
+        },
+        {
+          "opponent": "AS Monaco",
+          "difficulty": 6.2,
+          "date": 1769889900,
+          "is_home": false
+        }
+      ],
       "performance_delta": 3
     },
     {
@@ -3373,7 +6531,7 @@ const simulationResults = {
       "win_probability": 0.0,
       "top4_probability": 2.1,
       "uel_probability": 21.3,
-      "uecl_probability": 21.6,
+      "uecl_probability": 21.7,
       "relegation_probability": 0.1,
       "avg_points": 49.8,
       "attack_rating": 5.9,
@@ -3382,18 +6540,18 @@ const simulationResults = {
         0.0,
         0.0,
         0.3,
-        1.7,
-        7.3,
+        1.8,
+        7.4,
         14.0,
-        21.6,
-        21.4,
-        15.2,
+        21.7,
+        21.3,
+        15.0,
         8.8,
         4.8,
         2.6,
-        1.3,
+        1.4,
         0.6,
-        0.2,
+        0.3,
         0.1,
         0.0,
         0.0,
@@ -3405,7 +6563,39 @@ const simulationResults = {
         0.0
       ],
       "strength_of_schedule": 4.8,
-      "matches_remaining": 5,
+      "matches_remaining": 19,
+      "next_opponents": [
+        {
+          "opponent": "Olympique de Marseille",
+          "difficulty": 8.2,
+          "date": 1765741500,
+          "is_home": false
+        },
+        {
+          "opponent": "Olympique Lyonnais",
+          "difficulty": 4.0,
+          "date": 1767456000,
+          "is_home": true
+        },
+        {
+          "opponent": "Lorient",
+          "difficulty": 2.2,
+          "date": 1768586400,
+          "is_home": true
+        },
+        {
+          "opponent": "Le Havre",
+          "difficulty": 3.7,
+          "date": 1769277600,
+          "is_home": false
+        },
+        {
+          "opponent": "Stade Rennais",
+          "difficulty": 5.7,
+          "date": 1769889900,
+          "is_home": true
+        }
+      ],
       "performance_delta": 0
     },
     {
@@ -3426,11 +6616,11 @@ const simulationResults = {
         2.4,
         5.9,
         11.9,
-        17.0,
+        16.9,
         19.8,
-        15.2,
+        15.3,
         10.4,
-        7.1,
+        7.2,
         4.7,
         2.9,
         1.6,
@@ -3444,15 +6634,47 @@ const simulationResults = {
         0.0,
         0.0
       ],
-      "strength_of_schedule": 5.5,
-      "matches_remaining": 5,
+      "strength_of_schedule": 5.7,
+      "matches_remaining": 19,
+      "next_opponents": [
+        {
+          "opponent": "Paris FC",
+          "difficulty": 6.4,
+          "date": 1765656300,
+          "is_home": false
+        },
+        {
+          "opponent": "RC Lens",
+          "difficulty": 6.2,
+          "date": 1767383100,
+          "is_home": true
+        },
+        {
+          "opponent": "Nice",
+          "difficulty": 6.5,
+          "date": 1768672800,
+          "is_home": true
+        },
+        {
+          "opponent": "Stade Brestois",
+          "difficulty": 4.8,
+          "date": 1769357700,
+          "is_home": false
+        },
+        {
+          "opponent": "Auxerre",
+          "difficulty": 4.8,
+          "date": 1769962500,
+          "is_home": true
+        }
+      ],
       "performance_delta": -2
     },
     {
       "team_name": "Stade Brestois",
       "win_probability": 0.0,
       "top4_probability": 0.1,
-      "uel_probability": 2.6,
+      "uel_probability": 2.7,
       "uecl_probability": 5.1,
       "relegation_probability": 2.5,
       "avg_points": 43.1,
@@ -3467,13 +6689,13 @@ const simulationResults = {
         2.0,
         5.1,
         9.2,
-        14.1,
-        17.0,
-        15.1,
+        14.0,
+        17.1,
+        15.0,
         12.7,
         9.7,
         7.3,
-        4.7,
+        4.6,
         2.0,
         0.4,
         0.1,
@@ -3484,8 +6706,40 @@ const simulationResults = {
         0.0,
         0.0
       ],
-      "strength_of_schedule": 4.7,
-      "matches_remaining": 5,
+      "strength_of_schedule": 4.5,
+      "matches_remaining": 19,
+      "next_opponents": [
+        {
+          "opponent": "Stade Rennais",
+          "difficulty": 5.3,
+          "date": 1765641600,
+          "is_home": false
+        },
+        {
+          "opponent": "Auxerre",
+          "difficulty": 4.8,
+          "date": 1767543300,
+          "is_home": true
+        },
+        {
+          "opponent": "Olympique Lyonnais",
+          "difficulty": 4.9,
+          "date": 1768765500,
+          "is_home": false
+        },
+        {
+          "opponent": "Toulouse",
+          "difficulty": 2.5,
+          "date": 1769357700,
+          "is_home": true
+        },
+        {
+          "opponent": "Nice",
+          "difficulty": 5.0,
+          "date": 1769962500,
+          "is_home": false
+        }
+      ],
       "performance_delta": 1
     },
     {
@@ -3508,12 +6762,12 @@ const simulationResults = {
         2.0,
         4.4,
         8.4,
-        12.5,
-        14.8,
-        15.1,
+        12.6,
+        14.7,
+        15.0,
         14.0,
         12.6,
-        9.6,
+        9.5,
         4.4,
         1.3,
         0.2,
@@ -3525,7 +6779,39 @@ const simulationResults = {
         0.0
       ],
       "strength_of_schedule": 5.0,
-      "matches_remaining": 5,
+      "matches_remaining": 19,
+      "next_opponents": [
+        {
+          "opponent": "Nantes",
+          "difficulty": 3.0,
+          "date": 1765568700,
+          "is_home": true
+        },
+        {
+          "opponent": "Le Havre",
+          "difficulty": 3.7,
+          "date": 1767543300,
+          "is_home": false
+        },
+        {
+          "opponent": "Olympique de Marseille",
+          "difficulty": 3.8,
+          "date": 1768680300,
+          "is_home": true
+        },
+        {
+          "opponent": "Paris FC",
+          "difficulty": 6.4,
+          "date": 1769357700,
+          "is_home": false
+        },
+        {
+          "opponent": "Metz",
+          "difficulty": 8.3,
+          "date": 1769962500,
+          "is_home": true
+        }
+      ],
       "performance_delta": 2
     },
     {
@@ -3534,8 +6820,8 @@ const simulationResults = {
       "top4_probability": 0.0,
       "uel_probability": 0.1,
       "uecl_probability": 0.6,
-      "relegation_probability": 6.6,
-      "avg_points": 39.5,
+      "relegation_probability": 6.7,
+      "avg_points": 39.4,
       "attack_rating": 4.0,
       "defense_rating": 4.3,
       "position_distribution": [
@@ -3548,11 +6834,11 @@ const simulationResults = {
         0.6,
         1.9,
         5.0,
-        9.7,
+        9.6,
         14.2,
         17.0,
-        17.4,
-        15.8,
+        17.5,
+        15.9,
         11.7,
         5.1,
         1.3,
@@ -3564,8 +6850,40 @@ const simulationResults = {
         0.0,
         0.0
       ],
-      "strength_of_schedule": 5.1,
-      "matches_remaining": 5,
+      "strength_of_schedule": 5.3,
+      "matches_remaining": 19,
+      "next_opponents": [
+        {
+          "opponent": "RC Strasbourg",
+          "difficulty": 3.5,
+          "date": 1765728900,
+          "is_home": false
+        },
+        {
+          "opponent": "Metz",
+          "difficulty": 8.3,
+          "date": 1767543300,
+          "is_home": true
+        },
+        {
+          "opponent": "AS Monaco",
+          "difficulty": 6.2,
+          "date": 1768586400,
+          "is_home": false
+        },
+        {
+          "opponent": "Stade Rennais",
+          "difficulty": 5.3,
+          "date": 1769270400,
+          "is_home": false
+        },
+        {
+          "opponent": "Nantes",
+          "difficulty": 3.0,
+          "date": 1769882400,
+          "is_home": true
+        }
+      ],
       "performance_delta": 3
     },
     {
@@ -3586,14 +6904,14 @@ const simulationResults = {
         0.1,
         0.5,
         1.6,
-        3.6,
-        6.7,
-        10.0,
+        3.5,
+        6.8,
+        9.9,
         12.4,
         13.5,
         14.3,
         14.2,
-        12.8,
+        12.9,
         7.1,
         2.4,
         0.6,
@@ -3604,8 +6922,40 @@ const simulationResults = {
         0.0,
         0.0
       ],
-      "strength_of_schedule": 4.5,
-      "matches_remaining": 5,
+      "strength_of_schedule": 4.2,
+      "matches_remaining": 19,
+      "next_opponents": [
+        {
+          "opponent": "Toulouse",
+          "difficulty": 2.5,
+          "date": 1765656300,
+          "is_home": true
+        },
+        {
+          "opponent": "Paris Saint-Germain",
+          "difficulty": 4.4,
+          "date": 1767555900,
+          "is_home": false
+        },
+        {
+          "opponent": "Nantes",
+          "difficulty": 6.3,
+          "date": 1768752900,
+          "is_home": false
+        },
+        {
+          "opponent": "Angers",
+          "difficulty": 3.8,
+          "date": 1769357700,
+          "is_home": true
+        },
+        {
+          "opponent": "Olympique de Marseille",
+          "difficulty": 3.8,
+          "date": 1769875200,
+          "is_home": true
+        }
+      ],
       "performance_delta": -1
     },
     {
@@ -3627,12 +6977,12 @@ const simulationResults = {
         0.2,
         0.8,
         2.0,
-        4.3,
+        4.4,
         7.5,
         10.5,
         13.0,
         15.1,
-        16.7,
+        16.6,
         16.5,
         9.4,
         3.2,
@@ -3644,8 +6994,40 @@ const simulationResults = {
         0.0,
         0.0
       ],
-      "strength_of_schedule": 5.3,
-      "matches_remaining": 5,
+      "strength_of_schedule": 5.4,
+      "matches_remaining": 19,
+      "next_opponents": [
+        {
+          "opponent": "RC Lens",
+          "difficulty": 5.0,
+          "date": 1765728900,
+          "is_home": false
+        },
+        {
+          "opponent": "RC Strasbourg",
+          "difficulty": 6.0,
+          "date": 1767463200,
+          "is_home": true
+        },
+        {
+          "opponent": "Toulouse",
+          "difficulty": 4.9,
+          "date": 1768672800,
+          "is_home": false
+        },
+        {
+          "opponent": "Nantes",
+          "difficulty": 6.3,
+          "date": 1769349600,
+          "is_home": false
+        },
+        {
+          "opponent": "Stade Brestois",
+          "difficulty": 4.9,
+          "date": 1769962500,
+          "is_home": true
+        }
+      ],
       "performance_delta": 2
     },
     {
@@ -3654,7 +7036,7 @@ const simulationResults = {
       "top4_probability": 0.0,
       "uel_probability": 0.2,
       "uecl_probability": 0.7,
-      "relegation_probability": 12.6,
+      "relegation_probability": 12.7,
       "avg_points": 38.3,
       "attack_rating": 3.8,
       "defense_rating": 5.9,
@@ -3672,10 +7054,10 @@ const simulationResults = {
         10.8,
         13.1,
         15.6,
-        16.8,
+        16.7,
         16.6,
         9.0,
-        2.9,
+        3.0,
         0.7,
         0.0,
         0.0,
@@ -3685,7 +7067,39 @@ const simulationResults = {
         0.0
       ],
       "strength_of_schedule": 5.0,
-      "matches_remaining": 5,
+      "matches_remaining": 19,
+      "next_opponents": [
+        {
+          "opponent": "Olympique Lyonnais",
+          "difficulty": 4.9,
+          "date": 1765720800,
+          "is_home": false
+        },
+        {
+          "opponent": "Angers",
+          "difficulty": 3.8,
+          "date": 1767543300,
+          "is_home": true
+        },
+        {
+          "opponent": "Stade Rennais",
+          "difficulty": 5.3,
+          "date": 1768752900,
+          "is_home": false
+        },
+        {
+          "opponent": "AS Monaco",
+          "difficulty": 6.0,
+          "date": 1769277600,
+          "is_home": true
+        },
+        {
+          "opponent": "RC Lens",
+          "difficulty": 5.0,
+          "date": 1769802300,
+          "is_home": false
+        }
+      ],
       "performance_delta": -6
     },
     {
@@ -3694,7 +7108,7 @@ const simulationResults = {
       "top4_probability": 0.0,
       "uel_probability": 0.0,
       "uecl_probability": 0.0,
-      "relegation_probability": 64.7,
+      "relegation_probability": 64.8,
       "avg_points": 31.9,
       "attack_rating": 3.4,
       "defense_rating": 4.9,
@@ -3724,8 +7138,40 @@ const simulationResults = {
         0.0,
         0.0
       ],
-      "strength_of_schedule": 5.3,
-      "matches_remaining": 5,
+      "strength_of_schedule": 5.5,
+      "matches_remaining": 19,
+      "next_opponents": [
+        {
+          "opponent": "Lille",
+          "difficulty": 6.9,
+          "date": 1765728900,
+          "is_home": true
+        },
+        {
+          "opponent": "Stade Brestois",
+          "difficulty": 4.8,
+          "date": 1767543300,
+          "is_home": false
+        },
+        {
+          "opponent": "RC Lens",
+          "difficulty": 5.0,
+          "date": 1768665600,
+          "is_home": false
+        },
+        {
+          "opponent": "Paris Saint-Germain",
+          "difficulty": 6.0,
+          "date": 1769194800,
+          "is_home": true
+        },
+        {
+          "opponent": "Toulouse",
+          "difficulty": 4.9,
+          "date": 1769962500,
+          "is_home": false
+        }
+      ],
       "performance_delta": -2
     },
     {
@@ -3756,7 +7202,7 @@ const simulationResults = {
         4.6,
         14.3,
         35.4,
-        42.7,
+        42.6,
         0.0,
         0.0,
         0.0,
@@ -3765,7 +7211,39 @@ const simulationResults = {
         0.0
       ],
       "strength_of_schedule": 4.9,
-      "matches_remaining": 5,
+      "matches_remaining": 19,
+      "next_opponents": [
+        {
+          "opponent": "Paris Saint-Germain",
+          "difficulty": 6.0,
+          "date": 1765648800,
+          "is_home": true
+        },
+        {
+          "opponent": "Lorient",
+          "difficulty": 7.1,
+          "date": 1767543300,
+          "is_home": false
+        },
+        {
+          "opponent": "RC Strasbourg",
+          "difficulty": 3.5,
+          "date": 1768744800,
+          "is_home": false
+        },
+        {
+          "opponent": "Olympique Lyonnais",
+          "difficulty": 4.0,
+          "date": 1769357700,
+          "is_home": true
+        },
+        {
+          "opponent": "Angers",
+          "difficulty": 3.8,
+          "date": 1769962500,
+          "is_home": false
+        }
+      ],
       "performance_delta": 0
     },
     {
@@ -3794,9 +7272,9 @@ const simulationResults = {
         1.0,
         2.1,
         5.0,
-        13.9,
-        32.0,
-        45.2,
+        13.8,
+        31.9,
+        45.3,
         0.0,
         0.0,
         0.0,
@@ -3804,9 +7282,133 @@ const simulationResults = {
         0.0,
         0.0
       ],
-      "strength_of_schedule": 5.7,
-      "matches_remaining": 5,
+      "strength_of_schedule": 6.1,
+      "matches_remaining": 19,
+      "next_opponents": [
+        {
+          "opponent": "Angers",
+          "difficulty": 3.8,
+          "date": 1765568700,
+          "is_home": false
+        },
+        {
+          "opponent": "Olympique de Marseille",
+          "difficulty": 8.2,
+          "date": 1767535200,
+          "is_home": false
+        },
+        {
+          "opponent": "Paris FC",
+          "difficulty": 4.7,
+          "date": 1768752900,
+          "is_home": true
+        },
+        {
+          "opponent": "Nice",
+          "difficulty": 6.5,
+          "date": 1769349600,
+          "is_home": true
+        },
+        {
+          "opponent": "Lorient",
+          "difficulty": 7.1,
+          "date": 1769882400,
+          "is_home": false
+        }
+      ],
       "performance_delta": 0
+    }
+  ],
+  "Ligue 1_upcoming": [
+    {
+      "home_team": "Angers",
+      "away_team": "Nantes",
+      "date": 1765568700,
+      "home_win_prob": 49.9,
+      "draw_prob": 30.6,
+      "away_win_prob": 19.5,
+      "home_id": 1684,
+      "away_id": 1647
+    },
+    {
+      "home_team": "Stade Rennais",
+      "away_team": "Stade Brestois",
+      "date": 1765641600,
+      "home_win_prob": 68.8,
+      "draw_prob": 18.6,
+      "away_win_prob": 12.5,
+      "home_id": 1658,
+      "away_id": 1715
+    },
+    {
+      "home_team": "Metz",
+      "away_team": "Paris Saint-Germain",
+      "date": 1765648800,
+      "home_win_prob": 19.1,
+      "draw_prob": 30.6,
+      "away_win_prob": 50.3,
+      "home_id": 1651,
+      "away_id": 1644
+    },
+    {
+      "home_team": "Paris FC",
+      "away_team": "Toulouse",
+      "date": 1765656300,
+      "home_win_prob": 38.2,
+      "draw_prob": 28.1,
+      "away_win_prob": 33.7,
+      "home_id": 6070,
+      "away_id": 1681
+    },
+    {
+      "home_team": "Olympique Lyonnais",
+      "away_team": "Le Havre",
+      "date": 1765720800,
+      "home_win_prob": 76.6,
+      "draw_prob": 16.3,
+      "away_win_prob": 7.1,
+      "home_id": 1649,
+      "away_id": 1662
+    },
+    {
+      "home_team": "Auxerre",
+      "away_team": "Lille",
+      "date": 1765728900,
+      "home_win_prob": 37.8,
+      "draw_prob": 26.7,
+      "away_win_prob": 35.4,
+      "home_id": 1646,
+      "away_id": 1643
+    },
+    {
+      "home_team": "RC Lens",
+      "away_team": "Nice",
+      "date": 1765728900,
+      "home_win_prob": 85.9,
+      "draw_prob": 9.4,
+      "away_win_prob": 4.6,
+      "home_id": 1648,
+      "away_id": 1661
+    },
+    {
+      "home_team": "RC Strasbourg",
+      "away_team": "Lorient",
+      "date": 1765728900,
+      "home_win_prob": 83.3,
+      "draw_prob": 14.9,
+      "away_win_prob": 1.8,
+      "home_id": 1659,
+      "away_id": 1656
+    },
+    {
+      "home_team": "Olympique de Marseille",
+      "away_team": "AS Monaco",
+      "date": 1765741500,
+      "home_win_prob": 72.7,
+      "draw_prob": 13.9,
+      "away_win_prob": 13.3,
+      "home_id": 1641,
+      "away_id": 1653
     }
   ]
 };
